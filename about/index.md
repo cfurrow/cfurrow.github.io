@@ -32,7 +32,9 @@ solving problems through code, and enjoy sharing my knowledge with others.
   </div>
   <div class='col-md-4'>
     <a href="https://twitter.com/carl_furrow" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @carl_furrow</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
   </div>
 </div>
 
