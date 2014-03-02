@@ -50,7 +50,11 @@
     </div>
 
     <div class="container-narrow">
-
+      {% if page.id != null %}
+      <p>
+        I'm <strong>Carl Furrow</strong>. I'm a bit-pusher on the Internet, and I work at <a href="http://lumosity.com">Lumosity</a>.
+      </p>
+      {% endif %}
       <div class="content">
         {{ content }}
       </div>
