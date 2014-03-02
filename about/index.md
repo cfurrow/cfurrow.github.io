@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About Carl
+title: About
 tagline:
+group: navigation
 ---
 {% include JB/setup %}
 
