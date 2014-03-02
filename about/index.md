@@ -59,7 +59,7 @@ text.
     
     <p>
     A few months later, I was in our local bookstore, and came across a book that
-    fascinated and excited me, "Teach Yourself Game Programming in 21 Days" by André LaMothe.
+    fascinated and excited me, ["Teach Yourself Game Programming in 21 Days"](http://www.amazon.com/Teach-Yourself-Game-Programming-Cd-Rom/dp/0672305623/) by André LaMothe.
     </p>
     
     <p>
