@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Carl Furrow
-tagline: Pushing bits
+tagline: Pushing bits on the Internet
 ---
 {% include JB/setup %}
 
