@@ -35,7 +35,7 @@ examples from the book before I even knew I was writing Apple BASIC. I learned
 quickly as soon as I found out I could LIST the source of any program and
 take it apart from the inside out.
 
-<img src="/assets/photos/about/carl-is-cool.png"/>
+<img src="/assets/photos/about/carl-is-cool.png" width="100%" />
 
 This went on for a few years before my parents thought that I was spending
 too much time on such an antiquated machine. In early 1996, we spent
@@ -45,7 +45,7 @@ over, and that got me into more unfamiliar territory--what does it mean to
 because every time I'd open up 'Ski Free' in Notepad, I just saw gobbled up
 text.
 
-<img src="/assets/photos/about/ski32_exe.png" />
+<img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
 If this is what it took to write programs, I knew I was out of my league! I
 couldn't understand any of this BASIC code! Programmers were clearly wizards.
@@ -100,14 +100,14 @@ XML and MIDI files to prototype a robot dancing on the screen, receiving instruc
 MIDI file's lyric track. The XML was there to build the robots parts and the app parsed the XML
 and put the robot together.
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/qEUL-vPMw7c" frameborder="0" allowfullscreen="1">
+<iframe width="700" height="525" src="//www.youtube.com/embed/qEUL-vPMw7c" frameborder="0" allowfullscreen="1">
 </iframe>
 
 At the same time, I was getting more-deeply involved in C#, and with a group of classmates, we
 built a 2D platformer game for our capstone project. I came up with the concept, drew the art,
 and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge.net/). 
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
+<iframe width="700" height="525" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
 </iframe>
 
 ### Now
