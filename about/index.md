@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 
 
-<img src="/assets/photos/about/me.jpg" />
+<img src="/assets/photos/about/me.jpg" width="100%"/>
 
 ### TL;DR
 
@@ -47,11 +47,11 @@ text.
 
 <img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
-<div class='row-fluid'>
-  <div class='span4'>    
-    <img src="/assets/photos/about/teach-yourself-game-programming.JPG" />
+<div class='row'>
+  <div class='col-md-4'>    
+    <img src="/assets/photos/about/teach-yourself-game-programming.JPG" width="100%" />
   </div>
-  <div class='span8'>
+  <div class='col-md-8'>
     <p>
     If this is what it took to write programs, I knew I was out of my league! I
     couldn't understand any of this BASIC code! Programmers were clearly wizards.
