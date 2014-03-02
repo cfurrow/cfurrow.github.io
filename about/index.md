@@ -47,24 +47,27 @@ text.
 
 <img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
-<div>
-
-<img src="/assets/photos/about/teach-yourself-game-programming.JPG" style="float:left; margin-right: 10px;" />
-<p>
-If this is what it took to write programs, I knew I was out of my league! I
-couldn't understand any of this BASIC code! Programmers were clearly wizards.
-</p>
-<p>
-A few months later, I was in our local bookstore, and came across a book that
-fascinated and excited me, "Teach Yourself Game Programming in 21 Days" by André LaMothe.
-</p>
-<p>
-I had to have it! I had to understand how Ski Free and all my Nintendo and Genesis games
-worked! I had to understand how to write that gobbled text!
-</p>
-
+<div class='row-fluid'>
+  <div class='span4'>    
+    <img src="/assets/photos/about/teach-yourself-game-programming.JPG" />
+  </div>
+  <div class='span8'>
+    <p>
+    If this is what it took to write programs, I knew I was out of my league! I
+    couldn't understand any of this BASIC code! Programmers were clearly wizards.
+    </p>
+    
+    <p>
+    A few months later, I was in our local bookstore, and came across a book that
+    fascinated and excited me, "Teach Yourself Game Programming in 21 Days" by André LaMothe.
+    </p>
+    
+    <p>
+    I had to have it! I had to understand how Ski Free and all my Nintendo and Genesis games
+    worked! I had to understand how to write that gobbled text!
+    </p>
+  </div>
 </div>
-<div style="clear:both;"></div>
 
 ### My first steps into C++
 
