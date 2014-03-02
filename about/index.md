@@ -20,6 +20,22 @@ development for the first time (ASP.NET) and have been doing some form
 of that ever since, learning javascript, css, Ruby/Rails, etc. I love
 solving problems through code, and enjoy sharing my knowledge with others.
 
+<div class='row'>
+  <div class='col-md-4'>
+    <a href="http://stackoverflow.com/users/38375/carl">
+    <img src="http://stackoverflow.com/users/flair/38375.png?theme=clean" width="208" height="58" alt="profile for Carl at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Carl at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
+    </a>
+  </div>
+  <div class='col-md-4'>
+    <iframe src="https://githubbadge.appspot.com/cfurrow" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0">
+    </iframe>
+  </div>
+  <div class='col-md-4'>
+    <a href="https://twitter.com/carl_furrow" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</div>
+
 ### Where it all started
 
 It was the early 90s when my uncle gave my parents his old Apple IIe 
