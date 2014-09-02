@@ -35,9 +35,16 @@ I've started out with this data and will work from there:
     {x1: 700, x2: 900, height: 400},
     ];
 
+[Code is in my skyline.js repo.](https://github.com/cfurrow/skyline.js)
 
-My current output:
+## My current output:
+
+### Trial 1
+This was just a straight "draw to canvas" trial.
 
 <img src="/assets/photos/skyline/skyline_trial1.png" />
 
-[Code is in my skyline.js repo.](https://github.com/cfurrow/skyline.js)
+### Trial 2
+This one uses the canvas `globalCompositeOperation` to merge the shapes into one.
+
+<img src="/assets/photos/skyline/skyline_trial2.png" />
