@@ -40,12 +40,12 @@ solving problems through code, and enjoy sharing my knowledge with others.
 
 ### Where it all started
 
-It was the early 90s when my uncle gave my parents his old Apple IIe 
+It was the early 90s when my uncle gave my parents his old Apple IIe
 that was just collecting dust in his basement. Our first family computer.
 I didn't know much about them at the time, but I learned quickly how
-to swap disks, play Oregon Trail, and even store my own files on a disk I 
+to swap disks, play Oregon Trail, and even store my own files on a disk I
 labeled "Carl's Place". I had visions of putting all kinds of secret messages,
-and neat activities on there. 
+and neat activities on there.
 
 I was so excited that this old Apple came with a thick instruction manual,
 and it talked about ways to "write your own program". I started copying the
@@ -66,7 +66,7 @@ text.
 <img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
 <div class='row'>
-  <div class='col-md-4'>    
+  <div class='col-md-4'>
     <img src="/assets/photos/about/teach-yourself-game-programming.JPG" width="100%" />
   </div>
   <div class='col-md-8'>
@@ -74,12 +74,12 @@ text.
     If this is what it took to write programs, I knew I was out of my league! I
     couldn't understand any of this BASIC code! Programmers were clearly wizards.
     </p>
-    
+
     <p>
     A few months later, I was in our local bookstore, and came across a book that
-    fascinated and excited me, ["Teach Yourself Game Programming in 21 Days"](http://www.amazon.com/Teach-Yourself-Game-Programming-Cd-Rom/dp/0672305623/) by André LaMothe.
+    fascinated and excited me, <a href="http://www.amazon.com/Teach-Yourself-Game-Programming-Cd-Rom/dp/0672305623/">Teach Yourself Game Programming in 21 Days</a> by André LaMothe.
     </p>
-    
+
     <p>
     I had to have it! I had to understand how Ski Free and all my Nintendo and Genesis games
     worked! I had to understand how to write that gobbled text!
@@ -91,7 +91,7 @@ text.
 
 The game programming book came with a copy of Visual C++ 1.0, and it was amazing! But,
 I quickly realized I had no idea what it meant! What was C++? Integer? I was only 13,
-and so much of these terms were foreign. I went back to my parents, asking them to 
+and so much of these terms were foreign. I went back to my parents, asking them to
 help me figure out what C++ meant, and they bought me "C++ For Dummies". Awesome!
 
 I tore through that book, figuring out what variables, pointers, and structs were, and
@@ -136,7 +136,7 @@ and put the robot together.
 
 At the same time, I was getting more-deeply involved in C#, and with a group of classmates, we
 built a 2D platformer game for our capstone project. I came up with the concept, drew the art,
-and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge.net/). 
+and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge.net/).
 
 <div class='video-container'>
 <iframe width="700" height="525" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
@@ -148,9 +148,8 @@ and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge
 After college I landed a number of jobs working with ASP.NET and building large web sites. I found a love
 for javascript that I'd never thought I'd have--it's become one of my favorite languages to work with. For
 about 7 years I worked exclusively with .NET in my professional career, and toyed with Ruby/Rails, and Node.js
-on the side. [In the spring of 2013]({% post_url 2013-04-15-working-at-lumosity %}), I began working with Rails 
+on the side. [In the spring of 2013]({% post_url 2013-04-15-working-at-lumosity %}), I began working with Rails
 full-time, and am loving it.
 
 I still pick away at game development, usually in HTML5 canvas, but I am quite content with web dev for the
 time being.
-
