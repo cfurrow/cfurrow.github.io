@@ -27,7 +27,8 @@ header .nav {
 .hero {
   height: 200px;
   background-size: cover;
-  background-image: url('/assets/hero.jpg')
+  background-image: url('/assets/hero.jpg');
+  margin-bottom: 20px;
 }
 
 
