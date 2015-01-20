@@ -8,7 +8,8 @@ tagline: Pushing bits on the Internet
 ### Knowledge is a framework that experience bends.
 
 I'm just a learning-fool, looking to master the art of solving problems
-through writing code, and yelling at computer screens.
+through writing code, and yelling at computer screens. Currently pushing bits
+over wires at [Lumosity](http://lumosity.com).
 
 ### Posts
 

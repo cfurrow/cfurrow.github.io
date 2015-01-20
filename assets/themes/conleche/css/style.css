@@ -29,6 +29,7 @@ header .nav {
   background-size: cover;
   background-image: url('/assets/hero.jpg');
   margin-bottom: 20px;
+  background-color: #2B2B2B;
 }
 
 
