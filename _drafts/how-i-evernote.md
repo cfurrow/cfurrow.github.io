@@ -3,7 +3,7 @@ layout: post
 title: "How I Evernote"
 description: ""
 category:
-tags: [evernote, productivity, aText, TextExpander, skitch]
+tags: [Evernote, productivity, aText, TextExpander, skitch]
 ---
 {% include JB/setup %}
 
@@ -11,14 +11,16 @@ Evernote is a tool I reach for every single day to make:
 
 - Grocery lists
 - Daily dev journal
-- Phonecall notes
+- Phone call notes
 - Save articles and web pages
 - Recipes
 - Food journal
 - Screenshot storage (via [Skitch](http://evernote.com/skitch))
 
 I think I'm an above-average user of it, or at least that's what I tell myself
-to allow myself to be as addicted to it as I am. I feel like I'm constantly
+to allow myself to be as addicted to it as I am. I'M A POWER USER!
+
+I feel like I'm constantly
 telling others how I use it, and how it's benefited me, so I thought I might
 as well try to capture a bit what I tell people, without all the drool.
 
@@ -51,7 +53,7 @@ I invariably reference in the future. "How did I find that special-case user?",
 ### Filed
 All notes that don't end up in another notebook, but are no longer
 in the inbox, are put here. Usually with tags to help identify what it was. I use
-the "call" tag for any phonecall I made, and documented the conversation at a
+the "call" tag for any phone call I made, and documented the conversation at a
 high-level here.
 
     Calling Comcast. Hate their automated system.
@@ -105,7 +107,7 @@ example:
 >
 > What? nil? How is that even possible? Time to do some spelunking in the history code again.
 
-"Writing all those manual timestamps is stupid and tedius." Yeah, I'd agree with
+"Writing all those manual timestamps is stupid and tedious." Yeah, I'd agree with
 you if it weren't for apps like [TextExpander](http://smilesoftware.com/TextExpander/index.html)
 or [aText](https://www.trankynam.com/atext/). What either of those apps allow me
 to do is setup a series of macros that I can run by typing some keys. For instance,
@@ -125,10 +127,10 @@ passing between my last notes, or, perhaps the start of a new "topic" in my note
 If I'm working on a single problem, but it's taking a non-trivial amount of time,
 I use my "inline" time method, which takes the current time, and drops it into
 Evernote, without pressing the "Enter" key at the end. So when I type: "ttime Still
- checking rollbar for more instances of that error" as soon as I hit the space between
- "ttime" and "Still", it changes "ttime" to "8:03 PM" so the line would look like:
+checking rollbar for more instances of that error" as soon as I hit the space between
+"ttime" and "Still", it changes "ttime" to "8:03 PM" so the line would look like:
 
- > 8:03 PM Still checking rollbar for more instances of that error
+> 8:03 PM Still checking rollbar for more instances of that error
 
 So handy!
 
@@ -165,7 +167,7 @@ or snippets into Evernote. The best way I do this is to shift the text/code righ
 by using Cmd+Shift+}. It doesn't use spaces, but tabs or some other form of indentation.
 It's a manual process.
 
-- Paste code into E vernote
+- Paste code into Evernote
 - Highlight the code
 - Cmd+Shift+}
 
