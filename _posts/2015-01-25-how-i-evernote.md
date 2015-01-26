@@ -7,22 +7,18 @@ tags: [Evernote, productivity, aText, TextExpander, skitch]
 ---
 {% include JB/setup %}
 
-Evernote is a tool I reach for every single day to make:
+Evernote is a tool I reach for every single day to:
 
-- Grocery lists
-- Daily dev journal
-- Phone call notes
-- Save articles and web pages
-- Recipes
-- Food journal
-- Screenshot storage (via [Skitch](http://evernote.com/skitch))
+- Daily dev journals
+- Jot down phone call notes
+- Create grocery lists
+- Save articles and web pages for later offline reference
+- Store recipes
+- Keep a food journal
+- Store screenshots (via [Skitch](http://evernote.com/skitch))
 
-I think I'm an above-average user of it, or at least that's what I tell myself
-to allow myself to be as addicted to it as I am. I'M A POWER USER!
-
-I feel like I'm constantly
-telling others how I use it, and how it's benefited me, so I thought I might
-as well try to capture a bit what I tell people, without all the drool.
+I feel like I'm constantly telling others how I use it, and how it's benefited
+me, so I thought I might as well try to capture a bit what I tell people.
 
 # Notebooks and Tags
 
@@ -39,23 +35,24 @@ Obvious
 ### Work
 Here is where I keep my daily dev journals that are work-related. I
 create a new note for each day, title it by the date (e.g. 2015.01.22), and
-timestamp my progress throughout the day,
-which I'll get into in the next section. I keep many notes for myself on what
-I worked on, questions I had, how I solved a problem, code snippets, screenshots --
-whatever it takes to sufficiently document my day, for a few reasons:
+timestamp my progress throughout the day, which I'll get into in the next section.
+
+What I worked on, questions I had for myself, or to ask otehrs, how I solved
+a problem, code snippets, screenshots -- whatever it takes to sufficiently
+document my day, for a few reasons:
 
 1. So I won't forget what I did each day.
-2. This builds a nice reference library that
-
-I invariably reference in the future. "How did I find that special-case user?",
-"What was that unix command to search all the production logs over the last 5 minutes?"
+2. This builds a nice reference library that I invariably reference in the future.
+    1. "How did I find that special-case user?"
+    2. "What was that unix command to search all the production logs over the last 5 minutes?"
 
 ### Filed
 All notes that don't end up in another notebook, but are no longer
-in the inbox, are put here. Usually with tags to help identify what it was. I use
-the "call" tag for any phone call I made, and documented the conversation at a
-high-level here.
+in the inbox, are put here. Usually with tags to help identify what it was. For
+example I use the "call" tag for any phone call I made, and documented the
+conversation here.
 
+    # Sample call note
     Calling Comcast. Hate their automated system.
     Got to a person, Linda.
     She's nice. Needs my acct info again?
@@ -78,11 +75,11 @@ example:
 >
 > Got a late start, wasn't feeling well.
 > Checking emails.
-> Need to check on that script I ran last night. Rob says it went fine, verify counts.
+> Need to check on that script I ran last night. Rob says it went fine. Let's verify counts.
 >
 > [10:30 AM]
 >
-> Script was fine, moved on to story #1910. I think I still need to add some logic
+> Counts were fine, moved on to story #1910. I think I still need to add some logic
 > to fetch the assessment data now that I know what that will look like. Let's
 > do that now.
 >
@@ -120,6 +117,7 @@ You can type as fast as you want, so if I was on a roll, I could type "/etime
 Just got back from lunch, checking email", it would immediately expand it to:
 
 > [8:04 PM]
+>
 > Just got back from lunch, checking email
 
 I use that style of macro to delineate either the start of the day, or long time
@@ -138,7 +136,7 @@ I was a long-time TextExpander user until I saw aText hit the scene a few years
 ago. The price tag was far-far lower than TextExpander, and it seemed to meet my
 basic needs, so I grabbed it, and haven't looked back.
 
-I have another of other handy macros in aText that I use all day:
+I have a number of other handy macros in aText that I use all day:
 
 > **ddate** Expands to 2015.01.22 (the current date)
 >
@@ -154,13 +152,13 @@ I have another of other handy macros in aText that I use all day:
     /|~|\
     / / /|
 
-Evernote has some built in keyboard shortcuts to output date and time, but I've
-found my muscle memory for just typing "words" and not remembering the keyboard
-shortcuts is faster, plus, I have more needs than just date, and time, as you can
+Evernote has some built-in keyboard shortcuts to output date and time, but I've
+gotten so used to just typing out these "words" that I can't see why I'd change
+that up. Plus, I have more needs than just date, and time, as you can
 see. I think I've got somewhere on the order of 30-40 macros setup, not all for
 Evernote.
 
-# Code snippets
+# Code snippets / Quotes
 
 I don't have a perfect solution for this yet, but I tend to drop lots of code,
 or snippets into Evernote. The best way I do this is to shift the text/code right
@@ -168,7 +166,7 @@ by using Cmd+Shift+}. It doesn't use spaces, but tabs or some other form of inde
 It's a manual process.
 
 - Paste code into Evernote
-- Highlight the code
+- Highlight the code or quote
 - Cmd+Shift+}
 
 I'd really love some kind of prettifier inside of Evernote to syntax highlight
@@ -197,3 +195,9 @@ For code, etc. Like [GitHub's gist](https://gist.github.com/)
 Or, a simple way to create a table. Sometimes I just need to put things in tabular form, and Evernote does not make that easy or fluid.
 Microsoft's OneNote did this by letting you type some text, pressing "Tab" (I think), and it created a table cell around your first bit of text, and creates an empty cell for you to type into immediately. You can keep pressing "Tab" to add more cells to a row. If you pressed "Enter", it creates a new table row, and let's you start the process over again. If you press "Enter Enter", it exits out
 of table mode.
+
+# Let me know if you've got more tips!
+
+Hopefully that was somewhat helpful, and you've found a new tidbit of information
+to take back to your own productivity toolbelt. I'm always on the lookout for
+new ways to enhance how I work, so if you've got any, drop me a tweet [@carl_furrow](http://twitter.com/carl_furrow)
