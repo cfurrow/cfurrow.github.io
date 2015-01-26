@@ -19,7 +19,7 @@ Evernote is a tool I reach for every single day to:
 - Store screenshots (via [Skitch](http://evernote.com/skitch))
 
 I feel like I'm constantly telling others how I use it, and how it's benefited
-me, so I thought I might as well try to capture a bit what I tell people.
+me, so I thought I might as well try to capture a bit of what I tell people.
 
 # Notebooks and Tags
 
