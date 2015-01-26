@@ -53,8 +53,11 @@
 
   </header>
 
-  <div id="hero">
-  </div>
+  {% if page.hero %}
+    <div id="super-hero" style="background-image: url({{page.hero}})"></div>
+  {% else %}
+    <div id="hero"></div>
+  {% endif %}
 
   <body onload="prettyPrint()">
     <div class="container-fluid container-narrow">

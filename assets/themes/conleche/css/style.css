@@ -25,7 +25,7 @@ header .nav {
   text-align: right;
 }
 
-#hero {
+#hero, #super-hero {
   height: 200px;
   background-size: cover;
   margin-bottom: 20px;

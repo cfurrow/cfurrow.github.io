@@ -4,6 +4,7 @@ title: "How I Evernote"
 description: ""
 category:
 tags: [Evernote, productivity, aText, TextExpander, skitch]
+hero: "/assets/hero/2015-01-25-evernote.jpg"
 ---
 {% include JB/setup %}
 
