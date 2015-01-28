@@ -10,7 +10,7 @@ hero: "/assets/hero/2015-01-25-evernote.jpg"
 
 Evernote is a tool I reach for every single day to:
 
-- Daily dev journals
+- Keep daily dev journals
 - Jot down phone call notes
 - Create grocery lists
 - Save articles and web pages for later offline reference
