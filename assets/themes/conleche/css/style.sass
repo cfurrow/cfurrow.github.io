@@ -3,7 +3,9 @@
 $black: #000000
 $blue: #307EA9
 $gray: #2b2b2b
+$green: #57A957
 $lightGray: #eeeeee
+$white: #ffffff
 
 $stdMargin: 20px
 $stdPadding: 20px
@@ -84,27 +86,27 @@ header
     padding: 3px 6px
     margin: 2px
     background: $lightGray
-    color: #555
+    /* This is convoluted */
+    color: $gray + #303030 - #060606
     border-radius: 3px
     text-decoration: none
-    border: 1px dashed #cccccc
+    border: 1px dashed $lightGray - #222222
 
     &:hover
-      background-color: #e5e5e5
+      background-color: $lightGray - #0a0a0a
 
-    &.active
-      background: #57A957
-      border: 1px solid #4c964d
-      color: #FFF
+    &:active, &.active
+      background: $green
+      border: 1px solid $green - #111010
+      color: $white
 
     span
       vertical-align: super
       font-size: 0.8em
 
 td, th
-  border: 1px solid #e2e2e2
-  padding: 0 5px
-
+  border: 1px solid $lightGray - #0c0c0c
+  padding: 0 $stdPadding / 4
 
 .video-container
   position: relative

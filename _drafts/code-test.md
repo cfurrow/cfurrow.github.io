@@ -15,7 +15,7 @@ end
 
 class Foo
   def bar
-    nil / 2 # fuck you
+    nil / 2 # good luck
   end
 end
 </pre>
@@ -27,8 +27,8 @@ class PostView extends Backbone.View
   constructor: ->
     console.log('javascript!')
 
-  fuckIt: (fileNotFound) ->
-    1.0 / 3.1
+  doItLive: (fileNotFound) ->
+    1.0 / 3.1 % fileNotFound
 </pre>
 
 <pre class='prettyprint'>
@@ -43,3 +43,17 @@ And now a video. Shut up.
 <div class='video-container'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/f7q-vYbD2Wc" frameborder="0" allowfullscreen></iframe>
 </div>
+
+
+A table:
+
+<table class='table'>
+<tr>
+  <th>Header!!!</th>
+  <th>Header2</th>
+</tr>
+<tr>
+  <td>Cell 1</td>
+  <td>Cell 2</td>
+</tr>
+</table>
