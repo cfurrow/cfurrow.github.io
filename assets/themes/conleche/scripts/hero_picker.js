@@ -11,5 +11,4 @@ $(function(){
 
   $hero.css('background-image', heroPath);
 
-
 });
