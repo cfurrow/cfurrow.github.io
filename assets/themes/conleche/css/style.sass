@@ -1,0 +1,121 @@
+---
+---
+$black: #000000
+$blue: #307EA9
+$gray: #2b2b2b
+$lightGray: #eeeeee
+
+$stdMargin: 20px
+$stdPadding: 20px
+
+body
+  margin-top: $stdMargin * 1.5
+
+header
+  h1
+    font-weight: 700
+    text-align: center
+    a
+      color: $black
+      &:hover, &:focus
+        text-decoration: none
+        color: $blue
+    .thin
+      font-weight: 300
+  .nav
+    margin-top: $stdMargin
+    text-align: right
+
+
+#hero, #super-hero
+  height: 200px
+  background-size: cover
+  margin-bottom: $stdMargin
+  background-color: $gray
+
+/* Custom container */
+.container-narrow
+  margin: 0 auto
+  max-width: 700px
+
+  &>hr
+    margin: $stdMargin * 1.5 0
+
+.navbar
+  .nav
+    float: right
+
+/* posts index */
+.post
+  &>h3.title
+    position: relative
+    padding-top: $stdPadding / 2
+
+    span.date
+      position: absolute
+      right: 0
+      font-size: 0.9em
+
+  &>.more
+    margin: $stdMargin / 2 0
+    text-align: left
+
+
+/* post-full*/
+.post-full
+  .date
+    margin-bottom: $stdMargin
+    font-weight: bold
+
+/* tag_box */
+.tag_box
+  list-style: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+  li
+    line-height: 1.5em
+  &.inline
+    li
+      float: left
+      i
+        opacity: 0.9
+  a
+    padding: 3px 6px
+    margin: 2px
+    background: $lightGray
+    color: #555
+    border-radius: 3px
+    text-decoration: none
+    border: 1px dashed #cccccc
+
+    &:hover
+      background-color: #e5e5e5
+
+    &.active
+      background: #57A957
+      border: 1px solid #4c964d
+      color: #FFF
+
+    span
+      vertical-align: super
+      font-size: 0.8em
+
+td, th
+  border: 1px solid #e2e2e2
+  padding: 0 5px
+
+
+.video-container
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: $stdPadding * 1.5
+  height: 0
+  overflow: hidden
+
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
