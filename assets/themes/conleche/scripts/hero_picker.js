@@ -4,7 +4,7 @@ $(function(){
   }
 
   var $hero = $('#hero');
-  var imageCount = 5;
+  var imageCount = 11;
   var path = "/assets/hero/";
 
   var heroPath = "url(" + path + getRandomArbitrary(1, imageCount+1).toString() + ".jpg)";
