@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Destroying OSX Calendar Zombie Invites"
-description: ""
-category: 
+description: "What to do when those old, unimportant calendar invites are still sticking around."
+category:
 tags: [osx, calendar]
 ---
 {% include JB/setup %}

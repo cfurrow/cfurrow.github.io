@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Turned my treadmill into a desk for $15.34"
-description: ""
+description: "Just what it says. Took a treadmill, made it a desk."
 category: health
 tags: [treadmill, desk]
 hero: "/assets/photos/2015.02.22-treadmill/2015-02-22-12.30.33.jpg"

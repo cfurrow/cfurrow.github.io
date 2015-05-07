@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "How I removed friction in running my tests locally"
-description: ""
-category: 
+description: "Setting up a local continuous testing environment so I don't break production."
+category:
 tags: [testing, ci, git, deployment]
 ---
 {% include JB/setup %}

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Creating an animated GIF from multiple JPEGS (osx)"
-description: ""
-category: 
+description: "A how-to on making gifs from the command line."
+category:
 tags: [gif, osx]
 ---
 {% include JB/setup %}

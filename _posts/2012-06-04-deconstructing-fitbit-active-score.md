@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Deconstructing Fitbit's active score"
-description: ""
-category: 
+description: "Wanting to know how Fitbit calculates effort, I took to the internet to investigate."
+category:
 tags: [fitbit, health]
 ---
 {% include JB/setup %}
@@ -38,7 +38,7 @@ it calculated?
 
 From their site:
 
-> The Active Score is a rough translation of your average METs for the day 
+> The Active Score is a rough translation of your average METs for the day
 > (METs = Active Score x .001 + 1). [source](http://help.fitbit.com/customer/portal/articles/176130-how-does-the-active-score-work)
 
 So what is MET? From Wikipedia:
@@ -80,7 +80,7 @@ page above, it has a handy comparison chart of varying METs.
 
 1. I wanted to know an approximation for a few reasons:
 2. I just wanted to know how they may be calculating Active Score I wanted to
-create a helper-app to help you reach your activity goal for the day. 
+create a helper-app to help you reach your activity goal for the day.
 
 With regards to #2 above, this was my idea:
 
@@ -89,8 +89,8 @@ haven’t met your activity goal for the day. Let’s further say that your goal
 is to have an activity score of 1,000. So what I think would be nice to know
 is this:
 
-1. How many more steps do I have to take to reach my goal of 1,000 AND/OR 
-2. How many more floors should I climb to reach my goal of 1,000 
+1. How many more steps do I have to take to reach my goal of 1,000 AND/OR
+2. How many more floors should I climb to reach my goal of 1,000
 
 So the output could be:
 

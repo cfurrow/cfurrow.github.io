@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Happy Valentine's Day"
-description: ""
-category: 
+description: "To my gal."
+category:
 tags: [pixel art, valentines]
 ---
 {% include JB/setup %}
@@ -10,4 +10,3 @@ tags: [pixel art, valentines]
 <img src="/assets/photos/2013-02-14-happy-valentines.gif"/>
 
 I love *you*, Emily.
-

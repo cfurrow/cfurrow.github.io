@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I Evernote"
-description: ""
+description: "What I've learned from using Evernote over the last 7+ years."
 category:
 tags: [Evernote, productivity, aText, TextExpander, skitch]
 hero: "/assets/hero/2015-01-25-evernote.jpg"

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "I'm a rookie"
-description: ""
-category: 
+description: "I know nothing."
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -11,19 +11,19 @@ A colleague sent around an article today, [Execute Like a Rookie, Lead Like a Mu
 
 > Rookies are a lot faster than people with experience because they are desperate and uncomfortable. When we get comfortable, that's when we start to teach and mentor other people.
 
-An interesting thought. I often find myself in an uncomfortable state, such as when I walk into a room, I immediately slot myself at the bottom of the intellectual totem pole without any real evidence to back the action. I think it's a technique I subconsciously use to socialize and more easily relate with others. I listen more intently, and am generally more curious than if I think I have more to say than they. 
+An interesting thought. I often find myself in an uncomfortable state, such as when I walk into a room, I immediately slot myself at the bottom of the intellectual totem pole without any real evidence to back the action. I think it's a technique I subconsciously use to socialize and more easily relate with others. I listen more intently, and am generally more curious than if I think I have more to say than they.
 
 Wiseman goes on to list a few attributes of those she's identified as "rookies":
 
 > **They are risk mitigators, not risk takers.** They learn how to operate in thin slices, test, and de-risk their progress.
-> 
+>
 > **They are never satisfied.** “There's an abhorrence of mediocrity that they share.”
-> 
+>
 > **They are curious.** They always want to learn about everything, even if it's not related to their job or immediate challenges
-> 
+>
 > **They are humble.** “I don't mean in the sense of low self-esteem. I mean willing to learn from anyone and everyone no matter where they are in the hierarchy.”
-> 
-> **They are playful.** “It's not like they try to create fun amid the work. For them, their work is just fun.” 
+>
+> **They are playful.** “It's not like they try to create fun amid the work. For them, their work is just fun.”
 
 I certainly can relate to a number of those. But it also feels like anyone in the software industry should also follow these tenants, but experience proves to me that this is not the rule.
 

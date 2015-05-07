@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chrome broken when resetting your account password w/ 2-factor on."
-description: ""
+description: "Frustrations with Chrome when your org forces a password reset."
 category:
 tags: [google, chrome, two-factor, browser]
 ---

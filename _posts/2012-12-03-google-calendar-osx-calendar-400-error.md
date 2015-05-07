@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Google Calendar + OSX Calendars \"400\" error"
-description: ""
-category: 
+description: "Fixing some bad behavior in OSX's Calendar app."
+category:
 tags: [osx, mountain lion, calendar, fantastical, google, google calendar]
 ---
 {% include JB/setup %}
@@ -14,7 +14,7 @@ I’ve been having an issue happening more and more lately where I add an event
 via Fantastical, then add an invitee. Later, Calendar opens up with an alert:
 
 > The server responded with "400" to operation
-> CalDAVWriteEntityQueueableOperation. 
+> CalDAVWriteEntityQueueableOperation.
 
 A few Google searches later, I finally found a workaround.
 

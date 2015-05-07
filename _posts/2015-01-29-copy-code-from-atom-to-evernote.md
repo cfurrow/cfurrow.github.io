@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copy code from Atom to Evernote"
-description: ""
+description: "As an Evernote fiend, I searched for a way to copy code from Atom to Evernote w/ highlighting"
 category:
 tags: [atom, evernote]
 ---

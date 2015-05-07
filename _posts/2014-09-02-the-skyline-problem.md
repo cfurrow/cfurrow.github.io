@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The skyline problem"
-description: ""
+description: "A quick coding challenge to sketch a skyline with javascript."
 category:
 tags: [javascript, canvas]
 ---

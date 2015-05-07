@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Added a second layer to the treadmill desk"
-description: ""
+description: "I built up my treadmill desk so my screen would be more in-line with my eyes."
 category: health
 tags: [treadmill, desk]
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Penguin pixel art"
-description: ""
-category: 
+description: "Just a few scribbles."
+category:
 tags: [pixel art, penguin]
 ---
 {% include JB/setup %}

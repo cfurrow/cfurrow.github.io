@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "DOM Futures vs Custom Events"
-description: ""
-category: 
+description: "What the what?"
+category:
 tags: [javascript, dom futures, events]
 ---
 {% include JB/setup %}
@@ -38,9 +38,9 @@ call one of two callbacks depending on the response of the json call.
     }
 
     function postsSuccess(data){
-    }    
+    }
 
-    function showPosts(data) { 
+    function showPosts(data) {
         postsSuccess(data);
         //...
     }
@@ -56,10 +56,10 @@ using “on()” and triggers/publishes to an event using “trigger()”.
 
     $.getJSON("/usr/posts",onPostsSuccess,onPostsError)
 
-    function onPostsSuccess(data){ 
+    function onPostsSuccess(data){
         // let's just say we have two events we want fired
-        trigger("posts:success",data); 
-        trigger("posts:show",data); 
+        trigger("posts:success",data);
+        trigger("posts:show",data);
     }
 
     function onPostsError(error) { trigger("posts:error",error); }

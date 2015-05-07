@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Fast Tests Remove Testing Barriers"
-description: ""
-category: 
+description: "A blog post I wrote about a CI service."
+category:
 tags: [tddium, testing, ci, solano]
 ---
 {% include JB/setup %}

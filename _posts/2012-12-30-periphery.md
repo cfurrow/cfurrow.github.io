@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Periphery.js: HTML5 Canvas + Maths!"
-description: ""
-category: 
+description: "Challenged myself to make something in javascript that casts shadows from a moving light source."
+category:
 tags: [canvas, html5, math]
 ---
 {% include JB/setup %}
@@ -165,8 +165,8 @@ function frame(){
   requestAnimationFrame(frame);
 }
 
-requestAnimationFrame(frame); 
-</pre> 
+requestAnimationFrame(frame);
+</pre>
 
 You’ll see that in `drawPeripheryVision()`
 and `drawCentralVision()` I create the triangular vision fields, then I fill
@@ -175,7 +175,7 @@ falling outside those triangles away.
 
 `drawPlayer()` then puts it all together, creating the central player circle,
 plus the vision fields. You’ll also see my use of the
-`globalCompositeOperation=’xor’`, [see this link for details on that](https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html. 
+`globalCompositeOperation=’xor’`, [see this link for details on that](https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html.
 Then, after
 the peripheral triangle is drawn, I save the canvas state, draw the central
 vision (and clip), then restore the canvas. If I don’t do this, then the
@@ -244,15 +244,15 @@ document.onkeyup = function(e){
 part of the movement system. Up, Down, Left and Right. Those keys would not
 bubble up to the browser and try to scroll the page around. This also allowed
 me to be able to press `Command+R` to refresh the page, and those keys were
-allowed to bubble up to the browser. 
+allowed to bubble up to the browser.
 2. The `e.which` statements are not cross
 browser, but they work fine for Chrome/Firefox. Additionally, you’ll see
 `player.turningRight` or `player.movingDown` booleans. They stay set as long as
 the key is held down, so that on each pass of the main loop, the player is
-moving smoothly through each frame. 
+moving smoothly through each frame.
 3. Like I mentioned above, returning
 `!movement` returns ‘false’ when a movement key was pressed, and therefore, the
-event doesn’t bubble up. 
+event doesn’t bubble up.
 
 The code that moves the player is below. It is called
 each time the game loops:

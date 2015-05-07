@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Game Developer Diary - Part 1: Tools"
-description: ""
+description: "Wanting to play with Pixi.js again, I realized I needed some tools to simplify my workflow."
 category:
 tags: [game_development, phaserjs, ruby]
 hero: "/assets/hero/2015.02.08-phaser.png"

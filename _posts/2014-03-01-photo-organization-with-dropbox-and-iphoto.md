@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Photo Organization with Dropbox and iPhoto"
-description: ""
-category: 
+description: "My current solution to wrangling my photos."
+category:
 tags: [iphoto, dropbox, osx, photos]
 ---
 {% include JB/setup %}
@@ -31,7 +31,7 @@ Then it hit me: [I could create multiple libraries in iPhoto](http://support.app
 down on the slowness I'd experienced in the past when using iPhoto and having thousands
 of photos across 8+ years. Ok, that solves #4 problem. Additionally, I realized you can
 setup iPhoto to use an existing folder structure when importing photos, versus the default
-setting which copies imported photos into iPhoto's own internal folder setup (which I hated). 
+setting which copies imported photos into iPhoto's own internal folder setup (which I hated).
 
 <img src="/assets/photos/2014.03.01-iphoto setting.png" />
 
@@ -47,4 +47,3 @@ My new photo workflow looks like this:
 5. Use iPhoto's events to sort photos into events at-will.
 
 As usual, I'm going to try this out for a few months, and see how it works.
-
