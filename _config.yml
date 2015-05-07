@@ -18,6 +18,7 @@ author :
   github : cfurrow
   twitter : carl_furrow
   #feedburner : feedname
+paginate: 15
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -90,7 +91,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-48560508-1'
+      tracking_id : 'UA-48560508-1'
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
