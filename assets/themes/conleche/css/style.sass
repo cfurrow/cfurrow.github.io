@@ -48,15 +48,20 @@ header
     float: right
 
 /* posts index */
-.post
-  &>h3.title
-    position: relative
-    padding-top: $stdPadding / 2
+.posts, .post
+  list-style: none
+  margin: 0
+  padding: 0
 
-    span.date
-      position: absolute
-      right: 0
-      font-size: 0.9em
+.post
+  h3.title
+    //position: relative
+    //padding-top: $stdPadding / 2
+
+  span.date
+    // position: absolute
+    // left: 0
+    font-size: 0.9em
 
   &>.more
     margin: $stdMargin / 2 0
