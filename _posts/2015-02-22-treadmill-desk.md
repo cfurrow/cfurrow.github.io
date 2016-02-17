@@ -11,10 +11,10 @@ hero: "/assets/photos/2015.02.22-treadmill/2015-02-22-12.30.33.jpg"
 ## Finished Product
 
 <p>
-<img width="100%" src="/assets/photos/2015.02.22-treadmill/2015-02-22 14.56.59.jpg"></img>
+<img width="100%" src="/assets/photos/2015.02.22-treadmill/2015-02-22 14.56.59.jpg" />
 </p>
 <p>
-<img width="100%" src="/assets/photos/2015.02.22-treadmill/2015-02-22 14.57.26.jpg"></img>
+<img width="100%" src="/assets/photos/2015.02.22-treadmill/2015-02-22 14.57.26.jpg" />
 </p>
 
 ## Materials
