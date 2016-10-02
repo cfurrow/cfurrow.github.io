@@ -104,6 +104,16 @@ prose:
           placeholder: "Choose categories"
           value: personal
           options:
+            - name: "Health"
+              value: health
+            - name: "Calendar"
+              value: calendar
+            - name: "Game Development"
+              value: game development
+            - name: "Coding Challenge"
+              value: coding challenge
+            - name: "Note Taking"
+              value: note taking
             - name: "Personal"
               value: personal
             - name: "Engineering"
