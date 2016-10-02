@@ -2,10 +2,10 @@
 layout: post
 title: "Budget App"
 description: "Was challenged to curb my micro-spending habits, so I built an app"
-category: 
+category: app development
 tags: [budget, ruby on rails, web app]
 ---
-{% include JB/setup %}
+
 
 I spend a lot of money on "micro transactions" every month. iTunes, Amazon, Playstation, etc. Each one is usually less than $20 a piece, so it never *seems* like I'm spending much money, but collectively it adds up quickly as you might expect if you've ever done math.
 

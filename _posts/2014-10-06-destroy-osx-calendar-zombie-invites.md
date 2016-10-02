@@ -2,10 +2,10 @@
 layout: post
 title: "Destroying OSX Calendar Zombie Invites"
 description: "What to do when those old, unimportant calendar invites are still sticking around."
-category:
+category: calendar
 tags: [osx, calendar]
 ---
-{% include JB/setup %}
+
 
 A large reason why I don't use OSX's Calendar app is because every time I open it, I have 100+ calendar invites staring me in the face. I've already accepted/rejected these invites through Google Calendar, but Calendar doesn't care. I really enjoy the native interface of Calendar, but that kind of "digital zit" drives me crazy! There was no way to delete/ignore them through the app, so I looked for another solution.
 

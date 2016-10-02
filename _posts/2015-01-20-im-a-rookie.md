@@ -2,10 +2,10 @@
 layout: post
 title: "I'm a rookie"
 description: "I know nothing."
-category:
-tags: []
+category: professional growth
+tags: [ ]
 ---
-{% include JB/setup %}
+
 
 A colleague sent around an article today, [Execute Like a Rookie, Lead Like a Multiplier](http://firstround.com/article/Execute-Like-a-Rookie-Lead-Like-a-Multiplier), and a number of points really resonated with me. [Liz Wiseman's](http://thewisemangroup.com/about/our-team/) many years of research and experience found that "perpetual rookies" tend to outperform their peers for fields requiring "specialized knowledge."
 

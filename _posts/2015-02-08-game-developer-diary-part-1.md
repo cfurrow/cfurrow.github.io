@@ -2,11 +2,11 @@
 layout: post
 title: "Game Developer Diary - Part 1: Tools"
 description: "Wanting to play with Pixi.js again, I realized I needed some tools to simplify my workflow."
-category:
-tags: [game_development, phaserjs, ruby]
+category: game development
+tags: [game_development, phaserjs, ruby, javascript]
 hero: "/assets/hero/2015.02.08-phaser.png"
 ---
-{% include JB/setup %}
+
 
 # Phaser.js
 
@@ -49,7 +49,7 @@ gem was created.
 
 I could now automate creating these sprites via a Rake task:
 
-<pre class='prettyprint'>
+``` ruby
 task :make_sprites do
   ["assets/dude.psd"].each do |path|
     p "Processing #{path}..."
@@ -57,7 +57,7 @@ task :make_sprites do
     p "Done!"
   end
 end
-</pre>
+```
 
 My first tool is now complete. And I can continue making assets, and dropping them
 into some Phaser.js examples.

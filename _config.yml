@@ -6,19 +6,48 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 
 markdown: kramdown
+paginate:    5
+paginate_path: "page:num"
+kramdown:
+  syntax_highlighter: rouge
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Carl Furrow
 tagline: Pushing Bits on the Internet
+description: Knowledge is a framework that experience bends
+logo: 'logo.png'
+url: /
+google_analytics : 'UA-48560508-1'
+dropcap: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Featured Posts
+    url: /featured
+  - title: Tags
+    url: /tags
+  - title: About
+    url: /about
 author :
   name : Carl Furrow
   email : me@carlfurrow.com
   github : cfurrow
   twitter : carl_furrow
+  instagram: furrowcious_carl
+  avatar: 'carl.jpg'
+  description: >
+    I'm just a learning-fool, looking to master the art of solving problems
+    through writing code, and yelling at computer screens. Currently pushing bits
+    over wires at <a href="https://lumosity.com" alt="Lumosity">Lumosity</a>.
   #feedburner : feedname
-paginate: 15
 
 gems: [jekyll-paginate, rouge]
 
@@ -30,7 +59,85 @@ gems: [jekyll-paginate, rouge]
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://cfurrow.github.io
+production_url: http://cfurrow.github.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://cfurrow.github.io/'
+  relativeLinks: 'http://cfurrow.github.io/links.jsonp'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "headline"
+        field:
+          element: "text"
+          label: "beadline"
+          placeholder: "Enter Post Headline"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: personal
+          options:
+            - name: "Personal"
+              value: personal
+            - name: "Engineering"
+              value: engineering
+            - name: "Interesting"
+              value: interesting
+            - name: "Web-Development"
+              value: webdevelopment
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

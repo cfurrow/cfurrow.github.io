@@ -2,10 +2,10 @@
 layout: post
 title: "Photo Organization with Dropbox and iPhoto"
 description: "My current solution to wrangling my photos."
-category:
+category: photos
 tags: [iphoto, dropbox, osx, photos]
 ---
-{% include JB/setup %}
+
 
 I've been trying out [my latest Dropbox-only solution]({% post_url 2013-12-04-dropbox-photo-organizer %}) for a while now,
 and while it's been working, I still pine for the polish and nicities

@@ -2,12 +2,9 @@
 layout: post
 title: "Creating an animated GIF from multiple JPEGS (osx)"
 description: "A how-to on making gifs from the command line."
-category:
+category: osx
 tags: [gif, osx]
 ---
-{% include JB/setup %}
-
-
 
 ### Requirements
 
@@ -29,14 +26,14 @@ This script goes through all the .jpg files in the current directory, and
 resizes their width down to 500px, and resizes the height based on the current
 aspect ratio of the image.
 
-<pre class='prettyprint'>
+```
 #!/bin/bash
 for i in *.jpg
 do
   convert -resize 500 $i resized/$i
   echo $i processed
 done
-</pre>
+```
 
 Save the file, then back in the shell make it executable:
 

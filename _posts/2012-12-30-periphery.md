@@ -2,27 +2,14 @@
 layout: post
 title: "Periphery.js: HTML5 Canvas + Maths!"
 description: "Challenged myself to make something in javascript that casts shadows from a moving light source."
-category:
+category: html5
 tags: [canvas, html5, math]
 ---
-{% include JB/setup %}
 
-<div id="demo">
-  <canvas id="c" width="700" height="500"></canvas>
+
+<div id="demo" style="margin: 0 auto; width: 800px;">
+  <canvas width="800" height="500" id="c"></canvas>
 </div>
-<script type="text/javascript" charset="utf-8">
-  window.fillWindow=false;
-  $(function(){
-    var sizeCanvas = function(){
-      var c = $("#c");
-      c.width($("#demo").width());
-      c.height(c.width()*0.75);
-    };
-
-    $( window ).resize(sizeCanvas);
-    sizeCanvas();
-  });
-</script>
 <script type="text/javascript" src="/assets/demo/periphery.min.js"></script>
 
 [Source on github](https://github.com/cfurrow/periphery.js)
@@ -71,7 +58,7 @@ field.
 
 Here’s the code I ended up with:
 
-<pre class='prettyprint'>
+``` javascript
 function drawPeripheryVision(ctx,player){
   ctx.beginPath();
 
@@ -166,7 +153,7 @@ function frame(){
 }
 
 requestAnimationFrame(frame);
-</pre>
+```
 
 You’ll see that in `drawPeripheryVision()`
 and `drawCentralVision()` I create the triangular vision fields, then I fill
@@ -197,7 +184,7 @@ so that if a user holds a direction I keep moving until that key comes up.
 
 Here’s the code for my `onkeydown` and `onkeyup` handlers:
 
-<pre class='prettyprint'>
+``` javascript
 document.onkeydown = function(e){
   var movement=false;
   if(e.which == 38){
@@ -238,7 +225,7 @@ document.onkeyup = function(e){
   }
   return false; // don't bubble event
 }
-</pre>
+```
 
 1. The movement variable was so that the app would “swallow” all keys I deemed as
 part of the movement system. Up, Down, Left and Right. Those keys would not
@@ -257,7 +244,7 @@ event doesn’t bubble up.
 The code that moves the player is below. It is called
 each time the game loops:
 
-<pre class='prettyprint'>
+``` javascript
 function handleMovement(player) {
   if(player.movingForward){
     player.y += player.velocity * 2.5 * Math.sin(player.direction);
@@ -278,7 +265,7 @@ function handleMovement(player) {
   player.y = (player.y-player.radius) < 0 ? player.radius : player.y;
   player.y = (player.y+player.radius) > ctx.canvas.height ? ctx.canvas.height-player.radius : player.y;
 }
-</pre>
+```
 
 ### RequestAnimationFrame
 
