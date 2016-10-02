@@ -17,6 +17,8 @@ This is some stuff. I dunno what it'll look like. We'll preview it soon.
 
 ![things-hero.jpg]({{site.baseurl}}/images/things-hero.jpg)
 
+^Where'd the image go?
+
 # Heading 1
 ## Heading 2
 ### Heading 3
