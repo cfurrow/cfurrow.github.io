@@ -6,7 +6,7 @@ category: health
 tags: [treadmill, desk]
 hero: "/assets/photos/2015.02.22-treadmill/2015-02-22-12.30.33.jpg"
 ---
-{% include JB/setup %}
+
 
 ## Finished Product
 

@@ -2,10 +2,10 @@
 layout: post
 title: "How I removed friction in running my tests locally"
 description: "Setting up a local continuous testing environment so I don't break production."
-category:
+category: testing
 tags: [testing, ci, git, deployment]
 ---
-{% include JB/setup %}
+
 
 ### Problem: Sometimes I forget to run tests before deploying to staging (oops)
 

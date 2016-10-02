@@ -2,11 +2,11 @@
 layout: post
 title: "You lost me, Evernote"
 description: "How Evernote lost an 8-year paying customer."
-category:
+category: note taking
 tags: [evernote, quiver]
 hero: "/assets/photos/2016.02.16/quiver-icon.png"
 ---
-{% include JB/setup %}
+
 
 I did not see this coming. [I'm an Evernote fiend](/2015/01/25/how-i-evernote/), a superuser, an evangelizer. Or, I was until a few weeks ago when I came across [Quiver](http://happenapps.com/#quiver). Quiver is a Mac note-taking app that includes two features I've been waiting for Evernote to integrate for years:
 

@@ -2,16 +2,16 @@
 layout: post
 title: "macOS Sierra: Killing my CPU"
 description: "After the upgrade, I had 200% CPU usage for over a week."
-category:
+category: osx
 tags: [macos, sierra, osx, high-cpu]
-hero: '/assets/photos/2016.09.29-sierra/hero.png'
+imagefeature: '27/hero.png'
+featured: true
 ---
-{% include JB/setup %}
-
-[*TL;DR*](#the-fix)
 
 After upgrading to macOS Sierra last week, my 2012 Macbook Air was running at 200%+ CPU practically all day, every day.
 Top offenders were:
+
+[*TL;DR*](#the-fix)
 
 - mds
 - mds_stores

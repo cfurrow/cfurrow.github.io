@@ -2,10 +2,10 @@
 layout: post
 title: "Dropbox Photo Organizer"
 description: "I built a little tool to help sort photos in Dropbox as they arrive."
-category:
+category: photos
 tags: [dropbox, photos, iphoto, osx]
 ---
-{% include JB/setup %}
+
 
 Ever since [Everpix](http://www.cultofmac.com/253339/everpix-has-gone-what-the-hell-can-we-use-to-replace-it/) was shut down, I'd been searching for a replacement
 to store, and share photos. I was using a hybrid solution of managing

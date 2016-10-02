@@ -2,10 +2,10 @@
 layout: post
 title: "Chrome broken when resetting your account password w/ 2-factor on."
 description: "Frustrations with Chrome when your org forces a password reset."
-category:
+category: browser
 tags: [google, chrome, two-factor, browser]
 ---
-{% include JB/setup %}
+
 
 Since this has happened twice in the last two-weeks, I thought I'd write it up.
 

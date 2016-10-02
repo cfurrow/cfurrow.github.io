@@ -2,10 +2,10 @@
 layout: post
 title: "Copy code from Atom to Evernote"
 description: "As an Evernote fiend, I searched for a way to copy code from Atom to Evernote w/ highlighting"
-category:
+category: note taking
 tags: [atom, evernote]
 ---
-{% include JB/setup %}
+
 
 Just found this [Atom](https://atom.io/) package, [copy-as-rtf](https://atom.io/packages/copy-as-rtf)
 that adds the ability to copy code out of Atom in RTF (rich text format), which

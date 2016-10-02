@@ -5,7 +5,7 @@ description: "I built up my treadmill desk so my screen would be more in-line wi
 category: health
 tags: [treadmill, desk]
 ---
-{% include JB/setup %}
+
 
 <p>
   <img alt="desk" width="100%" src="/assets/photos/2015-03-02-desk-second-tier.jpg" />

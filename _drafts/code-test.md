@@ -8,7 +8,7 @@ tags: [test]
 
 This is normal text
 
-<pre class='prettyprint'>
+``` ruby
 def this_is_code
   puts "but is it really?"
 end
@@ -18,25 +18,25 @@ class Foo
     nil / 2 # good luck
   end
 end
-</pre>
+```
 
 Back to normal text
 
-<pre class='prettyprint'>
+``` coffee
 class PostView extends Backbone.View
   constructor: ->
     console.log('javascript!')
 
   doItLive: (fileNotFound) ->
     1.0 / 3.1 % fileNotFound
-</pre>
+```
 
-<pre class='prettyprint'>
+``` javascript
 function doShit() {
   var blowThisAway = {foo: 'bar', crap: 'true', neat: 111};
   return false;
 }
-</pre>
+```
 
 And now a video. Shut up.
 

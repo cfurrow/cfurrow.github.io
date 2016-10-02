@@ -4,8 +4,6 @@ title: About
 tagline:
 group: navigation
 ---
-{% include JB/setup %}
-
 
 <img src="/assets/photos/about/me.jpg" width="100%"/>
 

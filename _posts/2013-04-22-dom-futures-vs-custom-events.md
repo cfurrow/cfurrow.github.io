@@ -2,10 +2,10 @@
 layout: post
 title: "DOM Futures vs Custom Events"
 description: "What the what?"
-category:
+category: javascript
 tags: [javascript, dom futures, events]
 ---
-{% include JB/setup %}
+
 
 Maybe I just don’t get it yet, but it seems like the interest around “DOM
 Futures” (e.g. promises) is growing, and is becoming a proposed spec for

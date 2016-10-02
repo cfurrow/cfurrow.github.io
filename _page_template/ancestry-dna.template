@@ -4,7 +4,7 @@ title: "Ancestry.com DNA Results"
 description: ""
 hero: "./pictures/dnabg.jpg"
 ---
-{% include JB/setup %}
+
 
 # Ancestry.com DNA Results
 

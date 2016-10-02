@@ -2,7 +2,7 @@
 layout: post
 title: "The skyline problem"
 description: "A quick coding challenge to sketch a skyline with javascript."
-category:
+category: coding challenge
 tags: [javascript, canvas]
 ---
 
@@ -26,6 +26,7 @@ Example:
 
 I've started out with this data and will work from there:
 
+``` javascript
     var data = [
     {x1: 0,   x2: 200, height: 400},
     {x1: 300, x2: 400, height: 200},
@@ -34,6 +35,7 @@ I've started out with this data and will work from there:
     {x1: 500, x2: 650, height: 200},
     {x1: 700, x2: 900, height: 400},
     ];
+```
 
 [Code is in my skyline.js repo.](https://github.com/cfurrow/skyline.js)
 

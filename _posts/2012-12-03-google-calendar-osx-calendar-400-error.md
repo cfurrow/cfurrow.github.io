@@ -2,10 +2,10 @@
 layout: post
 title: "Google Calendar + OSX Calendars \"400\" error"
 description: "Fixing some bad behavior in OSX's Calendar app."
-category:
+category: calendar
 tags: [osx, mountain lion, calendar, fantastical, google, google calendar]
 ---
-{% include JB/setup %}
+
 
 ### Problem
 

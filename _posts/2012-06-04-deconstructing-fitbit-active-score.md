@@ -2,10 +2,10 @@
 layout: post
 title: "Deconstructing Fitbit's active score"
 description: "Wanting to know how Fitbit calculates effort, I took to the internet to investigate."
-category:
+category: health
 tags: [fitbit, health]
 ---
-{% include JB/setup %}
+
 
 ### Eh?
 
