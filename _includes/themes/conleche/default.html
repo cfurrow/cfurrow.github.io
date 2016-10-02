@@ -54,19 +54,14 @@
 
   </header>
 
-  {% if page.hero %}
-    <div id="super-hero" style="background-image: url({{page.hero}})"></div>
+  {% if page.hero  %}
+    <image type="image/svg+xml" id="super-hero" src="{{page.hero}}" width="100%"></image>
   {% else %}
     <div id="hero"></div>
   {% endif %}
 
   <body onload="prettyPrint()">
     <div class="container-fluid container-narrow">
-      <!-- {% if page.id != null %}
-      <p>
-        I'm <strong>Carl Furrow</strong>. I'm a bit-pusher on the Internet, and I work at <a href="http://lumosity.com">Lumosity</a>.
-      </p>
-      {% endif %} -->
       <div class="content">
         {{ content }}
       </div>
