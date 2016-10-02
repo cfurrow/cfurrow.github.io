@@ -19,6 +19,13 @@ Marxico allows me to use my top-requested feature for Evernote that it currently
 
 The app also performs all of this really well, and my guess is because it's running on top of the excellent [Electron](http://electron.atom.io/) framework, which GitHub's [Atom](https://atom.io/) editor is based on.
 
+### Any complaints?
+I've been using Marxico since June of this year, so I've got about four months of use under my belt, and it has been completely worth the $16/yr for the app. No real complaint comes to mind with regard to the apps functionality or feature set.
+
+If you're an Evernote user that would like to write your notes using Markdown, I urge you to try Marxico; it comes with a 10-day free trial.
+
+http://marxi.co/
+
 
 
 
