@@ -24,7 +24,7 @@ I've been using Marxico since June of this year, so I've got about four months o
 
 If you're an Evernote user that would like to write your notes using Markdown, I urge you to try Marxico; it comes with a 10-day free trial.
 
-http://marxi.co/
+[http://marxi.co/](http://marxi.co/)
 
 
 
