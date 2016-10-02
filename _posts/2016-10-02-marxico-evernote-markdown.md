@@ -9,13 +9,11 @@ description: 'I''m back on Evernote, kind of.'
 categories:
   - note taking
 tags: evernote marxico markdown
-headline: ''
-modified: ''
-imagefeature: ''
+imagefeature: marxico-web-1.png
 ---
 After [previously explaining](https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote) how I had switched away from Evernote, I've been back for several months now, thanks to [Marxico](http://marxi.co/).
 
-![cover-image]({{site.baseurl}}/images/marxico-web-1.png)
+![marxico window]({{site.baseurl}}/images/marxico-web-1.png)
 
 
 
