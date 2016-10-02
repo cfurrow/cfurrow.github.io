@@ -17,9 +17,18 @@ This is some stuff. I dunno what it'll look like. We'll preview it soon.
 
 ![things-hero.jpg]({{site.baseurl}}/images/things-hero.jpg)
 
-^Where'd the image go?
+^Where'd the image go?****
+Oh, it's back.
 
 # Heading 1
 ## Heading 2
 ### Heading 3
 Yeah, whatever.
+
+## Code ?
+
+``` ruby
+def does_it_work?
+  true or :true
+end
+```
