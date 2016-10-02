@@ -13,7 +13,7 @@ namespace :env do
 
   desc 'Sets the configuration for production mode.'
   task :pro do
-    edit_config 'url', 'http://cfurrow.github.io'
+    edit_config 'url', 'https://cfurrow.github.io'
   end
 end
 
