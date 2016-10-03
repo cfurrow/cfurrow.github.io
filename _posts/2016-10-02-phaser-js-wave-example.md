@@ -3,6 +3,7 @@ layout: post
 mathjax: false
 featured: false
 comments: false
+published: false
 title: Phaser.js - Wave Example
 categories:
   - game development
