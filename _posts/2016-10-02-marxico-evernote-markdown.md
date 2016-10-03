@@ -9,6 +9,7 @@ description: 'I''m back on Evernote, kind of.'
 categories:
   - note taking
 tags: evernote marxico markdown
+headline: 'I''m back on Evernote, kind of.'
 ---
 After [previously explaining](https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote) how I had switched away from Evernote, I've been back for several months now, thanks to [Marxico](http://marxi.co/).
 
@@ -25,7 +26,3 @@ I've been using Marxico since June of this year, so I've got about four months o
 If you're an Evernote user that would like to write your notes using Markdown, I urge you to try Marxico; it comes with a 10-day free trial.
 
 [http://marxi.co/](http://marxi.co/)
-
-
-
-
