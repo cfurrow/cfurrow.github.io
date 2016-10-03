@@ -64,10 +64,10 @@ text.
 <img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
 <div class='row'>
-  <div class='col-md-4'>
+  <div class='small-4 medium-4 columns'>
     <img src="/assets/photos/about/teach-yourself-game-programming.JPG" width="100%" />
   </div>
-  <div class='col-md-8'>
+  <div class='small-4 medium-8 columns'>
     <p>
     If this is what it took to write programs, I knew I was out of my league! I
     couldn't understand any of this BASIC code! Programmers were clearly wizards.
@@ -127,18 +127,26 @@ XML and MIDI files to prototype a robot dancing on the screen, receiving instruc
 MIDI file's lyric track. The XML was there to build the robots parts and the app parsed the XML
 and put the robot together.
 
-<div class='video-container'>
-<iframe width="700" height="525" src="//www.youtube.com/embed/qEUL-vPMw7c" frameborder="0" allowfullscreen="1">
-</iframe>
+<div class="row">
+  <div class="large6 columns">
+    <div class="flex-video">
+      <iframe width="700" height="525" src="//www.youtube.com/embed/qEUL-vPMw7c" frameborder="0" allowfullscreen="1">
+      </iframe>
+    </div>
+  </div>
 </div>
 
 At the same time, I was getting more-deeply involved in C#, and with a group of classmates, we
 built a 2D platformer game for our capstone project. I came up with the concept, drew the art,
 and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge.net/).
 
-<div class='video-container'>
-<iframe width="700" height="525" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
-</iframe>
+<div class="row">
+  <div class="large6 columns">
+    <div class="flex-video">
+    <iframe width="700" height="525" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
+    </iframe>
+    </div>
+  </div>
 </div>
 
 ### Now
