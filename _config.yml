@@ -49,7 +49,7 @@ author :
     over wires at <a href="https://lumosity.com" alt="Lumosity">Lumosity</a>.
   #feedburner : feedname
 
-gems: [jekyll-paginate, rouge]
+gems: [jekyll-paginate, jekyll-gist, rouge]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

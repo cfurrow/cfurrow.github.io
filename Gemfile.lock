@@ -135,6 +135,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-gist
   jekyll-paginate
   kramdown
   rake (= 10.4.2)
