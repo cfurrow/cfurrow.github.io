@@ -178,3 +178,24 @@ I've highlighted the physics bodies (green) in Phaser to show the boat and waves
 
 ## Motion!
 In order to make this more interesting, the boat needs to move and when the boat moves, the waves need to "shift" to the left adding new waves off the right side of the screen, and disappearing waves off the left side as they go out of view. This is how we'll create an "infinite" sea for the boat to explore. As its velocity moves it to the right, we'll constantly swap in new wave tiles so it always has something to sail on.
+
+### How did I swap tiles from the left "end" to the right "end"?
+
+
+### How did the boat move "endlessly"?
+The boat has a velocity on its x-access that constantly propels it forward through the world. This particular game world is only 10,000 pixels wide, but again, I'm only using enough wave segments to fill the width of the screen. The camera is also fixed to the boat, so as it moves, the boat stays centered.
+
+An alternate way to "move" the boat would be to not give it a velocity at all, and experiment with simply moving the waves to the left, and the boat would naturally collide with the wave bodies and slide over them. I'd have to make sure the boat could not slide backwards and only move forward, and I'm not sure how easily that would be done.
+
+Additionally, I could keep the X-velocity on the boat, and then as the player got to a world X coordinate (say, 9,000 of 10,000 pixels), I could reset the player's X position back to world-position 0, since the waves are fixed to the camera, and then the boat would be free to travel for another 9,000 pixels and never see the "end" of the world at 10,000 pixels. At this rate the world wouldn't even have to be 10,000 pixels, but instead, just wide enough to fit the entire user's viewport, plus some padding to the right, and then as the user got to the edge of this world length, reset them back to 0.
+
+## End Result
+
+<div class="row">
+  <div class="medium12 columns">
+    <video width="692" height="594" autoplay loop src="{{this.site.url}}/images/phaser-waves/phaser-wave.mov" />
+  </div>
+</div>
+
+- [Here is a live demo](https://cfurrow.github.io/phaser-wave-example/)
+- Check out the repo here: https://github.com/cfurrow/phaser-wave-example/
