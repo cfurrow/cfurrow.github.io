@@ -58,7 +58,7 @@ To move each wave up and down gradually, I use `Math.sin` in a function that get
 
 ``` javascript
 animateWaves: function(){
-  // increments every frame. gives us a constantly
+  // this.count increments every frame. gives us a constantly
   // increasing X value for our sin function
   this.count += 0.1;
   var i = 0;
@@ -74,7 +74,6 @@ animateWaves: function(){
 ## Boat and waves should collide
 Now that the waves are moving, we need a way to collide them with a boat. Phaser has built-in physics that can handle this by creating a "physics body" for each element that needs to interact with the physics engine. In our case, since the boat, and each wave are going to collide, that means all of those elements will need a physics body attached to it. By default, the physics body is square and is most often referred to as a "hit box". But, for our purposes, I thought I'd try to use a circle, and you'll see why in a little bit.
 
-
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
     <video width="100%" autoplay loop preload>
@@ -84,16 +83,99 @@ Now that the waves are moving, we need a way to collide them with a boat. Phaser
   </div>
 </div>
 
-I've highlighted the physics bodies (green) in Phaser to show the boat and waves colliding. Once we add some velocity to the boat, it will collide with each circle it meets, giving its path an irregular shape, almost as if it were riding up and down the slope of a wave. Kind of.
+The code:
+
+```javascript
+for (var i = 0; i < numWaves; i++){
+  x = i*waveLength;
+  y = 0;
+  wave = this.game.add.sprite(x, y, 'wave', this.game.rnd.between(0,1));
+
+  wave.anchor.set(0.5,0.5);
+  wave.smoothed=false;
+  this.waves.add(wave);
+  // randomize the circle size to vary the motion of anything
+  // that collides with this wave
+  wave.body.setCircle(this.game.rnd.between(80,140));
+  // offset the wave slightly below the top of the sprite
+  wave.body.offset.set(0, 50);
+  // do not allow other objects to "push" this sprite.
+  // simply collide
+  wave.body.immovable = true;
+}
+```
+
+I've highlighted the physics bodies (green) in Phaser to show the boat and waves colliding. Once we add some velocity to the boat, it will collide with each circle it meets, giving its path an irregular shape, almost as if it were riding up and down the slope of a wave. That's why using a circle physics body on the boat and all of the waves works better in this instance.
 
 ## Motion!
 In order to make this more interesting, the boat needs to move and when the boat moves, the waves need to "shift" to the left adding new waves off the right side of the screen, and disappearing waves off the left side as they go out of view. This is how we'll create an "infinite" sea for the boat to explore. As its velocity moves it to the right, we'll constantly swap in new wave tiles so it always has something to sail on.
 
-### How did I swap tiles from the left "end" to the right "end"?
+``` javascript
+update: function() {
+  this.game.physics.arcade.collide(this.boat, this.waves);
+  this.boat.body.velocity.x = 90; // Constantly move boat to the right
+  this.animateWaves();
+},
+```
 
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <video width="100%" autoplay loop preload>
+      <source src="{{this.site.url}}/images/phaser-waves/waves03.mp4" type="video/mp4">
+      <source src="{{this.site.url}}/images/phaser-waves/waves03.webm" type="video/webm">
+    </video>
+  </div>
+</div>
+
+As you can see, the boat eventually falls off the last wave, and off the screen. We need to implement the "infinite" part of this example, and continuously swap the left-most wave sprite to the right side of the screen, so the boat can never "fall off" the screen and to certain death below.
+
+### How to I swap tiles?
+
+On initialization of my scene, after creating each wave sprite, I set a few variables to keep track of where the first and last wave are in the group of waves. The idea is that these indexes will change as the sprite moves from right-to-left across the screen.
+
+*Note: At first I attempted to treat the array as a stack, and "pop off" the wave sprite that was "off the screen" on the left, and then insert it back on the top of the stack, placing it on the far right of the screen. This caused redraw problems, I think, because I would get a 20-50ms stutter every time I had to pop and push. That is how I came up with this index-tracking mechanism.*
+
+``` javascript
+this.firstWaveIndex = 0;
+this.lastWaveIndex = this.numWaves-1;
+```
+
+Once per frame of animation, I take a look at the first and last wave in my group of wave sprites. If the first wave has fallen off the screen (it's left-most x-position is less than the camera's x-position), move the sprite to the far right by setting its new x-position just to the right of the current last wave sprite. Then, set the `lastWaveIndex` to the `firstWaveIndex`, since it was just pushed to the far right, and increment the `firstWaveIndex` by 1 to make the now left-most wave sprite the "first" sprite. I also correct for if we increment the index and it's greater than the number of waves we're currently rendering. In that case, I set the `firstWaveIndex` to 0 to "wrap-around" the index.
+
+``` javascript
+shuffleLeftMostWave: function(){
+  // Look at left-most this.waves.children only!
+  // check if the current wave's right edge (in world coords)
+  // is less than the camera's left edge
+  var firstWave = this.waves.children[this.firstWaveIndex];
+  var lastWave  = this.waves.children[this.lastWaveIndex];
+
+  if((firstWave.world.x + firstWave.offsetX) < this.game.camera.x) {
+    newX = lastWave.x + this.WAVE_LENGTH;
+    firstWave.x = newX;
+    this.lastWaveIndex = this.firstWaveIndex;
+    if(this.firstWaveIndex+1 >= this.numWaves){
+      this.firstWaveIndex = 0;
+    } else {
+      this.firstWaveIndex++;
+    }
+  }
+}
+```
+
+I've numbered each wave with its index, so you can see them repeat themselves after the 5th wave. There are only six waves total, numbered 0, through 5.
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <video width="100%" autoplay loop preload>
+      <source src="{{this.site.url}}/images/phaser-waves/waves04.mp4" type="video/mp4">
+      <source src="{{this.site.url}}/images/phaser-waves/waves04.webm" type="video/webm">
+    </video>
+  </div>
+</div>
 
 ### How did the boat move "endlessly"?
-The boat has a velocity on its x-access that constantly propels it forward through the world. This particular game world is only 10,000 pixels wide, but again, I'm only using enough wave segments to fill the width of the screen. The camera is also fixed to the boat, so as it moves, the boat stays centered.
+The boat has a velocity on its x-axis that constantly propels it forward through the world. This particular game world is only 10,000 pixels wide, but again, I'm only using enough wave segments to fill the width of the screen. The camera is also fixed to the boat, so as it moves, the boat stays centered.
 
 An alternate way to "move" the boat would be to not give it a velocity at all, and experiment with simply moving the waves to the left, and the boat would naturally collide with the wave bodies and slide over them. I'd have to make sure the boat could not slide backwards and only move forward, and I'm not sure how easily that would be done.
 
@@ -102,8 +184,11 @@ Additionally, I could keep the X-velocity on the boat, and then as the player go
 ## End Result
 
 <div class="row">
-  <div class="medium12 columns">
-    <video width="692" height="594" autoplay loop preload src="{{this.site.url}}/images/phaser-waves/phaser-wave.mov" />
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <video width="100%" autoplay loop preload>
+      <source src="{{this.site.url}}/images/phaser-waves/phaser-wave.mp4" type="video/mp4">
+      <source src="{{this.site.url}}/images/phaser-waves/phaser-wave.webm" type="video/webm">
+    </video>
   </div>
 </div>
 
