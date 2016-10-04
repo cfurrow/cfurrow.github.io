@@ -10,7 +10,7 @@ categories:
 tags: gamedev phaserjs javascript
 ---
 
-I posted this animation to Twitter a few weeks ago, and I thought I'd walk through the origin story of how it came to be and some improvements I could make to it if I were to further the idea.
+I posted this animation to Twitter a few weeks ago, and I thought I'd walk through the origin story of how it came to be and the steps I took to create it.
 
 <div class="row">
   <div class="column small-centered small-12 medium-centered medium-6">
@@ -22,7 +22,7 @@ I posted this animation to Twitter a few weeks ago, and I thought I'd walk throu
 
 ***
 
-I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_actually_a_way_to_wrap_the_texture_of_a/) and /u/oddkraken was wondering how to wrap a texture over a `Phaser.Rope` object. If you're not familiar with a `Phaser.Rope` object, [check out this example](http://phaser.io/examples/v2/sprites/rope). Below is the reddit post:
+I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_actually_a_way_to_wrap_the_texture_of_a/) and [/u/oddkraken](https://www.reddit.com/user/oddkraken) was wondering how to wrap a texture over a `Phaser.Rope` object. If you're not familiar with a `Phaser.Rope` object, [check out this example](http://phaser.io/examples/v2/sprites/rope). Below is the reddit post:
 
 > The rope documentation says
 >
@@ -33,14 +33,16 @@ I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_ac
 > Is there a better way to go about this?
 > Thanks.
 
-What oddkraken is wondering is not possible with `Phaser.Rope` at this time. A Rope's texture ends up being "glued" to the rope object, and cannot be transformed left/right down the rope's geometry. Each segment of the rope is "fused" to the texture at it's x-position at creation-time, essentially. But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.
+What /u/oddkraken is wondering is not possible with `Phaser.Rope` at this time. A Rope's texture ends up being "glued" to the rope object, and cannot be transformed left/right down the rope's geometry. Each segment of the rope is "fused" to the texture at it's x-position at creation-time, essentially. But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.
 
 ## What I needed
-I could have simply tried to answer oddkraken's request, but I thought it was an interesting enough problem to try and solve myself as a full-solution. The added benefit was if I could get it to work, I could simply send them the link to my fully-working code. To build this example, I would need some assets. I went to work inside of [Pyxel Edit](http://pyxeledit.com/) and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets in 32x32, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you'll want to set `yourSprite.smoothed=false;` or else it'll look blurry.)
+I could have simply tried to answer /u/oddkraken's request, but I thought it was an interesting enough problem to try and solve myself. The added benefit was if I could get it to work, I could simply send them the link to my fully-working code. To build this example, I would need some assets. I went to work inside of [Pyxel Edit](http://pyxeledit.com/) and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets as 32x32 images, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you'll want to set `yourSprite.smoothed=false;` or else it'll look blurry.)
 
 <img src="{{this.site.url}}/images/phaser-waves/boat.png" />
 
 <img src="{{this.site.url}}/images/phaser-waves/wave.png" />
+
+Great! Assets done and looking pretty good.
 
 ## Waves need to move like waves
 Next, I needed to come up with a way to place these waves next to each other, and allow them to move independently in a "wave-like" fashion. Rolling and bobbing up and down.
@@ -54,7 +56,7 @@ Next, I needed to come up with a way to place these waves next to each other, an
   </div>
 </div>
 
-To move each wave up and down gradually, I use `Math.sin` in a function that gets called once per frame:
+To move each wave up and down gradually, I use Javascript's `Math.sin` function in my `update` function that gets called once per frame:
 
 ``` javascript
 animateWaves: function(){
@@ -70,6 +72,10 @@ animateWaves: function(){
   }, this);
 },
 ```
+
+Giving `Math.sin` an x-value, outputs a y-value at that x. As x increases, the y value oscillates up and down. If you were to plot these y values for every x value from 0 to 10, let's say, you'd see a wave-like pattern emerge. This is obviously perfect for what we are trying to accomplish here!
+
+In our case, we give `Math.sin` and x-value that is composed of two things: the current wave's number, `i` and a counter (`this.count`) that increments by 0.1 every time a frame is drawn to the screen (30-60 times per second!). After getting the y-value out of `Math.sin(x)`, we multiply that value by 5 to increase the height (amplitude) of the wave. If we did not multiple, we'd have very tiny wave motions and I wanted the waves to appear to be large and rolling.
 
 ## Boat and waves should collide
 Now that the waves are moving, we need a way to collide them with a boat. Phaser has built-in physics that can handle this by creating a "physics body" for each element that needs to interact with the physics engine. In our case, since the boat, and each wave are going to collide, that means all of those elements will need a physics body attached to it. By default, the physics body is square and is most often referred to as a "hit box". But, for our purposes, I thought I'd try to use a circle, and you'll see why in a little bit.
