@@ -19,16 +19,16 @@ of that ever since, learning javascript, css, Ruby/Rails, etc. I love
 solving problems through code, and enjoy sharing my knowledge with others.
 
 <div class='row'>
-  <div class='medium-4 columns'>
+  <div class='small-12 medium-4 columns'>
     <a href="http://stackoverflow.com/users/38375/carl">
     <img src="http://stackoverflow.com/users/flair/38375.png?theme=clean" width="208" height="58" alt="profile for Carl at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Carl at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
     </a>
   </div>
-  <div class='medium-4 columns'>
+  <div class='small-12 medium-4 columns'>
     <iframe src="https://githubbadge.appspot.com/cfurrow" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0">
     </iframe>
   </div>
-  <div class='medium-4 columns'>
+  <div class='small-12 medium-4 columns'>
     <a href="https://twitter.com/carl_furrow" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @carl_furrow</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
@@ -64,10 +64,10 @@ text.
 <img src="/assets/photos/about/ski32_exe.png" width="100%" />
 
 <div class='row'>
-  <div class='small-4 medium-4 columns'>
+  <div class='small-12 medium-4 columns'>
     <img src="/assets/photos/about/teach-yourself-game-programming.JPG" width="100%" />
   </div>
-  <div class='small-4 medium-8 columns'>
+  <div class='small-12 medium-8 columns'>
     <p>
     If this is what it took to write programs, I knew I was out of my league! I
     couldn't understand any of this BASIC code! Programmers were clearly wizards.
@@ -128,7 +128,7 @@ MIDI file's lyric track. The XML was there to build the robots parts and the app
 and put the robot together.
 
 <div class="row">
-  <div class="large6 columns">
+  <div class="large-6 large-centered columns">
     <div class="flex-video">
       <iframe width="700" height="525" src="//www.youtube.com/embed/qEUL-vPMw7c" frameborder="0" allowfullscreen="1">
       </iframe>
@@ -141,7 +141,7 @@ built a 2D platformer game for our capstone project. I came up with the concept,
 and did a bulk of the core engine work using [SDL.NET](http://cs-sdl.sourceforge.net/).
 
 <div class="row">
-  <div class="large6 columns">
+  <div class="large-6 large-centered columns">
     <div class="flex-video">
     <iframe width="700" height="525" src="//www.youtube.com/embed/5-sxwmIZJNw" frameborder="0" allowfullscreen="1">
     </iframe>
