@@ -9,7 +9,20 @@ categories:
   - game development
 tags: gamedev phaserjs javascript
 ---
-A few weeks ago I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_actually_a_way_to_wrap_the_texture_of_a/) and /u/oddkraken was wondering how to wrap a texture over a `Phaser.Rope` object. If you're not familiar with a `Phaser.Rope` object, [check out this example](http://phaser.io/examples/v2/sprites/rope). Below is the reddit post:
+
+I posted this animation to Twitter a few weeks ago, and I thought I'd walk through the origin story of how it came to be and some improvements I could make to it if I were to further the idea.
+
+<div class="row">
+  <div class="column small-centered small-12 medium-centered medium-6">
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Goodnight. <a href="https://t.co/uimVkBzqdb">pic.twitter.com/uimVkBzqdb</a></p>&mdash; Carl Furrow (@carl_furrow) <a href="https://twitter.com/carl_furrow/status/772992053810606080">September 6, 2016</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+
+
+***
+
+I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_actually_a_way_to_wrap_the_texture_of_a/) and /u/oddkraken was wondering how to wrap a texture over a `Phaser.Rope` object. If you're not familiar with a `Phaser.Rope` object, [check out this example](http://phaser.io/examples/v2/sprites/rope). Below is the reddit post:
 
 > The rope documentation says
 >
