@@ -49,12 +49,16 @@ Next, I needed to come up with a way to place these waves next to each other, an
 
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
     <video width="100%" autoplay loop preload>
       <source src="{{this.site.url}}/images/phaser-waves/waves01.mp4" type="video/mp4">
       <source src="{{this.site.url}}/images/phaser-waves/waves01.webm" type="video/webm">
     </video>
+    <figcaption>See the full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves01">here</a></figcaption>
+    </figure>
   </div>
 </div>
+
 
 To move each wave up and down gradually, I use Javascript's `Math.sin` function in my `update` function that gets called once per frame:
 
@@ -82,10 +86,13 @@ Now that the waves are moving, we need a way to collide them with a boat. Phaser
 
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
     <video width="100%" autoplay loop preload>
       <source src="{{this.site.url}}/images/phaser-waves/waves02.mp4" type="video/mp4">
       <source src="{{this.site.url}}/images/phaser-waves/waves02.webm" type="video/webm">
     </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves02">here.</a></figcaption>
+    </figure>
   </div>
 </div>
 
@@ -126,10 +133,13 @@ update: function() {
 
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
     <video width="100%" autoplay loop preload>
       <source src="{{this.site.url}}/images/phaser-waves/waves03.mp4" type="video/mp4">
       <source src="{{this.site.url}}/images/phaser-waves/waves03.webm" type="video/webm">
     </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves03">here.</a></figcaption>
+    </figure>
   </div>
 </div>
 
@@ -173,10 +183,13 @@ I've numbered each wave with its index, so you can see them repeat themselves af
 
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
     <video width="100%" autoplay loop preload>
       <source src="{{this.site.url}}/images/phaser-waves/waves04.mp4" type="video/mp4">
       <source src="{{this.site.url}}/images/phaser-waves/waves04.webm" type="video/webm">
     </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves04">here.</a></figcaption>
+    </figure>
   </div>
 </div>
 
@@ -191,10 +204,13 @@ Additionally, I could keep the X-velocity on the boat, and then as the player go
 
 <div class="row">
   <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
     <video width="100%" autoplay loop preload>
       <source src="{{this.site.url}}/images/phaser-waves/phaser-wave.mp4" type="video/mp4">
       <source src="{{this.site.url}}/images/phaser-waves/phaser-wave.webm" type="video/webm">
     </video>
+    <figcaption>Full code for final scene <a href="https://github.com/cfurrow/phaser-wave-example/">here.</a></figcaption>
+    </figure>
   </div>
 </div>
 
