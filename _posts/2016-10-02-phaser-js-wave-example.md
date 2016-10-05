@@ -1,9 +1,9 @@
 ---
 layout: post
 mathjax: false
-featured: false
+featured: true
+published: true
 comments: false
-published: false
 title: Phaser.js - Wave Example
 categories:
   - game development
@@ -18,7 +18,6 @@ I posted this animation to Twitter a few weeks ago, and I thought I'd walk throu
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
-
 
 ***
 
@@ -51,11 +50,11 @@ This particular use of `Phaser.Rope` is not possible at this time. A Rope's text
 But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.
 
 ## What I needed
-I could have simply tried to answer /u/oddkraken's request, but I thought it was an interesting enough problem to try and solve myself. The added benefit was if I could get it to work, I could simply send them the link to my fully-working code. To build this example, I would need some assets. I went to work inside of [Pyxel Edit](http://pyxeledit.com/) and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets as 32x32 images, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you'll want to set `yourSprite.smoothed=false;` or else it'll look blurry.)
+To build this example, I would need some assets. I went to work inside of [Pyxel Edit](http://pyxeledit.com/) and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets as 32x32 images, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you'll want to set `yourSprite.smoothed=false;` or else it'll look blurry.)
 
-<img src="{{this.site.url}}/images/phaser-waves/boat.png" />
+<img alt="super cool boat" src="{{this.site.url}}/images/phaser-waves/boat.png" />
 
-<img src="{{this.site.url}}/images/phaser-waves/wave.png" />
+<img alt="realistic looking waves" src="{{this.site.url}}/images/phaser-waves/wave.png" />
 
 Great! Assets done and looking pretty good.
 
@@ -77,6 +76,11 @@ Next, I needed to come up with a way to place these waves next to each other, an
 To move each wave up and down gradually, I use Javascript's `Math.sin` function in my `update` function that gets called once per frame:
 
 ``` javascript
+update: function() {
+  // ... snip
+  this.animateWaves();
+  // ... snip
+},
 animateWaves: function(){
   // this.count increments every frame. gives us a constantly
   // increasing X value for our sin function
@@ -116,8 +120,9 @@ The code:
 for (var i = 0; i < numWaves; i++){
   x = i*waveLength;
   y = 0;
+  // Pick a random wave frame (0, or 1) from the 'wave' graphic
   wave = this.game.add.sprite(x, y, 'wave', this.game.rnd.between(0,1));
-
+  // Let's setup the anchor to the center of the wave sprite
   wave.anchor.set(0.5,0.5);
   wave.smoothed=false;
   this.waves.add(wave);
