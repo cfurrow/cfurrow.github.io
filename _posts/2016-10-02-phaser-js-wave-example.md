@@ -234,4 +234,4 @@ Additionally, I could keep the X-velocity on the boat, and then as the player go
 </div>
 
 - [Here is a live demo](https://cfurrow.github.io/phaser-wave-example/)
-- Check out the repo here: https://github.com/cfurrow/phaser-wave-example/
+- Check out the repo here: [https://github.com/cfurrow/phaser-wave-example/](https://github.com/cfurrow/phaser-wave-example/)
