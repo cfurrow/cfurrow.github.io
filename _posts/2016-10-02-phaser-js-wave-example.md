@@ -33,7 +33,22 @@ I was on [/r/phaser](https://www.reddit.com/r/phaser/comments/4svphl/is_there_ac
 > Is there a better way to go about this?
 > Thanks.
 
-What /u/oddkraken is wondering is not possible with `Phaser.Rope` at this time. A Rope's texture ends up being "glued" to the rope object, and cannot be transformed left/right down the rope's geometry. Each segment of the rope is "fused" to the texture at it's x-position at creation-time, essentially. But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.
+This particular use of `Phaser.Rope` is not possible at this time. A Rope's texture ends up being "glued" to the rope object, and cannot be transformed left/right down the rope's geometry. Each segment of the rope is "fused" to the texture at it's x-position at creation-time, essentially. See the video below and note that each green square is a segment of the rope, and inside that segment, the texture is mapped to that square, and cannot be shifted left or right (or up or down).
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay loop preload>
+      <source src="{{this.site.url}}/images/phaser-waves/rope-example.mp4" type="video/mp4">
+      <source src="{{this.site.url}}/images/phaser-waves/rope-example.webm" type="video/webm">
+    </video>
+    <figcaption>Rope example.</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.
 
 ## What I needed
 I could have simply tried to answer /u/oddkraken's request, but I thought it was an interesting enough problem to try and solve myself. The added benefit was if I could get it to work, I could simply send them the link to my fully-working code. To build this example, I would need some assets. I went to work inside of [Pyxel Edit](http://pyxeledit.com/) and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets as 32x32 images, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you'll want to set `yourSprite.smoothed=false;` or else it'll look blurry.)
@@ -58,7 +73,6 @@ Next, I needed to come up with a way to place these waves next to each other, an
     </figure>
   </div>
 </div>
-
 
 To move each wave up and down gradually, I use Javascript's `Math.sin` function in my `update` function that gets called once per frame:
 
