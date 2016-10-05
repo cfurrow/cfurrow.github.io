@@ -1069,11 +1069,6 @@ img.mfp-img {
   right: 0;
   padding-top: 0; }
 
-.canvas-container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.canvas-container canvas {
-  margin: 0 auto;
+.newsletter-box {
+  margin-bottom: 30px;
 }
