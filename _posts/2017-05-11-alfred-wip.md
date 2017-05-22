@@ -58,4 +58,4 @@ about. I found that when I switch context, it's helpful to come back to a list o
 </div>
 
 ## Where do I download?
-[Right here!](https://www.dropbox.com/s/pvgnkdfbrfcrp4w/List%20WIP%20Projects.alfredworkflow?dl=1)
+[Right here!](https://www.dropbox.com/s/pvgnkdfbrfcrp4w/List%20WIP%20Projects%20v1.0.alfredworkflow?dl=1)
