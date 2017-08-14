@@ -16,22 +16,12 @@ We've all see mispellings or mispronunciations of "Lumosity", but this one struc
 <br/>
 <img src="images/email3.png" width="100%" alt="it begins"/>
 <br/>
-<img src="images/email4.png" width="100%" alt="it begins"/>
 
-From there, I created many-a-llama-themed-photoshops and a few more products.
+From there, I created many-a-llama-themed-photoshops and a few products.
 
-<img src="images/llama%20viking.png" width="45%" />
-<img src="images/what-color-llama-dress.gif" width="45%" />
-
-## Can I get one of those mugs?
-Yes, they are still for purchase exclusively for Lumosity employees only. Please don't share [this link](https://www.zazzle.com/llamacity_logo_black_two_tone_coffee_mug-168747457769161104) with any "normies".
-
-<img src="images/mug.png" width="40%" alt="the mug"/>
-
-<h2 class='center'><a href="https://www.zazzle.com/llamacity_logo_black_two_tone_coffee_mug-168747457769161104">Buy now!</a></h2>
-
-*Note: I set the price as low as I could to not make any profit from it, but I think I still get $0.05 per order*
-
+<img src="images/llama%20viking.png" width="30%" />
+<img src="images/what-color-llama-dress.gif" width="30%" />
+<img src="images/mug.png" width="30%" alt="the mug"/>
 
 ## So, you still do that whole "llama" thing?
 Yes! I've grown to admire llamas over the years, and even got to meet some awesome llamas over in Oakland back in 2015 thanks to an awesome Lumosity team outing!
