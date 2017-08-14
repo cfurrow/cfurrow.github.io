@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Llamacity/Llamasity
+title: Llamacity / Llamasity
 tagline:
 group:
 ---
 
-# Llamacity/Llamasity?
+# Llamacity / Llamasity?
 It all started in September of 2013. Andy Xue's parents were visiting the office, took a picture, and left. I don't know if anyone really saw them while they were here, but we all found out about it when Andy forwarded their email to chatter:
 
 <img src="images/email.png" width="100%" alt="the email that started it all"/>
@@ -19,9 +19,18 @@ We've all see mispellings or mispronunciations of "Lumosity", but this one struc
 
 From there, I created many-a-llama-themed-photoshops and a few products.
 
-<img src="images/llama%20viking.png" width="30%" />
-<img src="images/what-color-llama-dress.gif" width="30%" />
-<img src="images/mug.png" width="30%" alt="the mug"/>
+<div class="row">
+  <div class="large-4 small-12 columns">
+    <img src="images/llama%20viking.png"/>
+  </div>
+  <div class="large-4 small-12 columns">
+    <img src="images/what-color-llama-dress.gif"/>
+  </div>
+
+  <div class="large-4 small-12 columns">
+    <img src="images/mug.png" alt="the mug"/>
+  </div>
+</div>
 
 ## So, you still do that whole "llama" thing?
 Yes! I've grown to admire llamas over the years, and even got to meet some awesome llamas over in Oakland back in 2015 thanks to an awesome Lumosity team outing!
