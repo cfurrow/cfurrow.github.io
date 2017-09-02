@@ -57,8 +57,9 @@ See the results here:
 canvas {
   background-color: #000;
   background-image: url(http://lorempixel.com/800/600);
-  width: 800px;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
 }
 #fizzle-example {
   text-align: center;  
