@@ -45,8 +45,7 @@ author :
   avatar: 'carl.jpg'
   description: >
     I'm just a learning-fool, looking to master the art of solving problems
-    through writing code, and yelling at computer screens. Currently pushing bits
-    over wires at <a href="https://lumosity.com" alt="Lumosity">Lumosity</a>.
+    through writing code, and yelling at computer screens.
   #feedburner : feedname
 
 gems: [jekyll-paginate, jekyll-gist, rouge]
