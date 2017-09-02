@@ -12,7 +12,7 @@ featured: false
 
 While trying to read through my recent Instapaper articles, I was excited to come across [Fabien Sanglard's breakdown of Wolfenstein 3D's FizzleFade function](http://fabiensanglard.net/fizzlefade/index.php). It also reminded me to purchase his eBook, [Game Engine Black Book: Wolfenstein 3D](https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book?id=Lq4yDwAAQBAJ). Anyway, you should read the article; it's short and explains the technique well.
 
-After reading it, I wanted to recreate the C code in JavaScript, and, well, there's not much more to it than that.
+After reading it, I wanted to recreate the C code in JavaScript and, well, there's not much more to it than that.
 
 ```javascript
 var screen = document.getElementById('screen');
