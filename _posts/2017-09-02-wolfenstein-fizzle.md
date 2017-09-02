@@ -56,7 +56,9 @@ See the results here:
 <style>
 canvas {
   background-color: #000;
-  background-image: url(http://lorempixel.com/320/200);
+  background-image: url(http://lorempixel.com/800/600);
+  width: 800px;
+  height: 600px;
 }
 #fizzle-example {
   text-align: center;  
@@ -71,6 +73,8 @@ canvas {
 <script>
 window.onload = function(){
   var screen = document.getElementById('screen');
+  var height = screen.height;
+  var width = screen.width;
   var ctx = screen.getContext('2d');
   var $rerun = document.getElementById('rerun');
   $rerun.addEventListener('click', function(){
@@ -85,7 +89,7 @@ window.onload = function(){
   }
 
   function fizzlefade() {
-    ctx.clearRect(0,0, 320,200);
+    ctx.clearRect(0,0, width,height);
     var randomValue = 1;
     var x, y;
     do {
@@ -102,7 +106,7 @@ window.onload = function(){
         randomValue ^= 0x00012000;
       }
       // If x,y coordinate within the screen width/height, fizzle it!
-      if (x < 320 && y < 200) {
+      if (x < width && y < height) {
         fizzle_pixel(x, y);
       }
     } while (randomValue != 1);
