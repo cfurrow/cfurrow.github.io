@@ -66,10 +66,15 @@ canvas {
 }
 </style>
 <div id="fizzle-example">
-<canvas id="screen" width="320" height="200"></canvas>
-<br/>
-<a id="rerun" href="javascript:void(0);">Re-run</a>
+  <canvas id="screen" width="320" height="200"></canvas>
+  <br/>
+  <a id="rerun" href="javascript:void(0);">Re-run</a>
 </div>
+
+<hr/>
+
+If the above live example didn't work, this gif ought to illustrate the effect:
+<img src="/images/fizzle-fade/fizzlefade.gif" width="70%" alt="fizzlefade" />
 
 <script>
 window.onload = function(){
