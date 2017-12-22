@@ -48,7 +48,7 @@ author :
     through writing code, and yelling at computer screens.
   #feedburner : feedname
 
-gems: [jekyll-paginate, jekyll-gist, rouge]
+plugins: [jekyll-paginate, jekyll-gist, rouge]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
