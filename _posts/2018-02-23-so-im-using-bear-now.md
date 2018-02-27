@@ -110,4 +110,4 @@ If I don't use tags, I try to add enough descriptive, and varying text around th
 - `//3` => create an H1 for the interruption, with a timestamp and room for description: "# INTERRUPTION - Description goes here (10:49AM)"
 
 ## That's really it
-This is the system that I've found worksk for me.
+This is the system that I've found works for me.
