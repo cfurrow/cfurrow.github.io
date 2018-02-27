@@ -73,12 +73,14 @@ I use my TextExpander shortcut for this as well. I type `//1` and I get a little
 <img src="/assets/photos/20180227/textexpander-dialog.png"/>
 
 ### I use H2 headers to add sub-headers to a high-level task
-Similar to `//1`, I have `//2` which creates an H2 tag `##` allows for a short description, and drops the time stamp at the end.
+Similar to `//1`, I have `//2`, which creates an H2 tag (`##`) and allows for a short description, and drops the timestamp at the end.
 
 ### I timestamp details inside a task
 When writing under a header (h1 or h2), I tend to write a lot, especially when trying to solve a problem. I do some research, drop in some code snippets, read a link or two, and comment on them, etc. This takes time. So as I'm doing that research, I tend to timestamp individual lines of notes. It looks something like this:
 
 <img src="/assets/photos/20180227/example-note.jpg"/>
+
+I use another TextExpander macro, `ptime` to put the current time inside parenthesis, followed by a single space, so I can quickly drop a timestamp and continue typing.
 
 ### I note major interruptions to my work flow
 Similar to `//1` and `//2`, I have a third header for interruptions, `//i`. It outputs the following:
