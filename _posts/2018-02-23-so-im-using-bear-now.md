@@ -30,9 +30,9 @@ That is why it has always been hard to move away from Evernote. It has everythin
 
 When I first started using Evernote back in 2008, I'd come from using Microsoft's OneNote in college, and at my first gig post-college. I then abandon OneNote a few years later when I changed jobs, and the new place offered me a Macbook Pro, and OneNote was either not on MacOS or it was in poor shape. That is when I found Evernote. It was simple, and it didn't have intuitive key combos like OneNote did, but it got the job done. I could create notes, notebooks, tags, and search on any of those fields. No syntax highlighting, but OneNote did not have that either.
 
-After a few years of using Evernote, I began to feel its "limitations", as I saw them. I began to hear about "Markdown", which felt like my cup of tea because you could "just write" and the formatting comes in later. There was still no way to natively support syntax highlighting within Evernote, which was at-odds with how I started to write my daily deveveloper logs. The keyboard shortcuts were not intuitive, and required moving my fingers significantly away from the typing position to perform them. I simply stopped enjoying to use Evernote. It could receive notes, webpages, etc, but it was not an app I enjoyed to use. It made me constantly look for alternatives.
+After a few years of using Evernote, I began to feel its "limitations", as I saw them. I began to hear about "Markdown", which felt like my cup of tea because you could "just write" and the formatting comes in later. There was still no way to natively support syntax highlighting within Evernote, which was at-odds with how I started to write my daily deveveloper logs. The keyboard shortcuts were not intuitive, and required moving my fingers significantly away from the typing position to perform them. I simply stopped enjoying Evernote. It could receive notes, webpages, screenshots, etc, but it was not an app I enjoyed to use. It made me constantly look for alternatives.
 
-I tried intermediate steps, like using an [editor plugin](https://atom.io/packages/copy-as-rtf) that allowed me to copy code from my editor, and paste into Evernote as rich text. That worked pretty well for a time, but I wanted a more integrated solution.
+I tried intermediate steps, like using an [editor plugin](https://atom.io/packages/copy-as-rtf) that allowed me to copy code from my code editor, and paste into Evernote as rich text. That worked pretty well for a time, but I wanted a more integrated solution.
 
 I then used [Ever Notedown](https://atom.io/packages/ever-notedown), which was an [Atom editor](https://atom.io/) plugin that let me write all my notes in Markdown inside of Atom, and they would be exported to Evernote when I saved them. This was a pretty good solution for a while, but it eventually did not feel as polished as a native note-taking app. It wasn't what I wanted, and again, I was not enjoying myself. I began to realize how important that was.
 
@@ -42,7 +42,7 @@ I'd used it a few times, and even tried importing all my Evernote notes into Bea
 
 But, this latest time using Bear was different. I thought to myself, "Don't try to mimic Evernote. Don't import your notes, just write."
 
-With this new mindset, I'm loving Bear. I can take notes quickly, drop code snippets in with syntax-highlighting, tag, nest-tags, search, etc. I find I'm using Bear more than I used Evernote to do things like take notes on an article I read: grabbing quotes, images/graphs from the post, making my own comments or providing supplimentary links.
+With this new mindset, I'm loving Bear. I can take notes quickly, drop code snippets in with syntax-highlighting, tag, nest-tags, search, etc. I find I'm using Bear more than I used Evernote to do things like take notes on an article I read: grabbing quotes, images/graphs from the post, making my own comments or providing supplimentary links. It's a real delight, and I don't think I'm going to go back to Evernote, or the supplimentary apps.
 
 ## What is your routine?
 
