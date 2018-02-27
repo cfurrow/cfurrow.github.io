@@ -4,7 +4,7 @@ title: "So, I'm using Bear.app now"
 description: I finally switched away from Evernote. Is it for good?
 headline:
 modified: 2018-02-23 09:10:00 -0500
-category: note taking
+category: note-taking
 tags: [Evernote, productivity, bear, note-taking]
 imagefeature:
 mathjax:
