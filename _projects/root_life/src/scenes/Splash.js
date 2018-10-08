@@ -22,8 +22,9 @@ export default class extends Phaser.Scene {
     this.load.image('blank', 'assets/blank.png');
 
     this.load.spritesheet('dirt_edge', 'assets/dirt_edge.png', {frameWidth: 8, frameHeight: 16});
-    this.load.spritesheet('root',      'assets/root.png', { frameWidth: 4, frameHeight: 4 });
-    this.load.spritesheet('rock',      'assets/rock.png', { frameWidth: 8, frameHeight: 8 });
+    this.load.spritesheet('root',      'assets/root.png',  { frameWidth: 4, frameHeight: 4 });
+    this.load.spritesheet('rock',      'assets/rock.png',  { frameWidth: 8, frameHeight: 8 });
+    this.load.spritesheet('water',     'assets/water.png', { frameWidth: 8, frameHeight: 8 });
     this.load.spritesheet('plant',     'assets/plant.png', { frameWidth: 64, frameHeight: 64 });
 
     this.load.audio('forest_loop', ['assets/sfx/ESM_Forest_Woodland_Loop_Ambience_Nature_Tribal_Organic_Washington_Bird.wav']);

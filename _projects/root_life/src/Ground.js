@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import Rock from './sprites/Rock';
+import Water from './sprites/Water';
 
 export default class {
   get y() {
@@ -45,12 +46,12 @@ export default class {
     let chunkCount = this._height / this._chunkHeight;
     let chunkIndex = 0;
     let chunks = [];
-    let currentChunk = null;
+    this.currentChunk = null;
     let minY = this._y + 32;
     let maxY = 0;
     let currentY = this._y;
     let pX, pY;
-    let rnd = Phaser.Math.RND;
+    this.rnd = Phaser.Math.RND;
     let rockWidth = 8;
     let rockHeight = 8;
     let frame = 0;
@@ -61,9 +62,9 @@ export default class {
 
     for(; chunkIndex < chunkCount; chunkIndex++) {
       currentY = minY + (chunkIndex * this._chunkHeight);
-      currentChunk = [];
+      this.currentChunk = [];
       // Pick a layout
-      let layout = rnd.between(0,5);
+      let layout = this.rnd.between(0,5);
       // layout is an 8x8 sprite
       // if pixel is white/transp, no rock
       // if pixel is black (non transparent), rock.
@@ -71,20 +72,36 @@ export default class {
         for(let j = 0; j < 8; j++) {
           let color = this.scene.textures.getPixel(i, j, 'chunks', layout);
           if(color.alpha == 255) {
-            let pX = i * rockWidth;
-            let pY = currentY + (j * rockHeight);
-            let frame = rnd.pick([0,1,1,1,1,0,0,1,0,0]);
-
+            let gridWidth = 8;
+            let gridHeight = 8;
+            let pX = i * gridWidth;
+            let pY = currentY + (j * gridHeight);
             pX = Phaser.Math.Clamp(pX, minX, maxX);
-
-            let rock = new Rock({x: pX, y: pY, frame: frame, scene: this.scene});
-            currentChunk.push(rock);
-            this._rocks.push(rock);
+            this.placeObject(color, pX, pY);
           }
         }
       }
-      chunks.push(currentChunk);
+      chunks.push(this.currentChunk);
     }
+  }
+
+  placeObject(color, x, y) {
+    if(color.red == 0 && color.blue == 0 && color.green ==0){
+      this.placeRock(x,y);
+    } else if(color.red == 255 && color.blue == 0 &&  color.green == 0) {
+      this.placeWater(x,y);
+    }
+  }
+
+  placeRock(x,y) {
+    let frame = this.rnd.pick([0,1,1,1,1,0,0,1,0,0]);
+    let rock = new Rock({x: x, y: y, frame: frame, scene: this.scene});
+    this.currentChunk.push(rock);
+    this._rocks.push(rock);
+  }
+
+  placeWater(x,y) {
+    let water = new Water({x: x, y: y, scene: this.scene});
   }
 
   update(time, delta, velocityY) {

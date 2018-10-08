@@ -4771,7 +4771,7 @@ through@^2.3.6:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
-tile-extruder@^1.1:
+tile-extruder@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/tile-extruder/-/tile-extruder-1.1.0.tgz#a08b4bebf0f4fc522712d4b107b833722cb40a49"
   integrity sha512-DQdVdKkBnVKtdZYeGFQTrspqvaG6Ftpt6BSORkE4VcYCmoN3ngfH27GFywzgcoHZDol/B0JzOv66oPbEIvb3vQ==

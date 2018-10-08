@@ -6,6 +6,20 @@ export default class extends Phaser.Scene {
   }
 
   create() {
+    let config = this.game.config;
+    let viewWidth = window.innerWidth;
+    let viewHeight = window.innerHeight;
+    let factor = 1;
+    if(viewHeight > viewWidth) {
+      factor = viewWidth / config.width;
+    } else {
+      factor = viewHeight / config.height;
+    }
+
+
+    this.game.canvas.style.width = config.width * factor + "px";
+    this.game.canvas.style.height = config.height * factor + "px";
+
     this.scene.start('Splash');
   }
 }
