@@ -25,8 +25,9 @@ export default class extends Phaser.GameObjects.Group {
     this._verticalVelocity = 10;
     this._horizontalVelocity = 2;
 
-    this.lastSprite = this.create(this.x, this.y, 'blank');
     this.rootEndSprite = null;
+    this.graphics = this.scene.add.graphics();
+    this.path = null;
 
     this.lastRootPlacementY = 0;
 
@@ -48,6 +49,8 @@ export default class extends Phaser.GameObjects.Group {
     this.rootEndSprite.setCollideWorldBounds(true);
     this.rootEndSprite.body.setVelocityY(this._verticalVelocity);
     this.add(this.rootEndSprite, true);
+
+    this.path = this.scene.add.path(x,y);
 
     this.active = true;
   }
@@ -72,11 +75,22 @@ export default class extends Phaser.GameObjects.Group {
       }
     }
 
-    // Stop placing a sprite on every single frame.
-    if(this.rootEndSprite.y - this.lastSprite.y > 6) {
-      this.lastSprite = this.create(this.rootEndSprite.x, this.rootEndSprite.y-this.rootEndSprite.displayHeight-1, 'root', 0);
-      this.lastSprite.angle = this.rootEndSprite.angle;
-      this.lastSprite.setOrigin(0.5, 0);
+    // Do not grow on every single frame.
+    let endPoint = this.path.getEndPoint();
+    let x0 = endPoint.x;
+    let y0 = endPoint.y;
+    if(this.rootEndSprite.y - y0 > 3) {
+      this.graphics.clear();
+
+      let x1 = this.rootEndSprite.x;
+      let y1 = this.rootEndSprite.y;
+
+      this.path.moveTo(x0,y0-0.3);
+      this.path.lineTo(x1,y1);
+
+      this.graphics.lineStyle(2, 0xfbf236, 1);
+      this.path.draw(this.graphics);
+
       this.events.emit('grow');
     }
   }
