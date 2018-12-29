@@ -385,7 +385,11 @@ nav.pagination {
       float: left; }
     .notepad-site-footer .social-icons {
       text-align: right;
-      float: right; } }
+      float: right; }
+    .notepad-site-footer .buy-me-a-coffee {
+      text-align: center;
+      padding-top: 2rem;}
+    }
 
 .fadeInDown {
   -webkit-animation-duration: 1s;
