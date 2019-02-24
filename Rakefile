@@ -76,7 +76,7 @@ end
 desc 'Publish to static site'
 task :publish do
   system 'jekyll build'
-  system 'cp -r _site ../cfurrow.github.io/'
+  system 'cp -r _site/* ../cfurrow.github.io/'
   system 'cd ../cfurrow.github.io'
   system 'git add .'
   system 'git commit -m "Publishing"'
