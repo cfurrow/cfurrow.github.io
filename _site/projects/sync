@@ -1,3 +1,0 @@
-#!/bin/bash
-rsync -va --exclude=.git --exclude=node_modules  ~/workspace/gamedev/lowresjam2018/root_life/ ./root_life
-rsync -va --exclude=.git --exclude=node_modules  ~/workspace/gamedev/prospector/ ./prospector
