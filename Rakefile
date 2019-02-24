@@ -73,12 +73,9 @@ task :newpage, :title do |t, args|
  end
 end
 
-desc 'Publish to static site'
-task :publish do
+desc 'Build to static site repo'
+task :build do
   system 'jekyll build'
   system 'cp -r _site/* ../cfurrow.github.io/'
   system 'cd ../cfurrow.github.io'
-  system 'git add .'
-  system 'git commit -m "Publishing"'
-  system 'git push origin master'
 end
