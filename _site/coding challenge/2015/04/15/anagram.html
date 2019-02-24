@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+Theme Author Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>THE ANAGRAM PROBLEM &vert; CARL FURROW</title>
+<meta name="description" content="I try my hand at solving the 'Anagram Problem', and I have a poor first-showing.">
+<meta name="keywords" content="ruby, anagram, interview-question, teaser">
+
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cfurrow.github.io/images/logo.png">
+<meta name="twitter:title" content="The Anagram Problem">
+<meta name="twitter:description" content="I try my hand at solving the 'Anagram Problem', and I have a poor first-showing.">
+<meta name="twitter:creator" content="@carl_furrow">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Anagram Problem">
+<meta property="og:description" content="I try my hand at solving the 'Anagram Problem', and I have a poor first-showing.">
+<meta property="og:url" content="https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram">
+<meta property="og:site_name" content="Carl Furrow">
+
+<meta property="og:image" content="https://cfurrow.github.io/images/">
+
+
+
+
+
+
+<link rel="canonical" href="https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram">
+<link href="https://cfurrow.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Carl Furrow Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/normalize.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/nprogress.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/foundation.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/style.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/post.css">
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://cfurrow.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cfurrow.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cfurrow.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cfurrow.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+
+                    <a class="notepad-blog-logo" href="https://cfurrow.github.io">
+                        <img src="https://cfurrow.github.io/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/about">About</a>
+                 </li>
+
+           <li><a href="https://cfurrow.github.io/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>The Anagram Problem</h1>
+                            <p>by <strong>Carl Furrow</strong> &#8212; on <a href="https://cfurrow.github.io/tags/index.html#ruby" data-toggle="tooltip" title="Posts tagged with ruby" rel="tag">ruby</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#anagram" data-toggle="tooltip" title="Posts tagged with anagram" rel="tag">anagram</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#interview-question" data-toggle="tooltip" title="Posts tagged with interview-question" rel="tag">interview-question</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#teaser" data-toggle="tooltip" title="Posts tagged with teaser" rel="tag">teaser</a> <strong><time datetime="2015-04-15T00:00:00-04:00">15 Apr 2015</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <article class="notepad-post-content post tag-simple">
+            <div><p>Taken from <a href="http://nafiulis.me/the-deceptive-anagram-question.html">http://nafiulis.me/the-deceptive-anagram-question.html</a></p>
+
+<h2 id="problem">Problem</h2>
+
+<blockquote>
+  <p>Given a list of words L, find all the anagrams in L in the order in which they appear in L.</p>
+</blockquote>
+
+<h2 id="example">Example</h2>
+
+<p>The word list:</p>
+
+<blockquote>
+  <p>[“pool”, “loco”, “cool”, “stain”, “satin”, “pretty”, “nice”, “loop”]</p>
+</blockquote>
+
+<p>The output should be, in <em>exactly</em> this order:</p>
+
+<blockquote>
+  <p>[“pool”, “loco”, “cool”, “stain”, “satin”, “loop”]</p>
+</blockquote>
+
+<h2 id="solution">Solution</h2>
+
+<p>I started reading the above post when I thought I should stop reading and try it
+myself. I too, started with a very naive approach that was looping over the list
+in exponential time. Gross.</p>
+
+<p>As I read more, he said the interviewer suggested getting it to O(N) time by using
+a hash map. I stopped reading once more, and went back to my half-baked problem.</p>
+
+<p>I came up with something that processes the output as it’s reading words in. It’s
+still rough, but it doesn’t loop back over the list of words, which is nice.</p>
+
+<h3 id="step-1-read-in-the-words-remembering-their-place-in-the-original-string">Step 1: Read in the words, remembering their place in the original string</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+  <span class="n">word_list</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+    <span class="c1"># ... more to come ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="step-2-create-a-hash-of-the-word-that-will-map-similar-words-to-the-same-hash">Step 2: Create a hash of the word that will map similar words to the same hash</h3>
+
+<p>I figured I’d create a hash of a word that took each letter, and the count of each
+letter as it appeared in the word, the sort the letters and place the count next to it.</p>
+
+<p>Example: The word “cool” would become “c1l1o2” since “c” and “l” only appear once,
+and “o” appears twice. That would also map “loco” to the same hash. Nice.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+  <span class="n">letters</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="nb">hash</span> <span class="o">=</span> <span class="s1">''</span>
+
+  <span class="n">word</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s1">''</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
+    <span class="n">letters</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">||=</span> <span class="mi">0</span>
+    <span class="n">letters</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">end</span>
+
+  <span class="n">letters</span><span class="p">.</span><span class="nf">keys</span><span class="p">.</span><span class="nf">sort</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">+=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">key</span><span class="si">}#{</span><span class="n">letters</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">end</span>
+
+  <span class="nb">hash</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p><em><strong>Why did I choose this hash method?</strong></em> It seemed right at the time and I originally
+thought it would save space. Upon reading more of the original blog post, Nafiul
+ends up creating a hash of a word by sorting the letters alphabetically, which
+is much faster/nicer. I’m keeping my hashing function as-is for full-disclosure.</p>
+
+<h3 id="step-3-as-each-word-is-read-in-create-the-hash-and-store-the-word-in-the-set-of-hashes">Step 3: As each word is read in, create the hash, and store the word in the set of hashes.</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+  <span class="n">word_set</span> <span class="o">=</span> <span class="p">{}</span>
+
+  <span class="n">word_list</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">=</span> <span class="n">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="c1"># Default the word_set for hash to an empty array</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">||=</span> <span class="p">[]</span>
+
+    <span class="c1"># Append the word, plus its place in the original string</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s2">"</span><span class="si">#{</span><span class="n">word</span><span class="si">}</span><span class="s2">:</span><span class="si">#{</span><span class="n">index</span><span class="si">}</span><span class="s2">"</span>
+    <span class="c1"># ... more to come ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>As you can see, when I add the word to the hash map of words, I append it as
+the word, plus its original place in line. I’ll use that later when constructing
+the output.</p>
+
+<h3 id="step-4-build-the-output-string">Step 4: Build the output string</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+  <span class="s2">"</span><span class="si">#{</span><span class="n">word</span><span class="si">}</span><span class="s2">:</span><span class="si">#{</span><span class="n">index</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">unwrap_word_and_index</span><span class="p">(</span><span class="n">word_index</span><span class="p">)</span>
+  <span class="n">match</span> <span class="o">=</span> <span class="sr">/(\w+):(\d+)/</span><span class="p">.</span><span class="nf">match</span><span class="p">(</span><span class="n">word_index</span><span class="p">)</span>
+  <span class="p">[</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="nf">to_i</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+  <span class="n">word_set</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="c1"># Initialize an array the same size as the word_list, fill with nils</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span>
+
+  <span class="n">word_list</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">=</span> <span class="n">map_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">||=</span> <span class="p">[]</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+
+    <span class="c1"># If there are at least 2 words in the set, we have something worth outputting</span>
+    <span class="k">if</span> <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">2</span>
+      <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">w</span><span class="o">|</span>
+        <span class="n">word</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="n">unwrap_word_and_index</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+        <span class="c1"># Place the word in it's original index/placement of the original string</span>
+        <span class="n">output</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="c1"># Get rid of those pesky nils</span>
+  <span class="n">output</span><span class="p">.</span><span class="nf">compact</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="does-it-work">Does it work?</h2>
+
+<p>Yes, it does. It’s still a hot mess. Problems I see are:</p>
+
+<ol>
+  <li>My “word:index” <em>works</em>, but I’m not in love with it. That value has to be stored <em>somewhere</em>, so alongside the word is probably fine, but, it feels messy. I could just do an <code class="highlighter-rouge">.index_of</code> lookup on the original <code class="highlighter-rouge">word_list</code>, but that’s technically a scan of the original word list, which would happen for every word I’m going to output.</li>
+  <li>My hashing-function is a bit verbose/overkill when sorting the letters of a word would also work. I’m keeping the original here.</li>
+</ol>
+
+<h2 id="full-code">Full code</h2>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">word_list</span> <span class="o">=</span> <span class="sx">%w(pool loco cool stain satin pretty nice loop)</span>
+
+<span class="nb">puts</span> <span class="s2">"=== Anagram Finder ==="</span>
+<span class="nb">puts</span> <span class="s2">"Original list: </span><span class="si">#{</span><span class="n">word_list</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="k">def</span> <span class="nf">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+  <span class="n">letters</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="nb">hash</span> <span class="o">=</span> <span class="s1">''</span>
+
+  <span class="n">word</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s1">''</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
+    <span class="n">letters</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">||=</span> <span class="mi">0</span>
+    <span class="n">letters</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">end</span>
+
+  <span class="n">letters</span><span class="p">.</span><span class="nf">keys</span><span class="p">.</span><span class="nf">sort</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">+=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">key</span><span class="si">}#{</span><span class="n">letters</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">end</span>
+
+  <span class="nb">hash</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+  <span class="s2">"</span><span class="si">#{</span><span class="n">word</span><span class="si">}</span><span class="s2">:</span><span class="si">#{</span><span class="n">index</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">unwrap_word_and_index</span><span class="p">(</span><span class="n">word_index</span><span class="p">)</span>
+  <span class="n">match</span> <span class="o">=</span> <span class="sr">/(\w+):(\d+)/</span><span class="p">.</span><span class="nf">match</span><span class="p">(</span><span class="n">word_index</span><span class="p">)</span>
+  <span class="p">[</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="nf">to_i</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+  <span class="n">word_set</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="n">word_list</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">=</span> <span class="n">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">||=</span> <span class="p">[]</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">2</span>
+      <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">w</span><span class="o">|</span>
+        <span class="n">word</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="n">unwrap_word_and_index</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+        <span class="c1"># Place the word in it's original index/placement of the original string</span>
+        <span class="n">output</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="n">output</span><span class="p">.</span><span class="nf">compact</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="s2">"Processed list: </span><span class="si">#{</span><span class="n">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">).</span><span class="nf">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+<span class="c1">#=&gt; Processed list: pool loco cool stain satin loop</span>
+</code></pre></div></div>
+
+<h2 id="how-about-a-refactor">How about a refactor?</h2>
+<p>Knowing what I know now, and seeing the problems, let’s do some refactoring.</p>
+
+<h3 id="hashing-function">Hashing function</h3>
+<p>Let’s first simplify the function to do a letter-sort. It now becomes much shorter:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+  <span class="n">word</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s1">''</span><span class="p">).</span><span class="nf">sort</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Wow, I’m embarrassed.</p>
+
+<h3 id="wrapunwrap-functions">Wrap/Unwrap functions</h3>
+<p>Why didn’t I just use a hash, or an array?</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># No need for an unwrap function now, this is simple.</span>
+<span class="c1"># Heck, even this function seems overkill, now.</span>
+<span class="k">def</span> <span class="nf">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+  <span class="p">[</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">]</span>
+<span class="k">end</span>
+<span class="c1"># ... snip ...</span>
+<span class="k">if</span> <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">2</span>
+  <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">word_index</span><span class="o">|</span>
+    <span class="n">word</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="n">word_index</span> <span class="c1"># it's in the format I need already! how quaint</span>
+    <span class="c1"># Place the word in it's original index/placement of the original string</span>
+    <span class="n">output</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">embarassment++</code></p>
+
+<h2 id="refactored-full-code">Refactored full code</h2>
+
+<p>Now that the code is cleaner/leaner, here’s the full dump:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">word_list</span> <span class="o">=</span> <span class="sx">%w(pool loco cool stain satin pretty nice loop)</span>
+
+<span class="nb">puts</span> <span class="s2">"=== Anagram Finder ==="</span>
+<span class="nb">puts</span> <span class="s2">"Original list: </span><span class="si">#{</span><span class="n">word_list</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="k">def</span> <span class="nf">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+  <span class="n">word</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s1">''</span><span class="p">).</span><span class="nf">sort</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+  <span class="p">[</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+  <span class="n">word_set</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="n">word_list</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+    <span class="nb">hash</span> <span class="o">=</span> <span class="n">hash_word</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">||=</span> <span class="p">[]</span>
+    <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">wrap_word_with_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">length</span> <span class="o">&gt;=</span> <span class="mi">2</span>
+      <span class="n">word_set</span><span class="p">[</span><span class="nb">hash</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">word_index</span><span class="o">|</span>
+        <span class="n">word</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="n">word_index</span>
+        <span class="n">output</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="n">output</span><span class="p">.</span><span class="nf">compact</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="s2">"Processed list: </span><span class="si">#{</span><span class="n">process_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">).</span><span class="nf">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>Yeesh, that looks a lot better. Live, code and learn.</p>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+
+        <div class="cf"></div>
+
+<hr/>
+<div class="row newsletter-box">
+  <div class="small-12 columns small-centered text-center">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Want to get updates in your inbox?
+    <a href="https://tinyletter.com/furrowcious">Sign up to receive our newsletter!</a>
+  </div>
+</div>
+<div class="notepad-author-info">
+  <div class="row">
+    <section class="notepad-post-author small-12 columns">
+      <img src="https://cfurrow.github.io/images/carl.jpg" class="notepad-post-author-avatar" alt="Carl Furrow's photo">
+      <span class="author-label">Author</span>
+      <h1>Carl Furrow</h1>
+      <p><a href="mailto:hello@carlfurrow.com" class="author-website">hello@carlfurrow.com</a></p>
+      <p>I'm just a learning-fool, looking to master the art of solving problems through writing code, and yelling at computer screens.
+</p>
+    </section>
+  </div>
+</div>
+
+
+        <div class="cf"></div>
+        
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+  <div class="buy-me-a-coffee">
+    <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/furrowcious"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+  </div>
+  <div class="copyright">
+    <section>All content copyright <a href="https://cfurrow.github.io/about">Carl Furrow</a> &copy; 2019 &bull; All rights reserved.</section>
+    <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+  </div>
+  <div class="social-icons">
+    
+      <a href="http://twitter.com/carl_furrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://instagram.com/furrowcious_carl">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://github.com/cfurrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-github fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+  </div>
+  <div class="cf"></div>
+</footer>
+
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cfurrow.github.io/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="https://cfurrow.github.io/assets/js/vendor/modernizr.js"></script>
+<script src="https://cfurrow.github.io/assets/js/foundation.min.js"></script>
+
+<script src="https://cfurrow.github.io/assets/js/notepad.js"></script>
+<script src="https://cfurrow.github.io/assets/js/scripts.min.js"></script>
+<script src="https://cfurrow.github.io/assets/js/vendor/nprogress.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+<script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+<script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48560508-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+</body>
+</html>

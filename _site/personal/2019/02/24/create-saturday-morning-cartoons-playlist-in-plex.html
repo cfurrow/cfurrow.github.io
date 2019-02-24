@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+Theme Author Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>CREATE A "SATURDAY MORNING CARTOONS" PLAYLIST IN PLEX &vert; CARL FURROW</title>
+<meta name="description" content="Knowledge is a framework that experience bends">
+<meta name="keywords" content="plex, python, cartoons">
+
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cfurrow.github.io/images/logo.png">
+<meta name="twitter:title" content="Create a "Saturday Morning Cartoons" Playlist in Plex">
+<meta name="twitter:description" content="Knowledge is a framework that experience bends">
+<meta name="twitter:creator" content="@carl_furrow">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Create a "Saturday Morning Cartoons" Playlist in Plex">
+<meta property="og:description" content="Knowledge is a framework that experience bends">
+<meta property="og:url" content="https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex">
+<meta property="og:site_name" content="Carl Furrow">
+
+<meta property="og:image" content="https://cfurrow.github.io/images/">
+
+
+
+
+
+
+<link rel="canonical" href="https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex">
+<link href="https://cfurrow.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Carl Furrow Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/normalize.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/nprogress.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/foundation.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/style.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/post.css">
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://cfurrow.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cfurrow.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cfurrow.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cfurrow.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+
+                    <a class="notepad-blog-logo" href="https://cfurrow.github.io">
+                        <img src="https://cfurrow.github.io/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/about">About</a>
+                 </li>
+
+           <li><a href="https://cfurrow.github.io/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>Create a "Saturday Morning Cartoons" Playlist in Plex</h1>
+                            <p>by <strong>Carl Furrow</strong> &#8212; on <a href="https://cfurrow.github.io/tags/index.html#plex" data-toggle="tooltip" title="Posts tagged with plex" rel="tag">plex</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#python" data-toggle="tooltip" title="Posts tagged with python" rel="tag">python</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#cartoons" data-toggle="tooltip" title="Posts tagged with cartoons" rel="tag">cartoons</a> <strong><time datetime="2019-02-24T00:00:00-05:00">24 Feb 2019</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <article class="notepad-post-content post tag-simple">
+            <div><figure>
+  <img src="/assets/posts/create-saturday-morning-cartoons-playlist-in-plex/rawpixel-788409-unsplash.jpg" />
+  <figcaption>
+    Image by 
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@rawpixel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from rawpixel"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">rawpixel</span></a>
+  </figcaption>
+</figure>
+
+<p>Recently I setup an <a href="https://unraid.net">unRaid</a> file server on a $50 eBay desktop, and have been moving my TV shows and movies into a <a href="https://www.plex.tv">Plex</a> docker container running on said machine. It turns out that I have something like 14 days worth of cartoon shows, and I have a hard time curating a list of shows I want to watch on a Saturday morning when I’m feeling super lazy. But recently, I came across a Python script that gave an example of how to build a Plex playlist dynamically, based on all the episodes/movies that aired on a given day. So, for example, if you ran the script on 2019-02-10, it would scan your library for all movies and shows that had an original air date (or theater release date) of February 10th, of any year.</p>
+
+<p><a href="https://gist.github.com/blacktwin/397f07724abebd1223ba6ea644ea1669">Check out the original gist, here.</a></p>
+
+<p>I loved the script so much, I modified it to allow for providing <em>any</em> date to it, and have it create a playlist from that given date, and not be restricted to the date in which you ran it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python aired_today_playlist.py <span class="s1">'2019-02-12'</span>
+</code></pre></div></div>
+
+<p><a href="https://gist.github.com/cfurrow/8bb5cb079602eafb358c9ab062ba1ebb">My modified gist can be found here.</a></p>
+
+<p>This all got me thinking; “I can build custom cartoon playlists based on the next unplayed episode of each cartoon show!” So I did. When I run the script, it loops over all cartoon shows in my Plex library, and finds the first unplayed episode, and adds it to a playlist. That way, I’m always watching something I have not watched previously. Check out the code at the bottom of this post.</p>
+
+<p>The result looks like this:</p>
+
+<p><img src="/assets/posts/create-saturday-morning-cartoons-playlist-in-plex/plex-playlist.png" alt="saturday morning cartoon playlist" /></p>
+
+<p>My lazy Saturday mornings will never be the same.</p>
+
+<h2 id="the-code">The code</h2>
+<script src="https://gist.github.com/cfurrow/13a062359bd83ac17a38f8c4fcd3bab2.js"></script>
+
+
+            </div>
+        </article>
+        <div class="cf"></div>
+
+        <div class="cf"></div>
+
+<hr/>
+<div class="row newsletter-box">
+  <div class="small-12 columns small-centered text-center">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Want to get updates in your inbox?
+    <a href="https://tinyletter.com/furrowcious">Sign up to receive our newsletter!</a>
+  </div>
+</div>
+<div class="notepad-author-info">
+  <div class="row">
+    <section class="notepad-post-author small-12 columns">
+      <img src="https://cfurrow.github.io/images/carl.jpg" class="notepad-post-author-avatar" alt="Carl Furrow's photo">
+      <span class="author-label">Author</span>
+      <h1>Carl Furrow</h1>
+      <p><a href="mailto:hello@carlfurrow.com" class="author-website">hello@carlfurrow.com</a></p>
+      <p>I'm just a learning-fool, looking to master the art of solving problems through writing code, and yelling at computer screens.
+</p>
+    </section>
+  </div>
+</div>
+
+
+        <div class="cf"></div>
+        
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+  <div class="buy-me-a-coffee">
+    <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/furrowcious"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+  </div>
+  <div class="copyright">
+    <section>All content copyright <a href="https://cfurrow.github.io/about">Carl Furrow</a> &copy; 2019 &bull; All rights reserved.</section>
+    <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+  </div>
+  <div class="social-icons">
+    
+      <a href="http://twitter.com/carl_furrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://instagram.com/furrowcious_carl">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://github.com/cfurrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-github fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+  </div>
+  <div class="cf"></div>
+</footer>
+
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cfurrow.github.io/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="https://cfurrow.github.io/assets/js/vendor/modernizr.js"></script>
+<script src="https://cfurrow.github.io/assets/js/foundation.min.js"></script>
+
+<script src="https://cfurrow.github.io/assets/js/notepad.js"></script>
+<script src="https://cfurrow.github.io/assets/js/scripts.min.js"></script>
+<script src="https://cfurrow.github.io/assets/js/vendor/nprogress.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+<script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+<script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48560508-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+</body>
+</html>

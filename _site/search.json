@@ -1,0 +1,291 @@
+[
+	
+		{
+		  "title"      : "Create a &quot;Saturday Morning Cartoons&quot; Playlist in Plex",
+		  "category"   : "personal",
+		  "url"        : "https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex",
+		  "date"       : "2019-02-24 00:00:00 -0500",
+		  "shortdate"  : "February 24, 2019"
+		} ,
+	
+		{
+		  "title"      : "Game Dev Kata: Compass",
+		  "category"   : "personal",
+		  "url"        : "https://cfurrow.github.io/personal/2018/11/28/compass-kata",
+		  "date"       : "2018-11-28 00:00:00 -0500",
+		  "shortdate"  : "November 28, 2018"
+		} ,
+	
+		{
+		  "title"      : "So, I&#39;m using Bear.app now",
+		  "category"   : "note taking",
+		  "url"        : "https://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now",
+		  "date"       : "2018-02-23 00:00:00 -0500",
+		  "shortdate"  : "February 23, 2018"
+		} ,
+	
+		{
+		  "title"      : "Colorize Your Log Output in iTerm2",
+		  "category"   : "personal",
+		  "url"        : "https://cfurrow.github.io/personal/2017/12/22/colorize-log-output",
+		  "date"       : "2017-12-22 00:00:00 -0500",
+		  "shortdate"  : "December 22, 2017"
+		} ,
+	
+		{
+		  "title"      : "Wolfenstein 3D: FizzleFade",
+		  "category"   : "javascript",
+		  "url"        : "https://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle",
+		  "date"       : "2017-09-02 00:00:00 -0400",
+		  "shortdate"  : "September 02, 2017"
+		} ,
+	
+		{
+		  "title"      : "Alfred Workflow: WIP List",
+		  "category"   : "personal",
+		  "url"        : "https://cfurrow.github.io/personal/2017/05/11/alfred-wip",
+		  "date"       : "2017-05-11 00:00:00 -0400",
+		  "shortdate"  : "May 11, 2017"
+		} ,
+	
+		{
+		  "title"      : "Journey to build a $250 gaming PC",
+		  "category"   : "personal",
+		  "url"        : "https://cfurrow.github.io/personal/2017/01/20/250-budget-pc",
+		  "date"       : "2017-01-20 00:00:00 -0500",
+		  "shortdate"  : "January 20, 2017"
+		} ,
+	
+		{
+		  "title"      : "Phaser.js - Wave Example",
+		  "category"   : "",
+		  "url"        : "https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example",
+		  "date"       : "2016-10-02 00:00:00 -0400",
+		  "shortdate"  : "October 02, 2016"
+		} ,
+	
+		{
+		  "title"      : "Marxico (Evernote + Markdown)",
+		  "category"   : "",
+		  "url"        : "https://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown",
+		  "date"       : "2016-10-02 00:00:00 -0400",
+		  "shortdate"  : "October 02, 2016"
+		} ,
+	
+		{
+		  "title"      : "macOS Sierra: Killing my CPU",
+		  "category"   : "osx",
+		  "url"        : "https://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu",
+		  "date"       : "2016-09-29 00:00:00 -0400",
+		  "shortdate"  : "September 29, 2016"
+		} ,
+	
+		{
+		  "title"      : "You lost me, Evernote",
+		  "category"   : "note taking",
+		  "url"        : "https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote",
+		  "date"       : "2016-02-16 00:00:00 -0500",
+		  "shortdate"  : "February 16, 2016"
+		} ,
+	
+		{
+		  "title"      : "Why I always go back to Things",
+		  "category"   : "keeping organized",
+		  "url"        : "https://cfurrow.github.io/keeping%20organized/2016/01/19/things",
+		  "date"       : "2016-01-19 00:00:00 -0500",
+		  "shortdate"  : "January 19, 2016"
+		} ,
+	
+		{
+		  "title"      : "The Anagram Problem",
+		  "category"   : "coding challenge",
+		  "url"        : "https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram",
+		  "date"       : "2015-04-15 00:00:00 -0400",
+		  "shortdate"  : "April 15, 2015"
+		} ,
+	
+		{
+		  "title"      : "Added a second layer to the treadmill desk",
+		  "category"   : "health",
+		  "url"        : "https://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk",
+		  "date"       : "2015-03-03 00:00:00 -0500",
+		  "shortdate"  : "March 03, 2015"
+		} ,
+	
+		{
+		  "title"      : "Turned my treadmill into a desk for $15.34",
+		  "category"   : "health",
+		  "url"        : "https://cfurrow.github.io/health/2015/02/22/treadmill-desk",
+		  "date"       : "2015-02-22 00:00:00 -0500",
+		  "shortdate"  : "February 22, 2015"
+		} ,
+	
+		{
+		  "title"      : "Game Developer Diary - Part 1: Tools",
+		  "category"   : "game development",
+		  "url"        : "https://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1",
+		  "date"       : "2015-02-08 00:00:00 -0500",
+		  "shortdate"  : "February 08, 2015"
+		} ,
+	
+		{
+		  "title"      : "Copy code from Atom to Evernote",
+		  "category"   : "note taking",
+		  "url"        : "https://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote",
+		  "date"       : "2015-01-29 00:00:00 -0500",
+		  "shortdate"  : "January 29, 2015"
+		} ,
+	
+		{
+		  "title"      : "How I Evernote",
+		  "category"   : "note taking",
+		  "url"        : "https://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote",
+		  "date"       : "2015-01-25 00:00:00 -0500",
+		  "shortdate"  : "January 25, 2015"
+		} ,
+	
+		{
+		  "title"      : "I&#39;m a rookie",
+		  "category"   : "professional growth",
+		  "url"        : "https://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie",
+		  "date"       : "2015-01-20 00:00:00 -0500",
+		  "shortdate"  : "January 20, 2015"
+		} ,
+	
+		{
+		  "title"      : "Chrome broken when resetting your account password w/ 2-factor on.",
+		  "category"   : "browser",
+		  "url"        : "https://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken",
+		  "date"       : "2015-01-14 00:00:00 -0500",
+		  "shortdate"  : "January 14, 2015"
+		} ,
+	
+		{
+		  "title"      : "Destroying OSX Calendar Zombie Invites",
+		  "category"   : "calendar",
+		  "url"        : "https://cfurrow.github.io/calendar/2014/10/06/destroy-osx-calendar-zombie-invites",
+		  "date"       : "2014-10-06 00:00:00 -0400",
+		  "shortdate"  : "October 06, 2014"
+		} ,
+	
+		{
+		  "title"      : "Budget App",
+		  "category"   : "app development",
+		  "url"        : "https://cfurrow.github.io/app%20development/2014/10/02/budget-app",
+		  "date"       : "2014-10-02 00:00:00 -0400",
+		  "shortdate"  : "October 02, 2014"
+		} ,
+	
+		{
+		  "title"      : "The skyline problem",
+		  "category"   : "coding challenge",
+		  "url"        : "https://cfurrow.github.io/coding%20challenge/2014/09/02/the-skyline-problem",
+		  "date"       : "2014-09-02 00:00:00 -0400",
+		  "shortdate"  : "September 02, 2014"
+		} ,
+	
+		{
+		  "title"      : "Photo Organization with Dropbox and iPhoto",
+		  "category"   : "photos",
+		  "url"        : "https://cfurrow.github.io/photos/2014/03/01/photo-organization-with-dropbox-and-iphoto",
+		  "date"       : "2014-03-01 00:00:00 -0500",
+		  "shortdate"  : "March 01, 2014"
+		} ,
+	
+		{
+		  "title"      : "Dropbox Photo Organizer",
+		  "category"   : "photos",
+		  "url"        : "https://cfurrow.github.io/photos/2013/12/04/dropbox-photo-organizer",
+		  "date"       : "2013-12-04 00:00:00 -0500",
+		  "shortdate"  : "December 04, 2013"
+		} ,
+	
+		{
+		  "title"      : "Fast Tests Remove Testing Barriers",
+		  "category"   : "testing",
+		  "url"        : "https://cfurrow.github.io/testing/2013/11/04/fast-tests-remove-testing-barriers",
+		  "date"       : "2013-11-04 00:00:00 -0500",
+		  "shortdate"  : "November 04, 2013"
+		} ,
+	
+		{
+		  "title"      : "DOM Futures vs Custom Events",
+		  "category"   : "javascript",
+		  "url"        : "https://cfurrow.github.io/javascript/2013/04/22/dom-futures-vs-custom-events",
+		  "date"       : "2013-04-22 00:00:00 -0400",
+		  "shortdate"  : "April 22, 2013"
+		} ,
+	
+		{
+		  "title"      : "Working at Lumosity",
+		  "category"   : "lumosity",
+		  "url"        : "https://cfurrow.github.io/lumosity/2013/04/15/working-at-lumosity",
+		  "date"       : "2013-04-15 00:00:00 -0400",
+		  "shortdate"  : "April 15, 2013"
+		} ,
+	
+		{
+		  "title"      : "How I removed friction in running my tests locally",
+		  "category"   : "testing",
+		  "url"        : "https://cfurrow.github.io/testing/2013/04/02/how-i-removed-friction-in-running-my-tests-locally",
+		  "date"       : "2013-04-02 00:00:00 -0400",
+		  "shortdate"  : "April 02, 2013"
+		} ,
+	
+		{
+		  "title"      : "Penguin pixel art",
+		  "category"   : "pixelart",
+		  "url"        : "https://cfurrow.github.io/pixelart/2013/02/26/penguin-pixel-art",
+		  "date"       : "2013-02-26 00:00:00 -0500",
+		  "shortdate"  : "February 26, 2013"
+		} ,
+	
+		{
+		  "title"      : "Alien pixel art",
+		  "category"   : "pixelart",
+		  "url"        : "https://cfurrow.github.io/pixelart/2013/02/26/alien-pixel-art",
+		  "date"       : "2013-02-26 00:00:00 -0500",
+		  "shortdate"  : "February 26, 2013"
+		} ,
+	
+		{
+		  "title"      : "Happy Valentine&#39;s Day",
+		  "category"   : "pixelart",
+		  "url"        : "https://cfurrow.github.io/pixelart/2013/02/14/happy-valentines",
+		  "date"       : "2013-02-14 00:00:00 -0500",
+		  "shortdate"  : "February 14, 2013"
+		} ,
+	
+		{
+		  "title"      : "Periphery.js: HTML5 Canvas + Maths!",
+		  "category"   : "html5",
+		  "url"        : "https://cfurrow.github.io/html5/2012/12/30/periphery",
+		  "date"       : "2012-12-30 00:00:00 -0500",
+		  "shortdate"  : "December 30, 2012"
+		} ,
+	
+		{
+		  "title"      : "Google Calendar + OSX Calendars &quot;400&quot; error",
+		  "category"   : "calendar",
+		  "url"        : "https://cfurrow.github.io/calendar/2012/12/03/google-calendar-osx-calendar-400-error",
+		  "date"       : "2012-12-03 00:00:00 -0500",
+		  "shortdate"  : "December 03, 2012"
+		} ,
+	
+		{
+		  "title"      : "Creating an animated GIF from multiple JPEGS (osx)",
+		  "category"   : "osx",
+		  "url"        : "https://cfurrow.github.io/osx/2012/11/04/create-gif",
+		  "date"       : "2012-11-04 00:00:00 -0400",
+		  "shortdate"  : "November 04, 2012"
+		} ,
+	
+		{
+		  "title"      : "Deconstructing Fitbit&#39;s active score",
+		  "category"   : "health",
+		  "url"        : "https://cfurrow.github.io/health/2012/06/04/deconstructing-fitbit-active-score",
+		  "date"       : "2012-06-04 00:00:00 -0400",
+		  "shortdate"  : "June 04, 2012"
+		} 
+	
+]

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+Theme Author Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>PERIPHERY.JS: HTML5 CANVAS + MATHS! &vert; CARL FURROW</title>
+<meta name="description" content="Challenged myself to make something in javascript that casts shadows from a moving light source.">
+<meta name="keywords" content="canvas, html5, math">
+
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cfurrow.github.io/images/logo.png">
+<meta name="twitter:title" content="Periphery.js: HTML5 Canvas + Maths!">
+<meta name="twitter:description" content="Challenged myself to make something in javascript that casts shadows from a moving light source.">
+<meta name="twitter:creator" content="@carl_furrow">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Periphery.js: HTML5 Canvas + Maths!">
+<meta property="og:description" content="Challenged myself to make something in javascript that casts shadows from a moving light source.">
+<meta property="og:url" content="https://cfurrow.github.io/html5/2012/12/30/periphery">
+<meta property="og:site_name" content="Carl Furrow">
+
+<meta property="og:image" content="https://cfurrow.github.io/images/">
+
+
+
+
+
+
+<link rel="canonical" href="https://cfurrow.github.io/html5/2012/12/30/periphery">
+<link href="https://cfurrow.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Carl Furrow Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/normalize.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/nprogress.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/foundation.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/style.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/post.css">
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://cfurrow.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cfurrow.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cfurrow.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cfurrow.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+
+                    <a class="notepad-blog-logo" href="https://cfurrow.github.io">
+                        <img src="https://cfurrow.github.io/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/about">About</a>
+                 </li>
+
+           <li><a href="https://cfurrow.github.io/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>Periphery.js: HTML5 Canvas + Maths!</h1>
+                            <p>by <strong>Carl Furrow</strong> &#8212; on <a href="https://cfurrow.github.io/tags/index.html#canvas" data-toggle="tooltip" title="Posts tagged with canvas" rel="tag">canvas</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#html5" data-toggle="tooltip" title="Posts tagged with html5" rel="tag">html5</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#math" data-toggle="tooltip" title="Posts tagged with math" rel="tag">math</a> <strong><time datetime="2012-12-30T00:00:00-05:00">30 Dec 2012</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <article class="notepad-post-content post tag-simple">
+            <div><div id="demo" style="margin: 0 auto; width: 800px;">
+  <canvas width="800" height="500" id="c"></canvas>
+</div>
+<script type="text/javascript" src="/assets/demo/periphery.min.js"></script>
+
+<p><a href="https://github.com/cfurrow/periphery.js">Source on github</a></p>
+
+<h3 id="what">What?</h3>
+
+<p>This project demos HTML5 Canvas 2D and clipping objects with other objects. In
+this case, it’s clipping other scene elements with an emulation of the
+player’s view-field cone. You can rotate your vision with the left/right keys,
+and move in the direction you’re facing with the up key, or move in the
+opposite direction with the down key.</p>
+
+<p>It’s a proof of concept, and a chance to dust off the parts of my brain that
+used to know things about geometry and 2D math. I still daydream of creating a
+game in the browser, and starting from the ground up (e.g. reinventing the
+wheel) is how I learn best. A few years ago I heard it described as: “Don’t
+hire someone for a job you haven’t already done yourself.” That’s how I feel
+about frameworks most of the time. I want to go through the pain of re-
+learning low-level stuff, then work my way forward to something easier.</p>
+
+<h3 id="did-you-learn-anything">Did you learn anything?</h3>
+
+<p>Yes, a lot! Mainly that I’ve disappointed my high school geometry teacher
+(sorry Mr. Metzger!). Simple things like solving triangles, re-learning the
+law of sines, etc. Makes a person humble, that’s for sure. It came back to me
+in trickles, and I tried my hardest to figure the math out myself before
+running to Google.</p>
+
+<p>The next hardest part was figuring out a canvas context’s <code class="highlighter-rouge">.clip()</code> method and
+how to combine it with <code class="highlighter-rouge">.save()</code> and <code class="highlighter-rouge">.restore()</code> for what I need. I cover that a
+bit here so others can learn from my struggles.</p>
+
+<h3 id="clip-save-and-restore">.clip(), .save() and .restore()</h3>
+
+<p><code class="highlighter-rouge">context.clip()</code> is like <code class="highlighter-rouge">context.fill()</code> or <code class="highlighter-rouge">context.stroke()</code> but instead of
+painting a shape or lines to the canvas, it “hides” anything that doesn’t fall
+within that shape. So only intersecting elements that fall within that
+clipping shape are seen.</p>
+
+<p><a href="https://developer.mozilla.org/samples/canvas-tutorial/6_2_canvas_clipping.html">See an example of this on MDN.</a></p>
+
+<p>I knew I would need to use clip() to only show items that fell within the
+visual range of the “player”. Things falling outside of that would not be
+rendered. This could simulate a top-down representation of a person’s visual
+field.</p>
+
+<p>Here’s the code I ended up with:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">drawPeripheryVision</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">){</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"rgba(20,20,20,0.9)"</span><span class="p">;</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">periphery</span> <span class="o">=</span> <span class="p">[];</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">periphery</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+
+  <span class="kd">var</span> <span class="nx">trianglePointX</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">-</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+  <span class="kd">var</span> <span class="nx">trianglePointY</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">-</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">periphery</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">]);</span>
+
+  <span class="nx">trianglePointX</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">+</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+  <span class="nx">trianglePointY</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">+</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">periphery</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">]);</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">clip</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">drawCentralVision</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"rgba(200,200,200,0.9)"</span><span class="p">;</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+
+  <span class="nx">player</span><span class="p">.</span><span class="nx">central</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">central</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">]);</span>
+
+  <span class="kd">var</span> <span class="nx">trianglePointX</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">-</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">15</span><span class="p">));</span>
+  <span class="kd">var</span> <span class="nx">trianglePointY</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">-</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">15</span><span class="p">));</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">central</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">]);</span>
+
+  <span class="nx">trianglePointX</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">+</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">15</span><span class="p">));</span>
+  <span class="nx">trianglePointY</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">visionRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">+</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="mi">15</span><span class="p">));</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">central</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">trianglePointX</span><span class="p">,</span><span class="nx">trianglePointY</span><span class="p">]);</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">clip</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">drawPlayer</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">direction</span> <span class="o">=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">direction</span><span class="p">;</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"#ffffff"</span><span class="p">;</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span> <span class="nx">radius</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"#5e9fd2"</span><span class="p">;</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span> <span class="nx">radius</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">globalCompositeOperation</span> <span class="o">=</span> <span class="s1">'xor'</span><span class="p">;</span>
+  <span class="nx">drawPeripheryVision</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">);</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">globalCompositeOperation</span> <span class="o">=</span> <span class="s1">'xor'</span><span class="p">;</span>
+  <span class="nx">drawCentralVision</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">);</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">restore</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">frame</span><span class="p">(){</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+
+  <span class="nx">handleMovement</span><span class="p">(</span><span class="nx">player</span><span class="p">);</span>
+
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+  <span class="nx">drawPlayer</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="nx">player</span><span class="p">);</span>
+  <span class="nx">drawScene</span><span class="p">(</span><span class="nx">player</span><span class="p">);</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">restore</span><span class="p">();</span>
+
+  <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">frame</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">frame</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>You’ll see that in <code class="highlighter-rouge">drawPeripheryVision()</code>
+and <code class="highlighter-rouge">drawCentralVision()</code> I create the triangular vision fields, then I fill
+them with color, then use the same shape to clip the rest of the canvas
+falling outside those triangles away.</p>
+
+<p><code class="highlighter-rouge">drawPlayer()</code> then puts it all together, creating the central player circle,
+plus the vision fields. You’ll also see my use of the
+<code class="highlighter-rouge">globalCompositeOperation=’xor’</code>, [see this link for details on that](https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html.
+Then, after
+the peripheral triangle is drawn, I save the canvas state, draw the central
+vision (and clip), then restore the canvas. If I don’t do this, then the
+peripheral-triangle’s “xor” does not get applied, but instead, it is
+overwritten. By calling .restore(), I re-instate that effect to let the
+objects that fall within the peripheral clipping shape to show, but be darker
+(xor’d with the color of my periphery triangle).</p>
+
+<p>I do a similar technique in the <code class="highlighter-rouge">frame()</code> function. I save the state of the
+entire canvas, then draw the player and the scene with all their clipping and
+composite changes, then restore the canvas. If I did not save/restore on each
+frame() call, the first clipping path of the periphery would stick, and not
+move as the player rotated their vision around.</p>
+
+<h3 id="moving-in-the-direction-you-are-facing">Moving in the direction you are facing</h3>
+
+<p>I used <code class="highlighter-rouge">document.onkeydown</code> to capture all keyboard events, and I used <code class="highlighter-rouge">onkeydown</code>
+so that if a user holds a direction I keep moving until that key comes up.</p>
+
+<p>Here’s the code for my <code class="highlighter-rouge">onkeydown</code> and <code class="highlighter-rouge">onkeyup</code> handlers:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">onkeydown</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">movement</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span> <span class="o">==</span> <span class="mi">38</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingForward</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingBack</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">movement</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span> <span class="o">==</span> <span class="mi">40</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingBack</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingForward</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">movement</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span> <span class="o">==</span> <span class="mi">37</span> <span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningLeft</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningRight</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">movement</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span> <span class="o">==</span> <span class="mi">39</span> <span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningRight</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningLeft</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">movement</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">!</span><span class="nx">movement</span><span class="p">;</span> <span class="c1">// don't bubble event</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">onkeyup</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span> <span class="o">==</span> <span class="mi">38</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingForward</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span><span class="o">==</span><span class="mi">40</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">movingBack</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span><span class="o">==</span><span class="mi">37</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningLeft</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">which</span><span class="o">==</span><span class="mi">39</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">turningRight</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// don't bubble event</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>The movement variable was so that the app would “swallow” all keys I deemed as
+part of the movement system. Up, Down, Left and Right. Those keys would not
+bubble up to the browser and try to scroll the page around. This also allowed
+me to be able to press <code class="highlighter-rouge">Command+R</code> to refresh the page, and those keys were
+allowed to bubble up to the browser.</li>
+  <li>The <code class="highlighter-rouge">e.which</code> statements are not cross
+browser, but they work fine for Chrome/Firefox. Additionally, you’ll see
+<code class="highlighter-rouge">player.turningRight</code> or <code class="highlighter-rouge">player.movingDown</code> booleans. They stay set as long as
+the key is held down, so that on each pass of the main loop, the player is
+moving smoothly through each frame.</li>
+  <li>Like I mentioned above, returning
+<code class="highlighter-rouge">!movement</code> returns ‘false’ when a movement key was pressed, and therefore, the
+event doesn’t bubble up.</li>
+</ol>
+
+<p>The code that moves the player is below. It is called
+each time the game loops:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">handleMovement</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">movingForward</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">+=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span> <span class="o">*</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span><span class="p">);</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">+=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span> <span class="o">*</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">movingBack</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">-=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span> <span class="o">*</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span><span class="p">);</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">-=</span> <span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span> <span class="o">*</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">direction</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">turningRight</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">+=</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">turningLeft</span><span class="p">){</span>
+    <span class="nx">player</span><span class="p">.</span><span class="nx">direction</span> <span class="o">-=</span> <span class="nx">deg2rad</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">velocity</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="o">-</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">?</span> <span class="nx">player</span><span class="p">.</span><span class="nx">radius</span> <span class="p">:</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="o">+</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="p">?</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="o">-</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span> <span class="p">:</span> <span class="nx">player</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="o">-</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">?</span> <span class="nx">player</span><span class="p">.</span><span class="nx">radius</span> <span class="p">:</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="o">+</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="p">?</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="o">-</span><span class="nx">player</span><span class="p">.</span><span class="nx">radius</span> <span class="p">:</span> <span class="nx">player</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="requestanimationframe">RequestAnimationFrame</h3>
+
+<p>As is customary with canvas animation, I used <code class="highlighter-rouge">requestAnimationFrame()</code> versus
+<code class="highlighter-rouge">setTimeout()</code> to call my main <code class="highlighter-rouge">frame()</code> function each time the scene needed to be
+redrawn. Nothing special there.</p>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+
+        <div class="cf"></div>
+
+<hr/>
+<div class="row newsletter-box">
+  <div class="small-12 columns small-centered text-center">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Want to get updates in your inbox?
+    <a href="https://tinyletter.com/furrowcious">Sign up to receive our newsletter!</a>
+  </div>
+</div>
+<div class="notepad-author-info">
+  <div class="row">
+    <section class="notepad-post-author small-12 columns">
+      <img src="https://cfurrow.github.io/images/carl.jpg" class="notepad-post-author-avatar" alt="Carl Furrow's photo">
+      <span class="author-label">Author</span>
+      <h1>Carl Furrow</h1>
+      <p><a href="mailto:hello@carlfurrow.com" class="author-website">hello@carlfurrow.com</a></p>
+      <p>I'm just a learning-fool, looking to master the art of solving problems through writing code, and yelling at computer screens.
+</p>
+    </section>
+  </div>
+</div>
+
+
+        <div class="cf"></div>
+        
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+  <div class="buy-me-a-coffee">
+    <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/furrowcious"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+  </div>
+  <div class="copyright">
+    <section>All content copyright <a href="https://cfurrow.github.io/about">Carl Furrow</a> &copy; 2019 &bull; All rights reserved.</section>
+    <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+  </div>
+  <div class="social-icons">
+    
+      <a href="http://twitter.com/carl_furrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://instagram.com/furrowcious_carl">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://github.com/cfurrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-github fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+  </div>
+  <div class="cf"></div>
+</footer>
+
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cfurrow.github.io/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="https://cfurrow.github.io/assets/js/vendor/modernizr.js"></script>
+<script src="https://cfurrow.github.io/assets/js/foundation.min.js"></script>
+
+<script src="https://cfurrow.github.io/assets/js/notepad.js"></script>
+<script src="https://cfurrow.github.io/assets/js/scripts.min.js"></script>
+<script src="https://cfurrow.github.io/assets/js/vendor/nprogress.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+<script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+<script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48560508-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+</body>
+</html>
