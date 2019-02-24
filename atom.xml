@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<feed xmlns="http://www.w3.org/2005/Atom">
 
+ <title>Carl Furrow</title>
+ <link href="http://cfurrow.github.io/" rel="self"/>
+ <link href="http://cfurrow.github.io"/>
+ <updated>2019-02-24T14:48:25-05:00</updated>
+ <id>http://cfurrow.github.io</id>
+ <author>
+   <name>Carl Furrow</name>
+   <email>hello@carlfurrow.com</email>
+ </author>
 
-
-<title type="text">Carl Furrow</title>
-<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="https://cfurrow.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="https://cfurrow.github.io/" />
-<updated>2019-02-24T14:46:24-05:00</updated>
-<id>https://cfurrow.github.io/</id>
-<author>
-  <name>Carl Furrow</name>
-  <uri>https://cfurrow.github.io/</uri>
-  <email>hello@carlfurrow.com</email>
-</author>
-
-
-<entry>
-  <title type="html"><![CDATA[Create a "Saturday Morning Cartoons" Playlist in Plex]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex"/>
-  <id>https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex</id>
-  <published>2019-02-24T00:00:00-05:00</published>
-  <updated>2019-02-24 13:48:38 -0500T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#plex" term="plex" /><category scheme="https://cfurrow.github.io/tags/#python" term="python" /><category scheme="https://cfurrow.github.io/tags/#cartoons" term="cartoons" />
-  <content type="html">
-  
-    &lt;figure&gt;
+ 
+ <entry>
+   <title>Create a "Saturday Morning Cartoons" Playlist in Plex</title>
+   <link href="http://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex"/>
+   <updated>2019-02-24T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex</id>
+   <content type="html">&lt;figure&gt;
   &lt;img src=&quot;/assets/posts/create-saturday-morning-cartoons-playlist-in-plex/rawpixel-788409-unsplash.jpg&quot; /&gt;
   &lt;figcaption&gt;
     Image by 
@@ -61,28 +47,15 @@
 &lt;h2 id=&quot;the-code&quot;&gt;The code&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/cfurrow/13a062359bd83ac17a38f8c4fcd3bab2.js&quot;&gt;&lt;/script&gt;
 
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/personal/2019/02/24/create-saturday-morning-cartoons-playlist-in-plex&quot;&gt;Create a "Saturday Morning Cartoons" Playlist in Plex&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on February 24, 2019.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Game Dev Kata: Compass]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/personal/2018/11/28/compass-kata"/>
-  <id>https://cfurrow.github.io/personal/2018/11/28/compass-kata</id>
-  <published>2018-11-28T00:00:00-05:00</published>
-  <updated>2018-11-28 16:48:38 -0500T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#phaser" term="phaser" /><category scheme="https://cfurrow.github.io/tags/#gamedev" term="gamedev" /><category scheme="https://cfurrow.github.io/tags/#javascript" term="javascript" />
-  <content type="html">
-  
-    &lt;p&gt;I wanted to create a “compass” like that in Spelunky:&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Game Dev Kata: Compass</title>
+   <link href="http://cfurrow.github.io/personal/2018/11/28/compass-kata"/>
+   <updated>2018-11-28T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/personal/2018/11/28/compass-kata</id>
+   <content type="html">&lt;p&gt;I wanted to create a “compass” like that in Spelunky:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/photos/201811/CECE5CDC-A561-40A7-A9AE-AFDD6C7B50B9.png&quot; alt=&quot;Spelunky Compass&quot; /&gt;&lt;/p&gt;
 
@@ -110,28 +83,15 @@
 &lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;Check out the code over here: &lt;a href=&quot;https://github.com/cfurrow/gamedev-kata-compass&quot;&gt;gamedev-kata-compass&lt;/a&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/personal/2018/11/28/compass-kata&quot;&gt;Game Dev Kata: Compass&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on November 28, 2018.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[So, I'm using Bear.app now]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now"/>
-  <id>https://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now</id>
-  <published>2018-02-23T00:00:00-05:00</published>
-  <updated>2018-02-23 09:10:00 -0500T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#Evernote" term="Evernote" /><category scheme="https://cfurrow.github.io/tags/#productivity" term="productivity" /><category scheme="https://cfurrow.github.io/tags/#bear" term="bear" /><category scheme="https://cfurrow.github.io/tags/#note-taking" term="note-taking" />
-  <content type="html">
-  
-    &lt;p&gt;I did it. I think I finally found a note-taking app that will keep me away from Evernote. I’ve done this in the past multiple times. I’ve even switched from &lt;a href=&quot;http://evernote.com/&quot;&gt;Evernote&lt;/a&gt; to &lt;a href=&quot;http://www.bear-writer.com/&quot;&gt;Bear&lt;/a&gt;, and gone back to Evernote. I tried &lt;a href=&quot;https://marxi.co/&quot;&gt;Marxico&lt;/a&gt; for a couple years, and that is what brings me to this latest change.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>So, I'm using Bear.app now</title>
+   <link href="http://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now"/>
+   <updated>2018-02-23T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now</id>
+   <content type="html">&lt;p&gt;I did it. I think I finally found a note-taking app that will keep me away from Evernote. I’ve done this in the past multiple times. I’ve even switched from &lt;a href=&quot;http://evernote.com/&quot;&gt;Evernote&lt;/a&gt; to &lt;a href=&quot;http://www.bear-writer.com/&quot;&gt;Bear&lt;/a&gt;, and gone back to Evernote. I tried &lt;a href=&quot;https://marxi.co/&quot;&gt;Marxico&lt;/a&gt; for a couple years, and that is what brings me to this latest change.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/note%20taking/2015/01/25/how-i-evernote&quot;&gt;How I Evernote&lt;/a&gt;&lt;/li&gt;
@@ -232,28 +192,15 @@
 
 &lt;h2 id=&quot;thats-really-it&quot;&gt;That’s really it&lt;/h2&gt;
 &lt;p&gt;This is the system that I’ve found works for me.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/note%20taking/2018/02/23/so-im-using-bear-now&quot;&gt;So, I'm using Bear.app now&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on February 23, 2018.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Colorize Your Log Output in iTerm2]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/personal/2017/12/22/colorize-log-output"/>
-  <id>https://cfurrow.github.io/personal/2017/12/22/colorize-log-output</id>
-  <published>2017-12-22T00:00:00-05:00</published>
-  <updated>2017-12-22 11:14:20 -0500T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#iterm2" term="iterm2" />
-  <content type="html">
-  
-    &lt;p&gt;Let’s get right to it: this is what my log output looks like in iTerm 2&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Colorize Your Log Output in iTerm2</title>
+   <link href="http://cfurrow.github.io/personal/2017/12/22/colorize-log-output"/>
+   <updated>2017-12-22T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/personal/2017/12/22/colorize-log-output</id>
+   <content type="html">&lt;p&gt;Let’s get right to it: this is what my log output looks like in iTerm 2&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cfurrow.github.io/assets/photos/2017.12.22/01.png&quot; alt=&quot;01&quot; /&gt;&lt;/p&gt;
 
@@ -288,28 +235,15 @@
 &lt;p&gt;My triggers are centerd around Rails server log output, so your matches/regular expressions may differ from mine, but the concept will be the same. Look at what your server outputs for a request, and build a regular expression around that content and highlight them as desired.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cfurrow.github.io/assets/photos/2017.12.22/05.png&quot; alt=&quot;05&quot; /&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/personal/2017/12/22/colorize-log-output&quot;&gt;Colorize Your Log Output in iTerm2&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on December 22, 2017.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Wolfenstein 3D: FizzleFade]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle"/>
-  <id>https://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle</id>
-  <published>2017-09-02T00:00:00-04:00</published>
-  <updated>2017-09-02 17:31:53 -0400T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#javascript" term="javascript" />
-  <content type="html">
-  
-    &lt;p&gt;While trying to read through my recent Instapaper articles, I was excited to come across &lt;a href=&quot;http://fabiensanglard.net/fizzlefade/index.php&quot;&gt;Fabien Sanglard’s breakdown of Wolfenstein 3D’s FizzleFade function&lt;/a&gt;. It also reminded me to purchase his eBook, &lt;a href=&quot;https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book?id=Lq4yDwAAQBAJ&quot;&gt;Game Engine Black Book: Wolfenstein 3D&lt;/a&gt;. Anyway, you should read the article; it’s short and explains the technique well.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Wolfenstein 3D: FizzleFade</title>
+   <link href="http://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle"/>
+   <updated>2017-09-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle</id>
+   <content type="html">&lt;p&gt;While trying to read through my recent Instapaper articles, I was excited to come across &lt;a href=&quot;http://fabiensanglard.net/fizzlefade/index.php&quot;&gt;Fabien Sanglard’s breakdown of Wolfenstein 3D’s FizzleFade function&lt;/a&gt;. It also reminded me to purchase his eBook, &lt;a href=&quot;https://play.google.com/store/books/details/Fabien_Sanglard_Game_Engine_Black_Book?id=Lq4yDwAAQBAJ&quot;&gt;Game Engine Black Book: Wolfenstein 3D&lt;/a&gt;. Anyway, you should read the article; it’s short and explains the technique well.&lt;/p&gt;
 
 &lt;p&gt;After reading it, I wanted to recreate the C code in JavaScript. There’s not much more to it than that. See for yourself!&lt;/p&gt;
 
@@ -423,28 +357,15 @@ window.onload = function(){
 }
 &lt;/script&gt;
 
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/javascript/2017/09/02/wolfenstein-fizzle&quot;&gt;Wolfenstein 3D: FizzleFade&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on September 02, 2017.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Alfred Workflow: WIP List]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/personal/2017/05/11/alfred-wip"/>
-  <id>https://cfurrow.github.io/personal/2017/05/11/alfred-wip</id>
-  <published>2017-05-11T00:00:00-04:00</published>
-  <updated>2017-05-11 14:37:33 -0400T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#alfred" term="alfred" /><category scheme="https://cfurrow.github.io/tags/#todo" term="todo" />
-  <content type="html">
-  
-    &lt;p&gt;&lt;img src=&quot;/images/alfred-wip/check-list2-2400px.png&quot; width=&quot;30%&quot; alt=&quot;task list&quot; /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Alfred Workflow: WIP List</title>
+   <link href="http://cfurrow.github.io/personal/2017/05/11/alfred-wip"/>
+   <updated>2017-05-11T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/personal/2017/05/11/alfred-wip</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/alfred-wip/check-list2-2400px.png&quot; width=&quot;30%&quot; alt=&quot;task list&quot; /&gt;
 &lt;br /&gt;
 &lt;cite&gt;Image by &lt;a href=&quot;https://openclipart.org/detail/182735/check-list&quot;&gt;crisg&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
 
@@ -496,28 +417,15 @@ about. I found that when I switch context, it’s helpful to come back to a list
 
 &lt;h2 id=&quot;where-do-i-download&quot;&gt;Where do I download?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/pvgnkdfbrfcrp4w/List%20WIP%20Projects%20v1.0.alfredworkflow?dl=1&quot;&gt;Right here!&lt;/a&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/personal/2017/05/11/alfred-wip&quot;&gt;Alfred Workflow: WIP List&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on May 11, 2017.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Journey to build a $250 gaming PC]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/personal/2017/01/20/250-budget-pc"/>
-  <id>https://cfurrow.github.io/personal/2017/01/20/250-budget-pc</id>
-  <published>2017-01-20T00:00:00-05:00</published>
-  <updated>2017-01-20 22:28:37 -0500T00:00:00-00:00</updated>
-  
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#pc" term="pc" /><category scheme="https://cfurrow.github.io/tags/#gaming" term="gaming" />
-  <content type="html">
-  
-    &lt;p&gt;I’d been watching a fair bit of YouTube channels, like &lt;a href=&quot;https://www.youtube.com/channel/UCSy7VGPa8Np8PNjV7Mz-xZg&quot;&gt;Tech By Matt&lt;/a&gt; for the better part of a year, and what I really loved was all the different ways you could build a $200-$250 gaming machine that performed decently well. I used to be a PC gamer until about 10 years ago, when I switched to the Xbox360, then on to the PS4 in 2014. I still love my console game experience, but I was hoping to get more into the indie gaming scene, and that’s so much easier on the PC.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Journey to build a $250 gaming PC</title>
+   <link href="http://cfurrow.github.io/personal/2017/01/20/250-budget-pc"/>
+   <updated>2017-01-20T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/personal/2017/01/20/250-budget-pc</id>
+   <content type="html">&lt;p&gt;I’d been watching a fair bit of YouTube channels, like &lt;a href=&quot;https://www.youtube.com/channel/UCSy7VGPa8Np8PNjV7Mz-xZg&quot;&gt;Tech By Matt&lt;/a&gt; for the better part of a year, and what I really loved was all the different ways you could build a $200-$250 gaming machine that performed decently well. I used to be a PC gamer until about 10 years ago, when I switched to the Xbox360, then on to the PS4 in 2014. I still love my console game experience, but I was hoping to get more into the indie gaming scene, and that’s so much easier on the PC.&lt;/p&gt;
 
 &lt;h2 id=&quot;quick-jump-to&quot;&gt;Quick jump to:&lt;/h2&gt;
 &lt;ul&gt;
@@ -676,27 +584,15 @@ about. I found that when I switch context, it’s helpful to come back to a list
 &lt;p&gt;Overall, I’m very pleased. I’ve thrown a lot at this little machine, and it is exceeding my expectations.&lt;/p&gt;
 
 &lt;p&gt;Also, in case anyone is interested in the FPS overlay I was using, it was &lt;a href=&quot;https://camwebapp.com/&quot;&gt;CAM&lt;/a&gt; by NZXT. It wasn’t working inside of DOOM, so I had to use DOOM’s built-in performance monitor, which worked out well.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/personal/2017/01/20/250-budget-pc&quot;&gt;Journey to build a $250 gaming PC&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 20, 2017.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Phaser.js - Wave Example]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example"/>
-  <id>https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example</id>
-  <published>2016-10-02T00:00:00-04:00</published>
-  <updated>2016-10-02T00:00:00-04:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#gamedev" term="gamedev" /><category scheme="https://cfurrow.github.io/tags/#phaserjs" term="phaserjs" /><category scheme="https://cfurrow.github.io/tags/#javascript" term="javascript" />
-  <content type="html">
-  
-    &lt;p&gt;I posted this animation to Twitter a few weeks ago, and I thought I’d walk through the origin story of how it came to be and the steps I took to create it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Phaser.js - Wave Example</title>
+   <link href="http://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example"/>
+   <updated>2016-10-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example</id>
+   <content type="html">&lt;p&gt;I posted this animation to Twitter a few weeks ago, and I thought I’d walk through the origin story of how it came to be and the steps I took to create it.&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column small-centered small-12 medium-centered medium-6&quot;&gt;
@@ -921,27 +817,15 @@ Thanks.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://cfurrow.github.io/phaser-wave-example/&quot;&gt;Here is a live demo&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Check out the repo here: &lt;a href=&quot;https://github.com/cfurrow/phaser-wave-example/&quot;&gt;https://github.com/cfurrow/phaser-wave-example/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example&quot;&gt;Phaser.js - Wave Example&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on October 02, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Marxico (Evernote + Markdown)]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown"/>
-  <id>https://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown</id>
-  <published>2016-10-02T00:00:00-04:00</published>
-  <updated>2016-10-02T00:00:00-04:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#evernote" term="evernote" /><category scheme="https://cfurrow.github.io/tags/#marxico" term="marxico" /><category scheme="https://cfurrow.github.io/tags/#markdown" term="markdown" />
-  <content type="html">
-  
-    &lt;p&gt;After &lt;a href=&quot;https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote&quot;&gt;previously explaining&lt;/a&gt; how I had switched away from Evernote, I’ve been back for several months now, thanks to &lt;a href=&quot;http://marxi.co/&quot;&gt;Marxico&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Marxico (Evernote + Markdown)</title>
+   <link href="http://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown"/>
+   <updated>2016-10-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown</id>
+   <content type="html">&lt;p&gt;After &lt;a href=&quot;https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote&quot;&gt;previously explaining&lt;/a&gt; how I had switched away from Evernote, I’ve been back for several months now, thanks to &lt;a href=&quot;http://marxi.co/&quot;&gt;Marxico&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/marxico-web-1.png&quot; alt=&quot;marxico window&quot; /&gt;&lt;/p&gt;
 
@@ -956,27 +840,15 @@ Thanks.&lt;/p&gt;
 &lt;p&gt;If you’re an Evernote user that would like to write your notes using Markdown, I urge you to try Marxico; it comes with a 10-day free trial.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://marxi.co/&quot;&gt;http://marxi.co/&lt;/a&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/note%20taking/2016/10/02/marxico-evernote-markdown&quot;&gt;Marxico (Evernote + Markdown)&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on October 02, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[macOS Sierra: Killing my CPU]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu"/>
-  <id>https://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu</id>
-  <published>2016-09-29T00:00:00-04:00</published>
-  <updated>2016-09-29T00:00:00-04:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#macos" term="macos" /><category scheme="https://cfurrow.github.io/tags/#sierra" term="sierra" /><category scheme="https://cfurrow.github.io/tags/#osx" term="osx" /><category scheme="https://cfurrow.github.io/tags/#high-cpu" term="high-cpu" />
-  <content type="html">
-  
-    &lt;p&gt;After upgrading to macOS Sierra last week, my 2012 Macbook Air was running at 200%+ CPU practically all day, every day.
+</content>
+ </entry>
+ 
+ <entry>
+   <title>macOS Sierra: Killing my CPU</title>
+   <link href="http://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu"/>
+   <updated>2016-09-29T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu</id>
+   <content type="html">&lt;p&gt;After upgrading to macOS Sierra last week, my 2012 Macbook Air was running at 200%+ CPU practically all day, every day.
 Top offenders were:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#the-fix&quot;&gt;&lt;em&gt;TL;DR&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1047,27 +919,15 @@ into my main account. From there, I did the following:&lt;/p&gt;
 
 &lt;p&gt;It seemed my high CPU usage was over, for the most part. Like I said, the Photos-related services spike usage every
 now and then, but my fan has quieted down all day today.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/osx/2016/09/29/macos-sierra-killing-my-cpu&quot;&gt;macOS Sierra: Killing my CPU&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on September 29, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[You lost me, Evernote]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote"/>
-  <id>https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote</id>
-  <published>2016-02-16T00:00:00-05:00</published>
-  <updated>2016-02-16T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#evernote" term="evernote" /><category scheme="https://cfurrow.github.io/tags/#quiver" term="quiver" />
-  <content type="html">
-  
-    &lt;p&gt;I did not see this coming. &lt;a href=&quot;/2015/01/25/how-i-evernote/&quot;&gt;I’m an Evernote fiend&lt;/a&gt;, a superuser, an evangelizer. Or, I was until a few weeks ago when I came across &lt;a href=&quot;http://happenapps.com/#quiver&quot;&gt;Quiver&lt;/a&gt;. Quiver is a Mac note-taking app that includes two features I’ve been waiting for Evernote to integrate for years:&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>You lost me, Evernote</title>
+   <link href="http://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote"/>
+   <updated>2016-02-16T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote</id>
+   <content type="html">&lt;p&gt;I did not see this coming. &lt;a href=&quot;/2015/01/25/how-i-evernote/&quot;&gt;I’m an Evernote fiend&lt;/a&gt;, a superuser, an evangelizer. Or, I was until a few weeks ago when I came across &lt;a href=&quot;http://happenapps.com/#quiver&quot;&gt;Quiver&lt;/a&gt;. Quiver is a Mac note-taking app that includes two features I’ve been waiting for Evernote to integrate for years:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The ability to drop in syntax-highlighted code natively&lt;/li&gt;
@@ -1154,27 +1014,15 @@ now and then, but my fan has quieted down all day today.&lt;/p&gt;
 &lt;h3 id=&quot;goodbye-evernote&quot;&gt;Goodbye, Evernote&lt;/h3&gt;
 
 &lt;p&gt;As-is, Quiver accomplishes so much of what I loved about Evernote, and does more. If Quiver’s dev stopped supporting/upgrading Quiver right now, I’d be satisfied with the current feature set. But, I do not believe they are done improving the application yet, and I look forward to discovering more ways to love this app.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/note%20taking/2016/02/16/you-lost-me-evernote&quot;&gt;You lost me, Evernote&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on February 16, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Why I always go back to Things]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/keeping%20organized/2016/01/19/things"/>
-  <id>https://cfurrow.github.io/keeping%20organized/2016/01/19/things</id>
-  <published>2016-01-19T00:00:00-05:00</published>
-  <updated>2016-01-19T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#things" term="things" /><category scheme="https://cfurrow.github.io/tags/#todo" term="todo" /><category scheme="https://cfurrow.github.io/tags/#list" term="list" /><category scheme="https://cfurrow.github.io/tags/#tasks" term="tasks" />
-  <content type="html">
-  
-    &lt;h1 id=&quot;why-things&quot;&gt;Why Things?&lt;/h1&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Why I always go back to Things</title>
+   <link href="http://cfurrow.github.io/keeping%20organized/2016/01/19/things"/>
+   <updated>2016-01-19T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/keeping%20organized/2016/01/19/things</id>
+   <content type="html">&lt;h1 id=&quot;why-things&quot;&gt;Why Things?&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/photos/2016.01.19-things/thingslogo.png&quot; width=&quot;128px&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;&lt;/p&gt;
 
@@ -1316,27 +1164,15 @@ now and then, but my fan has quieted down all day today.&lt;/p&gt;
 &lt;h2 id=&quot;whats-your-favorite-why&quot;&gt;What’s your favorite? Why?&lt;/h2&gt;
 
 &lt;p&gt;I’d love to hear about what to do app you love, and why. Perhaps I’ve overlooked a killer feature in an app listed above? Perhaps I’ve missed a killer to do app that I really must try. Let me know by sending me a link.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/keeping%20organized/2016/01/19/things&quot;&gt;Why I always go back to Things&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 19, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[The Anagram Problem]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram"/>
-  <id>https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram</id>
-  <published>2015-04-15T00:00:00-04:00</published>
-  <updated>2015-04-15T00:00:00-04:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#ruby" term="ruby" /><category scheme="https://cfurrow.github.io/tags/#anagram" term="anagram" /><category scheme="https://cfurrow.github.io/tags/#interview-question" term="interview-question" /><category scheme="https://cfurrow.github.io/tags/#teaser" term="teaser" />
-  <content type="html">
-  
-    &lt;p&gt;Taken from &lt;a href=&quot;http://nafiulis.me/the-deceptive-anagram-question.html&quot;&gt;http://nafiulis.me/the-deceptive-anagram-question.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Anagram Problem</title>
+   <link href="http://cfurrow.github.io/coding%20challenge/2015/04/15/anagram"/>
+   <updated>2015-04-15T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/coding%20challenge/2015/04/15/anagram</id>
+   <content type="html">&lt;p&gt;Taken from &lt;a href=&quot;http://nafiulis.me/the-deceptive-anagram-question.html&quot;&gt;http://nafiulis.me/the-deceptive-anagram-question.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 
@@ -1603,27 +1439,15 @@ the output.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Yeesh, that looks a lot better. Live, code and learn.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/coding%20challenge/2015/04/15/anagram&quot;&gt;The Anagram Problem&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on April 15, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Added a second layer to the treadmill desk]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk"/>
-  <id>https://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk</id>
-  <published>2015-03-03T00:00:00-05:00</published>
-  <updated>2015-03-03T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#treadmill" term="treadmill" /><category scheme="https://cfurrow.github.io/tags/#desk" term="desk" />
-  <content type="html">
-  
-    &lt;p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Added a second layer to the treadmill desk</title>
+   <link href="http://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk"/>
+   <updated>2015-03-03T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk</id>
+   <content type="html">&lt;p&gt;
   &lt;img alt=&quot;desk&quot; width=&quot;100%&quot; src=&quot;/assets/photos/2015-03-02-desk-second-tier.jpg&quot; /&gt;
 &lt;/p&gt;
 
@@ -1650,27 +1474,15 @@ is now at $565.29.&lt;/p&gt;
   &lt;li&gt;36”x12”x1” pine shelf board =&amp;gt; $8.94&lt;/li&gt;
   &lt;li&gt;(4) 5x1.25x1.25” legs =&amp;gt; $8 per leg&lt;/li&gt;
 &lt;/ul&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/health/2015/03/03/second-tier-treadmill-desk&quot;&gt;Added a second layer to the treadmill desk&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on March 03, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Turned my treadmill into a desk for $15.34]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/health/2015/02/22/treadmill-desk"/>
-  <id>https://cfurrow.github.io/health/2015/02/22/treadmill-desk</id>
-  <published>2015-02-22T00:00:00-05:00</published>
-  <updated>2015-02-22T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#treadmill" term="treadmill" /><category scheme="https://cfurrow.github.io/tags/#desk" term="desk" />
-  <content type="html">
-  
-    &lt;h2 id=&quot;finished-product&quot;&gt;Finished Product&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Turned my treadmill into a desk for $15.34</title>
+   <link href="http://cfurrow.github.io/health/2015/02/22/treadmill-desk"/>
+   <updated>2015-02-22T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/health/2015/02/22/treadmill-desk</id>
+   <content type="html">&lt;h2 id=&quot;finished-product&quot;&gt;Finished Product&lt;/h2&gt;
 
 &lt;p&gt;
 &lt;img width=&quot;100%&quot; src=&quot;/assets/photos/2015.02.22-treadmill/2015-02-22 14.56.59.jpg&quot; /&gt;
@@ -1701,27 +1513,15 @@ puts the cost of this treadmill desk at $524.34. Not too bad.&lt;/p&gt;
 &lt;h2 id=&quot;step-3-strap-it-in&quot;&gt;Step 3: Strap it in&lt;/h2&gt;
 
 &lt;p&gt;I layed the board over the treadmill’s arms, then attached the bungie cords to the opposite site.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/health/2015/02/22/treadmill-desk&quot;&gt;Turned my treadmill into a desk for $15.34&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on February 22, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Game Developer Diary - Part 1: Tools]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1"/>
-  <id>https://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1</id>
-  <published>2015-02-08T00:00:00-05:00</published>
-  <updated>2015-02-08T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#game_development" term="game_development" /><category scheme="https://cfurrow.github.io/tags/#phaserjs" term="phaserjs" /><category scheme="https://cfurrow.github.io/tags/#ruby" term="ruby" /><category scheme="https://cfurrow.github.io/tags/#javascript" term="javascript" />
-  <content type="html">
-  
-    &lt;h1 id=&quot;phaserjs&quot;&gt;Phaser.js&lt;/h1&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Game Developer Diary - Part 1: Tools</title>
+   <link href="http://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1"/>
+   <updated>2015-02-08T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1</id>
+   <content type="html">&lt;h1 id=&quot;phaserjs&quot;&gt;Phaser.js&lt;/h1&gt;
 
 &lt;p&gt;I’ve decided to pick away at building a game again, but first I needed to decide
 on the framework. I’ve been a fan of the &lt;a href=&quot;http://www.pixijs.com/&quot;&gt;Pixi.js&lt;/a&gt; renderer
@@ -1781,27 +1581,15 @@ into some Phaser.js examples.&lt;/p&gt;
 &lt;h1 id=&quot;play&quot;&gt;Play!&lt;/h1&gt;
 
 &lt;iframe src=&quot;/assets/demo/gamedev-diary-1&quot; width=&quot;700px&quot; height=&quot;600px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/game%20development/2015/02/08/game-developer-diary-part-1&quot;&gt;Game Developer Diary - Part 1: Tools&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on February 08, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Copy code from Atom to Evernote]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote"/>
-  <id>https://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote</id>
-  <published>2015-01-29T00:00:00-05:00</published>
-  <updated>2015-01-29T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#atom" term="atom" /><category scheme="https://cfurrow.github.io/tags/#evernote" term="evernote" />
-  <content type="html">
-  
-    &lt;p&gt;Just found this &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; package, &lt;a href=&quot;https://atom.io/packages/copy-as-rtf&quot;&gt;copy-as-rtf&lt;/a&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Copy code from Atom to Evernote</title>
+   <link href="http://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote"/>
+   <updated>2015-01-29T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote</id>
+   <content type="html">&lt;p&gt;Just found this &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; package, &lt;a href=&quot;https://atom.io/packages/copy-as-rtf&quot;&gt;copy-as-rtf&lt;/a&gt;
 that adds the ability to copy code out of Atom in RTF (rich text format), which
 you can then paste into Evernote for some syntax highlighting.&lt;/p&gt;
 
@@ -1818,27 +1606,15 @@ you can then paste into Evernote for some syntax highlighting.&lt;/p&gt;
 &lt;p&gt;Done!&lt;/p&gt;
 
 &lt;p&gt;&lt;img width=&quot;100%&quot; src=&quot;/assets/photos/2015.01.29-evernote-syntax-highlight.png&quot; alt=&quot;Evernote example&quot; /&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/note%20taking/2015/01/29/copy-code-from-atom-to-evernote&quot;&gt;Copy code from Atom to Evernote&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 29, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[How I Evernote]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote"/>
-  <id>https://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote</id>
-  <published>2015-01-25T00:00:00-05:00</published>
-  <updated>2015-01-25T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#Evernote" term="Evernote" /><category scheme="https://cfurrow.github.io/tags/#productivity" term="productivity" /><category scheme="https://cfurrow.github.io/tags/#aText" term="aText" /><category scheme="https://cfurrow.github.io/tags/#TextExpander" term="TextExpander" /><category scheme="https://cfurrow.github.io/tags/#skitch" term="skitch" />
-  <content type="html">
-  
-    &lt;p&gt;Evernote is a tool I reach for every single day to:&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How I Evernote</title>
+   <link href="http://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote"/>
+   <updated>2015-01-25T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote</id>
+   <content type="html">&lt;p&gt;Evernote is a tool I reach for every single day to:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Keep daily dev journals&lt;/li&gt;
@@ -2054,27 +1830,15 @@ of table mode.&lt;/p&gt;
 &lt;p&gt;Hopefully that was somewhat helpful, and you’ve found a new tidbit of information
 to take back to your own productivity toolbelt. I’m always on the lookout for
 new ways to enhance how I work, so if you’ve got any, drop me a tweet &lt;a href=&quot;http://twitter.com/carl_furrow&quot;&gt;@carl_furrow&lt;/a&gt;&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/note%20taking/2015/01/25/how-i-evernote&quot;&gt;How I Evernote&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 25, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[I'm a rookie]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie"/>
-  <id>https://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie</id>
-  <published>2015-01-20T00:00:00-05:00</published>
-  <updated>2015-01-20T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  
-  <content type="html">
-  
-    &lt;p&gt;A colleague sent around an article today, &lt;a href=&quot;http://firstround.com/article/Execute-Like-a-Rookie-Lead-Like-a-Multiplier&quot;&gt;Execute Like a Rookie, Lead Like a Multiplier&lt;/a&gt;, and a number of points really resonated with me. &lt;a href=&quot;http://thewisemangroup.com/about/our-team/&quot;&gt;Liz Wiseman’s&lt;/a&gt; many years of research and experience found that “perpetual rookies” tend to outperform their peers for fields requiring “specialized knowledge.”&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I'm a rookie</title>
+   <link href="http://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie"/>
+   <updated>2015-01-20T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie</id>
+   <content type="html">&lt;p&gt;A colleague sent around an article today, &lt;a href=&quot;http://firstround.com/article/Execute-Like-a-Rookie-Lead-Like-a-Multiplier&quot;&gt;Execute Like a Rookie, Lead Like a Multiplier&lt;/a&gt;, and a number of points really resonated with me. &lt;a href=&quot;http://thewisemangroup.com/about/our-team/&quot;&gt;Liz Wiseman’s&lt;/a&gt; many years of research and experience found that “perpetual rookies” tend to outperform their peers for fields requiring “specialized knowledge.”&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Rookies are a lot faster than people with experience because they are desperate and uncomfortable. When we get comfortable, that’s when we start to teach and mentor other people.&lt;/p&gt;
@@ -2109,27 +1873,15 @@ new ways to enhance how I work, so if you’ve got any, drop me a tweet &lt;a hr
 &lt;p&gt;I’ve always attributed these feelings as a lack of confidence on my part, but Wiseman’s research gives me a different angle to interpret my actions. Ironically, or maybe not so ironically, I still do not believe I will change my actions. I’ll still walk upon a group of peers and think everybody knows more than me, and I’m further behind in my understanding of my craft than everyone else, but, I suppose that’s what makes me “hungry” to know more, and do better. Striving for constant improvement because I feel like I’m perpetually catching up.&lt;/p&gt;
 
 &lt;p&gt;More than anything, it’s nice to know I’m not alone in being a rookie.&lt;/p&gt;
-
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/professional%20growth/2015/01/20/im-a-rookie&quot;&gt;I'm a rookie&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 20, 2015.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Chrome broken when resetting your account password w/ 2-factor on.]]></title>
-  <link rel="alternate" type="text/html" href="https://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken"/>
-  <id>https://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken</id>
-  <published>2015-01-14T00:00:00-05:00</published>
-  <updated>2015-01-14T00:00:00-05:00</updated>
-  <author>
-    <name>Carl Furrow</name>
-    <uri>https://cfurrow.github.io</uri>
-    <email>hello@carlfurrow.com</email>
-  </author>
-  <category scheme="https://cfurrow.github.io/tags/#google" term="google" /><category scheme="https://cfurrow.github.io/tags/#chrome" term="chrome" /><category scheme="https://cfurrow.github.io/tags/#two-factor" term="two-factor" /><category scheme="https://cfurrow.github.io/tags/#browser" term="browser" />
-  <content type="html">
-  
-    &lt;p&gt;Since this has happened twice in the last two-weeks, I thought I’d write it up.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Chrome broken when resetting your account password w/ 2-factor on.</title>
+   <link href="http://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken"/>
+   <updated>2015-01-14T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken</id>
+   <content type="html">&lt;p&gt;Since this has happened twice in the last two-weeks, I thought I’d write it up.&lt;/p&gt;
 
 &lt;h2 id=&quot;scenario&quot;&gt;Scenario&lt;/h2&gt;
 
@@ -2162,9 +1914,974 @@ your Google Account”.&lt;/p&gt;
 over. While the process does not take long, the mere fact that it exists as the
 “solution” is very tiresome, having had to do it twice in as many weeks due to a
 mixup in the “password reset” schedule.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Destroying OSX Calendar Zombie Invites</title>
+   <link href="http://cfurrow.github.io/calendar/2014/10/06/destroy-osx-calendar-zombie-invites"/>
+   <updated>2014-10-06T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/calendar/2014/10/06/destroy-osx-calendar-zombie-invites</id>
+   <content type="html">&lt;p&gt;A large reason why I don’t use OSX’s Calendar app is because every time I open it, I have 100+ calendar invites staring me in the face. I’ve already accepted/rejected these invites through Google Calendar, but Calendar doesn’t care. I really enjoy the native interface of Calendar, but that kind of “digital zit” drives me crazy! There was no way to delete/ignore them through the app, so I looked for another solution.&lt;/p&gt;
 
-  
-  &lt;p&gt;&lt;a href=&quot;https://cfurrow.github.io/browser/2015/01/14/google-chrome-password-reset-broken&quot;&gt;Chrome broken when resetting your account password w/ 2-factor on.&lt;/a&gt; was originally published by Carl Furrow at &lt;a href=&quot;https://cfurrow.github.io&quot;&gt;Carl Furrow&lt;/a&gt; on January 14, 2015.&lt;/p&gt;</content>
-</entry>
+&lt;p&gt;I opened up my terminal, and went hunting, and that’s when I came across this file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Calendars/Calendar Cache&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I closed down the Calendar app, then deleted that sucker right away, and hoped for the best (&lt;code class=&quot;highlighter-rouge&quot;&gt;rm ~/Library/Calendars/Calendar\ Cache&lt;/code&gt;). After opening the Calendar app again, it crashed right away. Ugh! I tried opening the app once more, and I was presented with a dialog that said “Updating Calendars” with a progress bar. Once it was done, Calendar was working again, and I had 0 invites pending!&lt;/p&gt;
+
+&lt;p&gt;Brute force, FTW.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Budget App</title>
+   <link href="http://cfurrow.github.io/app%20development/2014/10/02/budget-app"/>
+   <updated>2014-10-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/app%20development/2014/10/02/budget-app</id>
+   <content type="html">&lt;p&gt;I spend a lot of money on “micro transactions” every month. iTunes, Amazon, Playstation, etc. Each one is usually less than $20 a piece, so it never &lt;em&gt;seems&lt;/em&gt; like I’m spending much money, but collectively it adds up quickly as you might expect if you’ve ever done math.&lt;/p&gt;
+
+&lt;p&gt;I was challenged by my lovely wife, Emily, to curb that trend of micro spending, and try to spend less than $1000 over the next 3 months left in the year. “Easy!” I thought, “I’ll just whip up a Google Spreadsheet and track my spending!” A few problems quickly arose:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It’s ugly&lt;/li&gt;
+  &lt;li&gt;It’s possible to track on the go via their mobile app, but it’s clumsy&lt;/li&gt;
+  &lt;li&gt;I’m an engineer, why not reinvent the wheel?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was that last point that really stuck with me. I &lt;em&gt;am&lt;/em&gt; an engineer! Why not just build something?! As I sat down, and fired up Xcode I asked myself, “Shouldn’t you at least look to see if there is an app that already does what you need? Also, you don’t know how to use Xcode.” I was right again.&lt;/p&gt;
+
+&lt;p&gt;I opened up the App Store and went looking. I downloaded five apps or so, and tried them all out over the next few hours, but none of them were simple. None of them did one thing well. So I went and grabbed a piece of paper, and drew this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/2014.10.02-budged/sketch.jpg&quot; width=&quot;670&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was simple:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;current balance at the top&lt;/li&gt;
+  &lt;li&gt;grouped list of all purchases&lt;/li&gt;
+  &lt;li&gt;a way to create new purchases&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I fired up Xcode again, and was quickly reminded that I still don’t know what I’m doing there, and I wanted to get my idea coded fast, so I went with what I know. Even though it was a lot of overhead, I created a new Rails 4 app and figured I could iterate over it as I went on. Rails is a great fast-prototyping tool with all of it’s magic and conventions.&lt;/p&gt;
+
+&lt;p&gt;Within an hour I had this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/2014.10.02-budged/budgedv1.png&quot; width=&quot;670&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It had all the pieces I needed for a v1.0. So I shipped it off to Heroku.&lt;/p&gt;
+
+&lt;p&gt;Since then I’ve spent more time on it and have added more features and refinements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Twitter Bootstrap (responsive design, what?)&lt;/li&gt;
+  &lt;li&gt;Facebook Auth (via devise/omniauth)&lt;/li&gt;
+  &lt;li&gt;jQuery Datepicker&lt;/li&gt;
+  &lt;li&gt;Colorized debits/credits (with monthly grouping)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/2014.10.02-budged/budgedv3.png&quot; width=&quot;670&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All in all I’m pretty happy with where I’ve gotten in the amount of time I’d put into it. There are more refinements that I have planned: Backbone or Angular front-end, in-line editing/creating, tagging purchases, but they can wait now that the app actually works well, and I can use it at a desktop or on my phone.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The skyline problem</title>
+   <link href="http://cfurrow.github.io/coding%20challenge/2014/09/02/the-skyline-problem"/>
+   <updated>2014-09-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/coding%20challenge/2014/09/02/the-skyline-problem</id>
+   <content type="html">&lt;p&gt;I read the problem statement from &lt;a href=&quot;https://briangordon.github.io/2014/08/the-skyline-problem.html&quot;&gt;Brian Gordon’s blog&lt;/a&gt;,
+and thought I’d give it a shot without reading any further.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You are given a set of n rectangles in no particular order.
+They have varying widths and heights, but their bottom edges are
+collinear, so that they look like buildings on a skyline.
+For each rectangle, you’re given the x position of the left edge,
+the x position of the right edge, and the height. Your task is to draw an
+outline around the set of rectangles so that you can see what the skyline
+would look like when silhouetted at night.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/skyline/The_skyline_problem.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
+
+&lt;p&gt;I’ve started out with this data and will work from there:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;   &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;350&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;450&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;450&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;650&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;900&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cfurrow/skyline.js&quot;&gt;Code is in my skyline.js repo.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;my-current-output&quot;&gt;My current output:&lt;/h2&gt;
+
+&lt;h3 id=&quot;trial-1&quot;&gt;Trial 1&lt;/h3&gt;
+&lt;p&gt;This was just a straight “draw to canvas” trial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/skyline/skyline_trial1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;trial-2&quot;&gt;Trial 2&lt;/h3&gt;
+&lt;p&gt;This one uses the canvas &lt;code class=&quot;highlighter-rouge&quot;&gt;globalCompositeOperation&lt;/code&gt; to merge the shapes into one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/skyline/skyline_trial2.png&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Photo Organization with Dropbox and iPhoto</title>
+   <link href="http://cfurrow.github.io/photos/2014/03/01/photo-organization-with-dropbox-and-iphoto"/>
+   <updated>2014-03-01T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/photos/2014/03/01/photo-organization-with-dropbox-and-iphoto</id>
+   <content type="html">&lt;p&gt;I’ve been trying out &lt;a href=&quot;/photos/2013/12/04/dropbox-photo-organizer&quot;&gt;my latest Dropbox-only solution&lt;/a&gt; for a while now,
+and while it’s been working, I still pine for the polish and nicities
+of iPhoto, such as face-detection, location mapping, and custom meta-events.
+I thought of ways I could have fun building those features into some
+Rails-backed website, but it just didn’t &lt;em&gt;feel&lt;/em&gt; right when there was already
+software that could do it for me (iPhoto).&lt;/p&gt;
+
+&lt;p&gt;Talking with my wife, &lt;a href=&quot;http://emilysf.com&quot;&gt;Emily&lt;/a&gt;, she said she recently
+began creating simplified, over-arching events in iPhoto, such as “2014 - botanical gardens”.
+That way, all pictures that she took over 2014 would be date-sorted, and filed in this
+event. It sounded great! No need to look through separate months or days of folders. I wanted
+that simplicity, but it meant modifying my current Dropbox flow.&lt;/p&gt;
+
+&lt;p&gt;The things that were most important to keep for me:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Dropbox-backed storage&lt;/li&gt;
+  &lt;li&gt;Photo sharing through Dropbox&lt;/li&gt;
+  &lt;li&gt;Simple/understandable folder structure by year/month, etc&lt;/li&gt;
+  &lt;li&gt;Fast browsing/previewing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Then it hit me: &lt;a href=&quot;http://support.apple.com/kb/PH2505&quot;&gt;I could create multiple libraries in iPhoto&lt;/a&gt;, one for each year to cut
+down on the slowness I’d experienced in the past when using iPhoto and having thousands
+of photos across 8+ years. Ok, that solves #4 problem. Additionally, I realized you can
+setup iPhoto to use an existing folder structure when importing photos, versus the default
+setting which copies imported photos into iPhoto’s own internal folder setup (which I hated).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/photos/2014.03.01-iphoto setting.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Great! That solves 1-3!&lt;/p&gt;
+
+&lt;p&gt;My new photo workflow looks like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Take a photo on the iPhone&lt;/li&gt;
+  &lt;li&gt;Let dropbox auto-sync to my Dropbox/Camera Uploads folder&lt;/li&gt;
+  &lt;li&gt;My &lt;a href=&quot;https://github.com/cfurrow/photo_organizer&quot;&gt;photo_organizer&lt;/a&gt; script picks up the new file, and sorts it by year/month into a folder&lt;/li&gt;
+  &lt;li&gt;I open iPhoto, and drag in the month-folder that has new photos in it
+    &lt;ol&gt;
+      &lt;li&gt;iPhoto automatically detects if a photo has already been imported, so you can safely ignore those.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use iPhoto’s events to sort photos into events at-will.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As usual, I’m going to try this out for a few months, and see how it works.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dropbox Photo Organizer</title>
+   <link href="http://cfurrow.github.io/photos/2013/12/04/dropbox-photo-organizer"/>
+   <updated>2013-12-04T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/photos/2013/12/04/dropbox-photo-organizer</id>
+   <content type="html">&lt;p&gt;Ever since &lt;a href=&quot;http://www.cultofmac.com/253339/everpix-has-gone-what-the-hell-can-we-use-to-replace-it/&quot;&gt;Everpix&lt;/a&gt; was shut down, I’d been searching for a replacement
+to store, and share photos. I was using a hybrid solution of managing
+photos locally in iPhoto, and then letting Everpix upload those events/photos
+to the cloud. Then to share it, I’d simple go to Everpix’s site, and share
+the event. Simple! Sadly, that ended when they closed their virtual doors.&lt;/p&gt;
+
+&lt;p&gt;I was back to just using iPhoto, and was getting tired with how hard it was
+to share photos now. iCloud was not the solution was hoping for. Dropbox was
+nice, but it required me to copy photos out of my iPhoto library file structure
+and into a Dropbox folder somewhere, then share that folder. Tedious.&lt;/p&gt;
+
+&lt;p&gt;I thought that maybe giving up iPhoto altogether wouldn’t be a horrible idea–
+it was getting slower with all my photos inside it, and its file organization
+was a mystery–it made more sense for the computer, than I. I wished it was
+organizing by “year/month/day”.&lt;/p&gt;
+
+&lt;p&gt;Thinking I could script my way into using just Dropbox for a bit, I created
+&lt;a href=&quot;https://github.com/cfurrow/photo_organizer&quot;&gt;photo_organizer&lt;/a&gt;. It’s a little
+script that can listen for photos to be inserted into your Dropbox’s “Camera Uploads”
+directory, and then sort them into another photo by “year/month” (I gave up on ‘day’).&lt;/p&gt;
+
+&lt;p&gt;My workflow became something like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Take a photo on the iPhone&lt;/li&gt;
+  &lt;li&gt;Let dropbox auto-upload the new photo to it’s “Camera Uploads” directory&lt;/li&gt;
+  &lt;li&gt;My personal computer would notice the incoming photo being downloaded from Dropbox, then run “photo_organizer” on it.&lt;/li&gt;
+  &lt;li&gt;The photo would get moved out of “Camera Uploads”, and moved into my “Dropbox/Photos/year/month” folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Worked great! I could then come back to the Dropbox Photos folder, and organize photos into
+sub-folders for events, etc (“Dropbox/Photos/2013/12/holiday party/”).&lt;/p&gt;
+
+&lt;p&gt;I think I’ll give this a try for a bit, and see how it goes.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Fast Tests Remove Testing Barriers</title>
+   <link href="http://cfurrow.github.io/testing/2013/11/04/fast-tests-remove-testing-barriers"/>
+   <updated>2013-11-04T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/testing/2013/11/04/fast-tests-remove-testing-barriers</id>
+   <content type="html">&lt;p&gt;Check out my guest-post I did for Solano Labs: &lt;a href=&quot;http://blog.tddium.com/2013/11/04/fast-tests-remove-testing-barriers/&quot;&gt;Fast Tests Remove Testing Barriers&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>DOM Futures vs Custom Events</title>
+   <link href="http://cfurrow.github.io/javascript/2013/04/22/dom-futures-vs-custom-events"/>
+   <updated>2013-04-22T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/javascript/2013/04/22/dom-futures-vs-custom-events</id>
+   <content type="html">&lt;p&gt;Maybe I just don’t get it yet, but it seems like the interest around “DOM
+Futures” (e.g. promises) is growing, and is becoming a proposed spec for
+future javascript engines. What DOM Futures is is another way to handle
+asynchronous flow in your javascript apps. Currently you can use nested
+callbacks, which are probably the most common, or you can use custom events
+(like Backbone, jQuery, or any other publish/subscribe framework).&lt;/p&gt;
+
+&lt;p&gt;While I see that DOM Futures / Promises could cut down on lines of code, I’m
+not sure what else it truly gives me as a developer. But, I may not fully grok
+it yet.&lt;/p&gt;
+
+&lt;p&gt;I’ve put together two examples of a ficticious javascript app that needs to
+get a user’s posts via ajax. Below you’ll see each example via DOM Futures and
+via custom events.&lt;/p&gt;
+
+&lt;p&gt;What am I missing?&lt;/p&gt;
+
+&lt;h2 id=&quot;dom-futures&quot;&gt;DOM Futures&lt;/h2&gt;
+
+&lt;p&gt;From the WHATWG spec. This example makes a JSON ajax request, and then returns
+a promise object that has the “.done()” method on it, that will asynchronously
+call one of two callbacks depending on the response of the json call.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetchJSON(&quot;/user/posts&quot;).done(showPosts, showFailcat)
+
+function fetchJSON(url){
+    // create json request, wrap in a promiseObject
+    return promiseObject;
+}
+
+function postsSuccess(data){
+}
+
+function showPosts(data) {
+    postsSuccess(data);
+    //...
+}
+
+function showFailcat(error){
+    //...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;custom-events&quot;&gt;Custom Events&lt;/h2&gt;
+
+&lt;p&gt;A similar example using some custom event framework, that attaches/subscribes
+using “on()” and triggers/publishes to an event using “trigger()”.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$.getJSON(&quot;/usr/posts&quot;,onPostsSuccess,onPostsError)
+
+function onPostsSuccess(data){
+    // let's just say we have two events we want fired
+    trigger(&quot;posts:success&quot;,data);
+    trigger(&quot;posts:show&quot;,data);
+}
+
+function onPostsError(error) { trigger(&quot;posts:error&quot;,error); }
+
+function postsSuccess(posts){
+}
+
+function postsShow(posts){
+}
+
+on(&quot;posts:success&quot;,postsSuccss);
+on(&quot;posts:success&quot;,postsShow);
+
+function postsError(error){
+}
+on(&quot;posts:error&quot;,postsError);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Working at Lumosity</title>
+   <link href="http://cfurrow.github.io/lumosity/2013/04/15/working-at-lumosity"/>
+   <updated>2013-04-15T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/lumosity/2013/04/15/working-at-lumosity</id>
+   <content type="html">&lt;p&gt;Starting today, I am now a senior engineer at &lt;a href=&quot;http://lumosity.com&quot;&gt;Lumosity&lt;/a&gt;.
+They’re a Rails shop, with a ton of awesome talent working there. I’m excited
+to be solving problems with them.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How I removed friction in running my tests locally</title>
+   <link href="http://cfurrow.github.io/testing/2013/04/02/how-i-removed-friction-in-running-my-tests-locally"/>
+   <updated>2013-04-02T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/testing/2013/04/02/how-i-removed-friction-in-running-my-tests-locally</id>
+   <content type="html">&lt;h3 id=&quot;problem-sometimes-i-forget-to-run-tests-before-deploying-to-staging-oops&quot;&gt;Problem: Sometimes I forget to run tests before deploying to staging (oops)&lt;/h3&gt;
+
+&lt;p&gt;Yes, “bad dev!” indeed. In the midst of quick-fire releases, sometimes my own
+standards for due-dilegence falls through the cracks. The friction comes with
+my having to remember to run all my tests before pushing code off my machine,
+and to a shared environment (git repo, staging build server).&lt;/p&gt;
+
+&lt;p&gt;What I am good at remembering to do is to commit the smallest possible changes
+to my local git feature branch. Because I makes mistakes, and the easier it is
+to isolate those changes/mistakes, the easier it is to cherry-pick them away,
+or create a fixing commit.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-remove-the-friction-and-bring-the-continuous-integration-locally&quot;&gt;Solution: Remove the friction and bring the continuous integration locally&lt;/h3&gt;
+
+&lt;p&gt;Continuous Integration (CI) / Continuous Delivery (CD) are a must-have for
+your company’s projects to take away the hassles of running tests, bundling
+and deploying your code to their production or staging endpoints/servers.&lt;/p&gt;
+
+&lt;p&gt;Because of my commit small hunks, and commit often, I decided to install a CI
+server locally that listened to all my local commits across all branches, and
+then build the code, run all the unit tests and deploy the app locally for UI
+testing.&lt;/p&gt;
+
+&lt;p&gt;Now, I can be sure that all my changes have not broken any existing test, and
+I can keep plugging away while the server handles the rest.&lt;/p&gt;
+
+&lt;p&gt;On a multi-monitor setup my main display is for coding, and my secondary is
+for watching the build server alerts and refreshing the locally-deployed site
+in a browser.&lt;/p&gt;
+
+&lt;p&gt;I’ve found having this configuration and workflow actually helps enforce good
+practice. Knowing that each commit fires a build keeps me doing it in small
+amounts, and I get the added benefit of tests and deployments while I keep my
+mind in the context of the problem.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Penguin pixel art</title>
+   <link href="http://cfurrow.github.io/pixelart/2013/02/26/penguin-pixel-art"/>
+   <updated>2013-02-26T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/pixelart/2013/02/26/penguin-pixel-art</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/photos/2013-02-26/penguin.gif&quot; /&gt;
+&lt;img src=&quot;/assets/photos/2013-02-26/dog.png&quot; /&gt;&lt;img src=&quot;/assets/photos/2013-02-26/penguin01.png&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Alien pixel art</title>
+   <link href="http://cfurrow.github.io/pixelart/2013/02/26/alien-pixel-art"/>
+   <updated>2013-02-26T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/pixelart/2013/02/26/alien-pixel-art</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/photos/2013-02-26-alien.png&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Happy Valentine's Day</title>
+   <link href="http://cfurrow.github.io/pixelart/2013/02/14/happy-valentines"/>
+   <updated>2013-02-14T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/pixelart/2013/02/14/happy-valentines</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/photos/2013-02-14-happy-valentines.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I love &lt;em&gt;you&lt;/em&gt;, Emily.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Periphery.js: HTML5 Canvas + Maths!</title>
+   <link href="http://cfurrow.github.io/html5/2012/12/30/periphery"/>
+   <updated>2012-12-30T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/html5/2012/12/30/periphery</id>
+   <content type="html">&lt;div id=&quot;demo&quot; style=&quot;margin: 0 auto; width: 800px;&quot;&gt;
+  &lt;canvas width=&quot;800&quot; height=&quot;500&quot; id=&quot;c&quot;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/demo/periphery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cfurrow/periphery.js&quot;&gt;Source on github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what&quot;&gt;What?&lt;/h3&gt;
+
+&lt;p&gt;This project demos HTML5 Canvas 2D and clipping objects with other objects. In
+this case, it’s clipping other scene elements with an emulation of the
+player’s view-field cone. You can rotate your vision with the left/right keys,
+and move in the direction you’re facing with the up key, or move in the
+opposite direction with the down key.&lt;/p&gt;
+
+&lt;p&gt;It’s a proof of concept, and a chance to dust off the parts of my brain that
+used to know things about geometry and 2D math. I still daydream of creating a
+game in the browser, and starting from the ground up (e.g. reinventing the
+wheel) is how I learn best. A few years ago I heard it described as: “Don’t
+hire someone for a job you haven’t already done yourself.” That’s how I feel
+about frameworks most of the time. I want to go through the pain of re-
+learning low-level stuff, then work my way forward to something easier.&lt;/p&gt;
+
+&lt;h3 id=&quot;did-you-learn-anything&quot;&gt;Did you learn anything?&lt;/h3&gt;
+
+&lt;p&gt;Yes, a lot! Mainly that I’ve disappointed my high school geometry teacher
+(sorry Mr. Metzger!). Simple things like solving triangles, re-learning the
+law of sines, etc. Makes a person humble, that’s for sure. It came back to me
+in trickles, and I tried my hardest to figure the math out myself before
+running to Google.&lt;/p&gt;
+
+&lt;p&gt;The next hardest part was figuring out a canvas context’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.clip()&lt;/code&gt; method and
+how to combine it with &lt;code class=&quot;highlighter-rouge&quot;&gt;.save()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.restore()&lt;/code&gt; for what I need. I cover that a
+bit here so others can learn from my struggles.&lt;/p&gt;
+
+&lt;h3 id=&quot;clip-save-and-restore&quot;&gt;.clip(), .save() and .restore()&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;context.clip()&lt;/code&gt; is like &lt;code class=&quot;highlighter-rouge&quot;&gt;context.fill()&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;context.stroke()&lt;/code&gt; but instead of
+painting a shape or lines to the canvas, it “hides” anything that doesn’t fall
+within that shape. So only intersecting elements that fall within that
+clipping shape are seen.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/samples/canvas-tutorial/6_2_canvas_clipping.html&quot;&gt;See an example of this on MDN.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I knew I would need to use clip() to only show items that fell within the
+visual range of the “player”. Things falling outside of that would not be
+rendered. This could simulate a top-down representation of a person’s visual
+field.&lt;/p&gt;
+
+&lt;p&gt;Here’s the code I ended up with:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawPeripheryVision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;beginPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;rgba(20,20,20,0.9)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;periphery&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;moveTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;periphery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;periphery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;periphery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawCentralVision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;beginPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;rgba(200,200,200,0.9)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;moveTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;central&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;visionRadius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;central&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trianglePointY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawPlayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;beginPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#ffffff&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;beginPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fillStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#5e9fd2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;globalCompositeOperation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'xor'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawPeripheryVision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;globalCompositeOperation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'xor'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawCentralVision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clearRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;handleMovement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawPlayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;restore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;requestAnimationFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;requestAnimationFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You’ll see that in &lt;code class=&quot;highlighter-rouge&quot;&gt;drawPeripheryVision()&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;drawCentralVision()&lt;/code&gt; I create the triangular vision fields, then I fill
+them with color, then use the same shape to clip the rest of the canvas
+falling outside those triangles away.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;drawPlayer()&lt;/code&gt; then puts it all together, creating the central player circle,
+plus the vision fields. You’ll also see my use of the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;globalCompositeOperation=’xor’&lt;/code&gt;, [see this link for details on that](https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html.
+Then, after
+the peripheral triangle is drawn, I save the canvas state, draw the central
+vision (and clip), then restore the canvas. If I don’t do this, then the
+peripheral-triangle’s “xor” does not get applied, but instead, it is
+overwritten. By calling .restore(), I re-instate that effect to let the
+objects that fall within the peripheral clipping shape to show, but be darker
+(xor’d with the color of my periphery triangle).&lt;/p&gt;
+
+&lt;p&gt;I do a similar technique in the &lt;code class=&quot;highlighter-rouge&quot;&gt;frame()&lt;/code&gt; function. I save the state of the
+entire canvas, then draw the player and the scene with all their clipping and
+composite changes, then restore the canvas. If I did not save/restore on each
+frame() call, the first clipping path of the periphery would stick, and not
+move as the player rotated their vision around.&lt;/p&gt;
+
+&lt;h3 id=&quot;moving-in-the-direction-you-are-facing&quot;&gt;Moving in the direction you are facing&lt;/h3&gt;
+
+&lt;p&gt;I used &lt;code class=&quot;highlighter-rouge&quot;&gt;document.onkeydown&lt;/code&gt; to capture all keyboard events, and I used &lt;code class=&quot;highlighter-rouge&quot;&gt;onkeydown&lt;/code&gt;
+so that if a user holds a direction I keep moving until that key comes up.&lt;/p&gt;
+
+&lt;p&gt;Here’s the code for my &lt;code class=&quot;highlighter-rouge&quot;&gt;onkeydown&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;onkeyup&lt;/code&gt; handlers:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onkeydown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;38&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingForward&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingBack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingBack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingForward&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;37&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningLeft&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningRight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;39&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningRight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningLeft&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// don't bubble event&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onkeyup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;38&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingForward&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingBack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;37&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningLeft&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;39&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningRight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// don't bubble event&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The movement variable was so that the app would “swallow” all keys I deemed as
+part of the movement system. Up, Down, Left and Right. Those keys would not
+bubble up to the browser and try to scroll the page around. This also allowed
+me to be able to press &lt;code class=&quot;highlighter-rouge&quot;&gt;Command+R&lt;/code&gt; to refresh the page, and those keys were
+allowed to bubble up to the browser.&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;e.which&lt;/code&gt; statements are not cross
+browser, but they work fine for Chrome/Firefox. Additionally, you’ll see
+&lt;code class=&quot;highlighter-rouge&quot;&gt;player.turningRight&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;player.movingDown&lt;/code&gt; booleans. They stay set as long as
+the key is held down, so that on each pass of the main loop, the player is
+moving smoothly through each frame.&lt;/li&gt;
+  &lt;li&gt;Like I mentioned above, returning
+&lt;code class=&quot;highlighter-rouge&quot;&gt;!movement&lt;/code&gt; returns ‘false’ when a movement key was pressed, and therefore, the
+event doesn’t bubble up.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The code that moves the player is below. It is called
+each time the game loops:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;handleMovement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingForward&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;movingBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningRight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;turningLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;direction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deg2rad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;requestanimationframe&quot;&gt;RequestAnimationFrame&lt;/h3&gt;
+
+&lt;p&gt;As is customary with canvas animation, I used &lt;code class=&quot;highlighter-rouge&quot;&gt;requestAnimationFrame()&lt;/code&gt; versus
+&lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout()&lt;/code&gt; to call my main &lt;code class=&quot;highlighter-rouge&quot;&gt;frame()&lt;/code&gt; function each time the scene needed to be
+redrawn. Nothing special there.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Google Calendar + OSX Calendars "400" error</title>
+   <link href="http://cfurrow.github.io/calendar/2012/12/03/google-calendar-osx-calendar-400-error"/>
+   <updated>2012-12-03T00:00:00-05:00</updated>
+   <id>http://cfurrow.github.io/calendar/2012/12/03/google-calendar-osx-calendar-400-error</id>
+   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+
+&lt;p&gt;I use Fantastical on Mountain Lion, which grabs data from Google Calendars.
+I’ve been having an issue happening more and more lately where I add an event
+via Fantastical, then add an invitee. Later, Calendar opens up with an alert:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The server responded with “400” to operation
+CalDAVWriteEntityQueueableOperation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A few Google searches later, I finally found a workaround.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://discussions.apple.com/message/19040873#19040873&quot;&gt;discussions.apple.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I went to Calendar preferences and switched to my Google account and changed
+all alert types to anything but “None”. Closed the window, and it seemed to
+work.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Creating an animated GIF from multiple JPEGS (osx)</title>
+   <link href="http://cfurrow.github.io/osx/2012/11/04/create-gif"/>
+   <updated>2012-11-04T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/osx/2012/11/04/create-gif</id>
+   <content type="html">&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.imagemagick.org/script/index.php&quot;&gt;ImageMagick&lt;/a&gt;
+I use &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot;&gt;homebrew&lt;/a&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install imagemagick&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.lcdf.org/gifsicle/&quot;&gt;gifcicle&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install gifcicle&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;open-up-a-terminal-to-the-folder-with-the-jpgs&quot;&gt;Open up a terminal to the folder with the jpgs.&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Note, they should be in the frame-order you want them to animate with, so
+number them ascending. 1.jpg, 2.jpg, 3.jpg, etc.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;put-the-following-script-in-a-file-convertsh&quot;&gt;Put the following script in a file (convert.sh)&lt;/h3&gt;
+
+&lt;p&gt;This script goes through all the .jpg files in the current directory, and
+resizes their width down to 500px, and resizes the height based on the current
+aspect ratio of the image.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.jpg
+&lt;span class=&quot;k&quot;&gt;do
+  &lt;/span&gt;convert &lt;span class=&quot;nt&quot;&gt;-resize&lt;/span&gt; 500 &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; resized/&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; processed
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Save the file, then back in the shell make it executable:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ chmod 700 convert.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make a ‘resized’ folder&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ mkdir resized&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Run convert.sh&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ./convert.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;CD into the ‘resized’ folder that was just created, and run mogrify&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd resized
+$ mogrify -path . -format gif *.jpg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will convert all .jpg files to .gif files, which are required for gifcicle to make an animated gif from multiple gif files.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-gifcicle-to-create-the-final-gif&quot;&gt;Use gifcicle to create the final gif&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ gifsicle --delay=30 --colors=256 --loop *.gif &amp;gt; animated.gif&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Done!&lt;/p&gt;
+
+&lt;p&gt;Now you’ve got an animated gif file called animated.gif in the ‘resized’
+folder. This particular one will loop forever.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Deconstructing Fitbit's active score</title>
+   <link href="http://cfurrow.github.io/health/2012/06/04/deconstructing-fitbit-active-score"/>
+   <updated>2012-06-04T00:00:00-04:00</updated>
+   <id>http://cfurrow.github.io/health/2012/06/04/deconstructing-fitbit-active-score</id>
+   <content type="html">&lt;h3 id=&quot;eh&quot;&gt;Eh?&lt;/h3&gt;
+
+&lt;p&gt;If you’re not familiar with FitBit, here’s the skinny: it’s a tiny device you
+clip to yourself practically 24/7. It tracks things like steps taken, miles
+traveled, and flights of stairs climbed. It has an associated website
+dashboard at &lt;a href=&quot;http://fitbit.com/&quot;&gt;fitbit.com&lt;/a&gt; that helps you track other things like your current
+weight, food logs, etc. It also has a concept of your daily “Active Score”.&lt;/p&gt;
+
+&lt;p&gt;For each metric that FitBit tracks, you can set goals. Mine are as follows:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Goal&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Steps&lt;/td&gt;
+      &lt;td&gt;15300&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Miles&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Calories Burned&lt;/td&gt;
+      &lt;td&gt;3300&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Floors Climbed&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Active Score&lt;/td&gt;
+      &lt;td&gt;1000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I try to hit each of those goals each day. I do pretty well most of the time,
+and bump the goals up as I begin to consistently exceed them on a daily basis.&lt;/p&gt;
+
+&lt;p&gt;Anyway, what I wanted to do was get to know this “Active Score” metric some
+more. It is an all-encompassing daily snapshot of how active you were during
+the day. If you were sitting down, not moving, you’d end up with an active
+score of 0. Walking, climbing stairs, etc, helps boost your score, but how is
+it calculated?&lt;/p&gt;
+
+&lt;h3 id=&quot;how-fitbit-calculates-your-active-score&quot;&gt;How Fitbit calculates your Active Score&lt;/h3&gt;
+
+&lt;p&gt;From their site:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Active Score is a rough translation of your average METs for the day
+(METs = Active Score x .001 + 1). &lt;a href=&quot;http://help.fitbit.com/customer/portal/articles/176130-how-does-the-active-score-work&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So what is MET? From Wikipedia:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MET (or Metabolic Equivalent) is used as a means of expressing the intensity
+and energy expenditure of activities in a way comparable among persons of
+different weight. […] MET values of activities range from 0.9 (sleeping) to 18
+(running at 17.5 km/h or a 5:31 mile pace). &lt;a href=&quot;http://en.wikipedia.org/wiki/Metabolic_equivalent&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now that I know how an MET is calculated, how can it be used? From the wiki
+page above, it has a handy comparison chart of varying METs.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Physical Activity&lt;/th&gt;
+      &lt;th&gt;MET&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Light Intensity Activities&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt; 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;sleeping&lt;/td&gt;
+      &lt;td&gt;0.9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;watching television&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;writing, desk work, typing&lt;/td&gt;
+      &lt;td&gt;1.8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;walking, 1.7 mph (2.7 km/h), level ground, strolling, very slow&lt;/td&gt;
+      &lt;td&gt;2.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;walking, 2.5 mph (4 km/h)&lt;/td&gt;
+      &lt;td&gt;2.9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Moderate Intensity Activities&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;3 to 6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bicycling, stationary, 50 watts, very light effort&lt;/td&gt;
+      &lt;td&gt;3.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;walking 3.0 mph (4.8 km/h)&lt;/td&gt;
+      &lt;td&gt;3.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;calisthenics, home exercise, light or moderate effort, general&lt;/td&gt;
+      &lt;td&gt;3.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;walking 3.4 mph (5.5 km/h)&lt;/td&gt;
+      &lt;td&gt;3.6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bicycling, &amp;lt; 10 mph (16 km/h), leisure, to work or for pleasure&lt;/td&gt;
+      &lt;td&gt;4.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bicycling, stationary, 100 watts, light effort&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Vigorous Intensity Activities&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&amp;gt; 6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;jogging, general&lt;/td&gt;
+      &lt;td&gt;7.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Singles tennis, squash, racquet ball&lt;/td&gt;
+      &lt;td&gt;7.0-12.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;calisthenics (e.g. pushups, situps, pullups,jumping jacks)&lt;/td&gt;
+      &lt;td&gt;8.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;running jogging, in place&lt;/td&gt;
+      &lt;td&gt;8.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;running 5mph (12 min mile)&lt;/td&gt;
+      &lt;td&gt;8.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;running 6mph (10 min mile)&lt;/td&gt;
+      &lt;td&gt;10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;running 8mph&lt;/td&gt;
+      &lt;td&gt;13.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;running at 10mph&lt;/td&gt;
+      &lt;td&gt;16.0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I wanted to know an approximation for a few reasons:&lt;/li&gt;
+  &lt;li&gt;I just wanted to know how they may be calculating Active Score I wanted to
+create a helper-app to help you reach your activity goal for the day.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With regards to #2 above, this was my idea:&lt;/p&gt;
+
+&lt;p&gt;Let’s say it’s getting towards the end of the day (7-8pm) and you still
+haven’t met your activity goal for the day. Let’s further say that your goal
+is to have an activity score of 1,000. So what I think would be nice to know
+is this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;How many more steps do I have to take to reach my goal of 1,000 AND/OR&lt;/li&gt;
+  &lt;li&gt;How many more floors should I climb to reach my goal of 1,000&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So the output could be:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You are at 455 activity points for the day, to get to your goal of 1,000 you
+should try and take an additional X number of steps&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You are at 455 activity points for the day, to get to your goal of 1,000 you
+should try and run at 6mph for 30 minutes or 5mph for 45 minutes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m getting close to starting development on a little web app that can pull
+this all together. I plan on documenting progress here.&lt;/p&gt;
+</content>
+ </entry>
+ 
 
 </feed>
