@@ -5,8 +5,8 @@
         <description>Carl Furrow - Carl Furrow</description>
         <link>http://cfurrow.github.io</link>
         <link>http://cfurrow.github.io</link>
-        <lastBuildDate>2019-02-24T14:48:25-05:00</lastBuildDate>
-        <pubDate>2019-02-24T14:48:25-05:00</pubDate>
+        <lastBuildDate>2019-02-24T15:12:55-05:00</lastBuildDate>
+        <pubDate>2019-02-24T15:12:55-05:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -15,7 +15,7 @@
                 <description>&lt;figure&gt;
   &lt;img src=&quot;/assets/posts/create-saturday-morning-cartoons-playlist-in-plex/rawpixel-788409-unsplash.jpg&quot; /&gt;
   &lt;figcaption&gt;
-    Image by 
+    Image by
     &lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@rawpixel?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from rawpixel&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;rawpixel&lt;/span&gt;&lt;/a&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -40,6 +40,18 @@
 &lt;p&gt;My lazy Saturday mornings will never be the same.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-code&quot;&gt;The code&lt;/h2&gt;
+&lt;p&gt;Grab these files, and modify them to match your current Plex server setup.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;My server is at ip 192.168.1.5:32400&lt;/li&gt;
+  &lt;li&gt;Get your Plex token by visiting your app.plex.tv site, and start playing a video. Then, open up your browser’s network monitor, and find a request being made that has X-Plex-Token in the URL. Copy the value of that parameter, and paste it in the .env file&lt;/li&gt;
+  &lt;li&gt;You may have to modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;cartoon_playlist.py&lt;/code&gt; to match your library. I created a few TV Show collections called “80s Cartoons” and “90s Cartoons”. Your setup may differ.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then run it like this: &lt;code class=&quot;highlighter-rouge&quot;&gt;python cartoon_playlist.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That will create a playlist called “Saturday Morning Cartoons” if one does not exist. If that playlist already exists, nothing will be done. To re-create the playlist, delete the existing one, and re-run the script above to build the list.&lt;/p&gt;
+
 &lt;script src=&quot;https://gist.github.com/cfurrow/13a062359bd83ac17a38f8c4fcd3bab2.js&quot;&gt;&lt;/script&gt;
 
 </description>
