@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+Theme Author Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>PHASER.JS - WAVE EXAMPLE &vert; CARL FURROW</title>
+<meta name="description" content="Knowledge is a framework that experience bends">
+<meta name="keywords" content="gamedev, phaserjs, javascript">
+
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cfurrow.github.io/images/logo.png">
+<meta name="twitter:title" content="Phaser.js - Wave Example">
+<meta name="twitter:description" content="Knowledge is a framework that experience bends">
+<meta name="twitter:creator" content="@carl_furrow">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Phaser.js - Wave Example">
+<meta property="og:description" content="Knowledge is a framework that experience bends">
+<meta property="og:url" content="https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example">
+<meta property="og:site_name" content="Carl Furrow">
+
+<meta property="og:image" content="https://cfurrow.github.io/images/">
+
+
+
+
+
+
+<link rel="canonical" href="https://cfurrow.github.io/game%20development/2016/10/02/phaser-js-wave-example">
+<link href="https://cfurrow.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Carl Furrow Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/normalize.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/nprogress.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/vendor/foundation.min.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/style.css">
+<link rel="stylesheet" href="https://cfurrow.github.io/assets/css/post.css">
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://cfurrow.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://cfurrow.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cfurrow.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cfurrow.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cfurrow.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+
+                    <a class="notepad-blog-logo" href="https://cfurrow.github.io">
+                        <img src="https://cfurrow.github.io/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="https://cfurrow.github.io/about">About</a>
+                 </li>
+
+           <li><a href="https://cfurrow.github.io/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>Phaser.js - Wave Example</h1>
+                            <p>by <strong>Carl Furrow</strong> &#8212; on <a href="https://cfurrow.github.io/tags/index.html#gamedev" data-toggle="tooltip" title="Posts tagged with gamedev" rel="tag">gamedev</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#phaserjs" data-toggle="tooltip" title="Posts tagged with phaserjs" rel="tag">phaserjs</a>&nbsp;&comma;&nbsp;<a href="https://cfurrow.github.io/tags/index.html#javascript" data-toggle="tooltip" title="Posts tagged with javascript" rel="tag">javascript</a> <strong><time datetime="2016-10-02T00:00:00-04:00">02 Oct 2016</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <article class="notepad-post-content post tag-simple">
+            <div><p>I posted this animation to Twitter a few weeks ago, and I thought I’d walk through the origin story of how it came to be and the steps I took to create it.</p>
+
+<div class="row">
+  <div class="column small-centered small-12 medium-centered medium-6">
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Goodnight. <a href="https://t.co/uimVkBzqdb">pic.twitter.com/uimVkBzqdb</a></p>&mdash; Carl Furrow (@carl_furrow) <a href="https://twitter.com/carl_furrow/status/772992053810606080">September 6, 2016</a></blockquote>
+    <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+
+<hr />
+
+<p>I was on <a href="https://www.reddit.com/r/phaser/comments/4svphl/is_there_actually_a_way_to_wrap_the_texture_of_a/">/r/phaser</a> and <a href="https://www.reddit.com/user/oddkraken">/u/oddkraken</a> was wondering how to wrap a texture over a <code class="highlighter-rouge">Phaser.Rope</code> object. If you’re not familiar with a <code class="highlighter-rouge">Phaser.Rope</code> object, <a href="http://phaser.io/examples/v2/sprites/rope">check out this example</a>. Below is the reddit post:</p>
+
+<blockquote>
+  <p>The rope documentation says</p>
+
+  <blockquote>
+    <p>A Rope is a Sprite that has a repeating texture. The texture will automatically wrap on the edges as it moves.</p>
+  </blockquote>
+
+  <p>As the texture moves? The rope? I’ve tried moving the rope around and adjusting the crop and frame of the texture, but nothing works. I’m using ropes for waves in my game (http://orangesea.oddkraken.com/), and I want to scroll the texture by while keeping the waves moving up and down, so it looks like the player is moving to the right.</p>
+
+  <p>Is there a better way to go about this?
+Thanks.</p>
+</blockquote>
+
+<p>This particular use of <code class="highlighter-rouge">Phaser.Rope</code> is not possible at this time. A Rope’s texture ends up being “glued” to the rope object, and cannot be transformed left/right down the rope’s geometry. Each segment of the rope is “fused” to the texture at it’s x-position at creation-time, essentially. See the video below and note that each green square is a segment of the rope, and inside that segment, the texture is mapped to that square, and cannot be shifted left or right (or up or down).</p>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/rope-example.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/rope-example.webm" type="video/webm" />
+    </video>
+    <figcaption>Rope example.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>But, that does not mean we cannot accomplish something similar in Phaser, so I tried my hand at it.</p>
+
+<h2 id="what-i-needed">What I needed</h2>
+<p>To build this example, I would need some assets. I went to work inside of <a href="http://pyxeledit.com/">Pyxel Edit</a> and built a little boat, and a spritesheet of some waves. I tend to make all my pixel assets as 32x32 images, then scale them up on export, or inside of Phaser (note: if you scale up in Phaser, you’ll want to set <code class="highlighter-rouge">yourSprite.smoothed=false;</code> or else it’ll look blurry.)</p>
+
+<p><img alt="super cool boat" src="/images/phaser-waves/boat.png" /></p>
+
+<p><img alt="realistic looking waves" src="/images/phaser-waves/wave.png" /></p>
+
+<p>Great! Assets done and looking pretty good.</p>
+
+<h2 id="waves-need-to-move-like-waves">Waves need to move like waves</h2>
+<p>Next, I needed to come up with a way to place these waves next to each other, and allow them to move independently in a “wave-like” fashion. Rolling and bobbing up and down.</p>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/waves01.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/waves01.webm" type="video/webm" />
+    </video>
+    <figcaption>See the full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves01">here</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>To move each wave up and down gradually, I use Javascript’s <code class="highlighter-rouge">Math.sin</code> function in my <code class="highlighter-rouge">update</code> function that gets called once per frame:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">update</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ... snip</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">animateWaves</span><span class="p">();</span>
+  <span class="c1">// ... snip</span>
+<span class="p">},</span>
+<span class="nx">animateWaves</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">// this.count increments every frame. gives us a constantly</span>
+  <span class="c1">// increasing X value for our sin function</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">+=</span> <span class="mf">0.1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">waves</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">currentWave</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">count</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="nx">currentWave</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
+<span class="p">},</span>
+</code></pre></div></div>
+
+<p>Giving <code class="highlighter-rouge">Math.sin</code> an x-value, outputs a y-value at that x. As x increases, the y value oscillates up and down. If you were to plot these y values for every x value from 0 to 10, let’s say, you’d see a wave-like pattern emerge. This is obviously perfect for what we are trying to accomplish here!</p>
+
+<p>In our case, we give <code class="highlighter-rouge">Math.sin</code> and x-value that is composed of two things: the current wave’s number, <code class="highlighter-rouge">i</code> and a counter (<code class="highlighter-rouge">this.count</code>) that increments by 0.1 every time a frame is drawn to the screen (30-60 times per second!). After getting the y-value out of <code class="highlighter-rouge">Math.sin(x)</code>, we multiply that value by 5 to increase the height (amplitude) of the wave. If we did not multiple, we’d have very tiny wave motions and I wanted the waves to appear to be large and rolling.</p>
+
+<h2 id="boat-and-waves-should-collide">Boat and waves should collide</h2>
+<p>Now that the waves are moving, we need a way to collide them with a boat. Phaser has built-in physics that can handle this by creating a “physics body” for each element that needs to interact with the physics engine. In our case, since the boat, and each wave are going to collide, that means all of those elements will need a physics body attached to it. By default, the physics body is square and is most often referred to as a “hit box”. But, for our purposes, I thought I’d try to use a circle, and you’ll see why in a little bit.</p>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/waves02.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/waves02.webm" type="video/webm" />
+    </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves02">here.</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>The code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numWaves</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+  <span class="nx">x</span> <span class="o">=</span> <span class="nx">i</span><span class="o">*</span><span class="nx">waveLength</span><span class="p">;</span>
+  <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// Pick a random wave frame (0, or 1) from the 'wave' graphic</span>
+  <span class="nx">wave</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">game</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">sprite</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s1">'wave'</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">game</span><span class="p">.</span><span class="nx">rnd</span><span class="p">.</span><span class="nx">between</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">));</span>
+  <span class="c1">// Let's setup the anchor to the center of the wave sprite</span>
+  <span class="nx">wave</span><span class="p">.</span><span class="nx">anchor</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
+  <span class="nx">wave</span><span class="p">.</span><span class="nx">smoothed</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">waves</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">wave</span><span class="p">);</span>
+  <span class="c1">// randomize the circle size to vary the motion of anything</span>
+  <span class="c1">// that collides with this wave</span>
+  <span class="nx">wave</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">setCircle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">game</span><span class="p">.</span><span class="nx">rnd</span><span class="p">.</span><span class="nx">between</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span><span class="mi">140</span><span class="p">));</span>
+  <span class="c1">// offset the wave slightly below the top of the sprite</span>
+  <span class="nx">wave</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">offset</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+  <span class="c1">// do not allow other objects to "push" this sprite.</span>
+  <span class="c1">// simply collide</span>
+  <span class="nx">wave</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">immovable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I’ve highlighted the physics bodies (green) in Phaser to show the boat and waves colliding. Once we add some velocity to the boat, it will collide with each circle it meets, giving its path an irregular shape, almost as if it were riding up and down the slope of a wave. That’s why using a circle physics body on the boat and all of the waves works better in this instance.</p>
+
+<h2 id="motion">Motion!</h2>
+<p>In order to make this more interesting, the boat needs to move and when the boat moves, the waves need to “shift” to the left adding new waves off the right side of the screen, and disappearing waves off the left side as they go out of view. This is how we’ll create an “infinite” sea for the boat to explore. As its velocity moves it to the right, we’ll constantly swap in new wave tiles so it always has something to sail on.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">update</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">game</span><span class="p">.</span><span class="nx">physics</span><span class="p">.</span><span class="nx">arcade</span><span class="p">.</span><span class="nx">collide</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">boat</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">waves</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">boat</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">velocity</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span> <span class="c1">// Constantly move boat to the right</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">animateWaves</span><span class="p">();</span>
+<span class="p">},</span>
+</code></pre></div></div>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/waves03.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/waves03.webm" type="video/webm" />
+    </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves03">here.</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>As you can see, the boat eventually falls off the last wave, and off the screen. We need to implement the “infinite” part of this example, and continuously swap the left-most wave sprite to the right side of the screen, so the boat can never “fall off” the screen and to certain death below.</p>
+
+<h3 id="how-to-i-swap-tiles">How to I swap tiles?</h3>
+
+<p>On initialization of my scene, after creating each wave sprite, I set a few variables to keep track of where the first and last wave are in the group of waves. The idea is that these indexes will change as the sprite moves from right-to-left across the screen.</p>
+
+<p><em>Note: At first I attempted to treat the array as a stack, and “pop off” the wave sprite that was “off the screen” on the left, and then insert it back on the top of the stack, placing it on the far right of the screen. This caused redraw problems, I think, because I would get a 20-50ms stutter every time I had to pop and push. That is how I came up with this index-tracking mechanism.</em></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">lastWaveIndex</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">numWaves</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Once per frame of animation, I take a look at the first and last wave in my group of wave sprites. If the first wave has fallen off the screen (it’s left-most x-position is less than the camera’s x-position), move the sprite to the far right by setting its new x-position just to the right of the current last wave sprite. Then, set the <code class="highlighter-rouge">lastWaveIndex</code> to the <code class="highlighter-rouge">firstWaveIndex</code>, since it was just pushed to the far right, and increment the <code class="highlighter-rouge">firstWaveIndex</code> by 1 to make the now left-most wave sprite the “first” sprite. I also correct for if we increment the index and it’s greater than the number of waves we’re currently rendering. In that case, I set the <code class="highlighter-rouge">firstWaveIndex</code> to 0 to “wrap-around” the index.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">shuffleLeftMostWave</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="c1">// Look at left-most this.waves.children only!</span>
+  <span class="c1">// check if the current wave's right edge (in world coords)</span>
+  <span class="c1">// is less than the camera's left edge</span>
+  <span class="kd">var</span> <span class="nx">firstWave</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">waves</span><span class="p">.</span><span class="nx">children</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span><span class="p">];</span>
+  <span class="kd">var</span> <span class="nx">lastWave</span>  <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">waves</span><span class="p">.</span><span class="nx">children</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">lastWaveIndex</span><span class="p">];</span>
+
+  <span class="k">if</span><span class="p">((</span><span class="nx">firstWave</span><span class="p">.</span><span class="nx">world</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">firstWave</span><span class="p">.</span><span class="nx">offsetX</span><span class="p">)</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">game</span><span class="p">.</span><span class="nx">camera</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">newX</span> <span class="o">=</span> <span class="nx">lastWave</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">WAVE_LENGTH</span><span class="p">;</span>
+    <span class="nx">firstWave</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">newX</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">lastWaveIndex</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span><span class="o">+</span><span class="mi">1</span> <span class="o">&gt;=</span> <span class="k">this</span><span class="p">.</span><span class="nx">numWaves</span><span class="p">){</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">firstWaveIndex</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I’ve numbered each wave with its index, so you can see them repeat themselves after the 5th wave. There are only six waves total, numbered 0, through 5.</p>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/waves04.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/waves04.webm" type="video/webm" />
+    </video>
+    <figcaption>Full code <a href="https://github.com/cfurrow/phaser-wave-example/tree/waves04">here.</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<h3 id="how-did-the-boat-move-endlessly">How did the boat move “endlessly”?</h3>
+<p>The boat has a velocity on its x-axis that constantly propels it forward through the world. This particular game world is only 10,000 pixels wide, but again, I’m only using enough wave segments to fill the width of the screen. The camera is also fixed to the boat, so as it moves, the boat stays centered.</p>
+
+<p>An alternate way to “move” the boat would be to not give it a velocity at all, and experiment with simply moving the waves to the left, and the boat would naturally collide with the wave bodies and slide over them. I’d have to make sure the boat could not slide backwards and only move forward, and I’m not sure how easily that would be done.</p>
+
+<p>Additionally, I could keep the X-velocity on the boat, and then as the player got to a world X coordinate (say, 9,000 of 10,000 pixels), I could reset the player’s X position back to world-position 0, since the waves are fixed to the camera, and then the boat would be free to travel for another 9,000 pixels and never see the “end” of the world at 10,000 pixels. At this rate the world wouldn’t even have to be 10,000 pixels, but instead, just wide enough to fit the entire user’s viewport, plus some padding to the right, and then as the user got to the edge of this world length, reset them back to 0.</p>
+
+<h2 id="end-result">End Result</h2>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered column">
+    <figure>
+    <video width="100%" autoplay="" loop="" preload="">
+      <source src="/images/phaser-waves/phaser-wave.mp4" type="video/mp4" />
+      <source src="/images/phaser-waves/phaser-wave.webm" type="video/webm" />
+    </video>
+    <figcaption>Full code for final scene <a href="https://github.com/cfurrow/phaser-wave-example/">here.</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<ul>
+  <li><a href="https://cfurrow.github.io/phaser-wave-example/">Here is a live demo</a></li>
+  <li>Check out the repo here: <a href="https://github.com/cfurrow/phaser-wave-example/">https://github.com/cfurrow/phaser-wave-example/</a></li>
+</ul>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+
+        <div class="cf"></div>
+
+<hr/>
+<div class="row newsletter-box">
+  <div class="small-12 columns small-centered text-center">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Want to get updates in your inbox?
+    <a href="https://tinyletter.com/furrowcious">Sign up to receive our newsletter!</a>
+  </div>
+</div>
+<div class="notepad-author-info">
+  <div class="row">
+    <section class="notepad-post-author small-12 columns">
+      <img src="https://cfurrow.github.io/images/carl.jpg" class="notepad-post-author-avatar" alt="Carl Furrow's photo">
+      <span class="author-label">Author</span>
+      <h1>Carl Furrow</h1>
+      <p><a href="mailto:hello@carlfurrow.com" class="author-website">hello@carlfurrow.com</a></p>
+      <p>I'm just a learning-fool, looking to master the art of solving problems through writing code, and yelling at computer screens.
+</p>
+    </section>
+  </div>
+</div>
+
+
+        <div class="cf"></div>
+        
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+  <div class="buy-me-a-coffee">
+    <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/furrowcious"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+  </div>
+  <div class="copyright">
+    <section>All content copyright <a href="https://cfurrow.github.io/about">Carl Furrow</a> &copy; 2019 &bull; All rights reserved.</section>
+    <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+  </div>
+  <div class="social-icons">
+    
+      <a href="http://twitter.com/carl_furrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://instagram.com/furrowcious_carl">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+      <a href="http://github.com/cfurrow">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-github fa-stack-1x"></i>
+        </span>
+      </a>
+    
+    
+  </div>
+  <div class="cf"></div>
+</footer>
+
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cfurrow.github.io/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="https://cfurrow.github.io/assets/js/vendor/modernizr.js"></script>
+<script src="https://cfurrow.github.io/assets/js/foundation.min.js"></script>
+
+<script src="https://cfurrow.github.io/assets/js/notepad.js"></script>
+<script src="https://cfurrow.github.io/assets/js/scripts.min.js"></script>
+<script src="https://cfurrow.github.io/assets/js/vendor/nprogress.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+<script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+<script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48560508-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+</body>
+</html>
