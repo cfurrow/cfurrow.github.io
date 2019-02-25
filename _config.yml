@@ -11,7 +11,11 @@ paginate_path: "page:num"
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    line_numbers: true
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
     css_class: 'highlight-wrap'
   # syntax_highlighter_opts:
   #   # Rouge Options › https://github.com/jneen/rouge#full-options

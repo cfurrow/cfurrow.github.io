@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "\"Down to Eart\" - Part 1"
+title: "\"Down to Earth\" - Part 1"
 description:
 headline:
 modified: 2019-02-25 13:34:38 -0500
@@ -61,11 +61,12 @@ I devised a system similar to this. I created a bitmap image with tiles in it, o
   <figcaption>An example of my "chunk.png" file.</figcaption>
 </figure>
 
-The code responsible for picking a tile, and adding the objects to the game world is below:
+The code responsible for picking a "chunk" tile from the tiles above, and adding the objects to the game world is below:
 
 ```javascript
-_buildChunks(startY, endY) {
+CHUNK_COUNT = 5;
 
+_buildChunks(startY, endY) {
   let chunkCount = Math.floor((endY-startY) / this._chunkHeight);
   if(chunkCount < 1) {
     chunkCount = 1;
@@ -79,31 +80,23 @@ _buildChunks(startY, endY) {
   let currentY = startY;
   let pX, pY;
   this.rnd = Phaser.Math.RND;
-  let rockWidth = 8;
-  let rockHeight = 8;
-  let frame = 0;
-  let rocksPerChunk = 4;
-  let rocksToInsert = 0;
-  let minX = rockWidth/2;
-  let maxX = this._width - rockWidth/2;
+  // Each chunk "tile" is an 8x8 grid
+  let gridWidth  = 8;
+  let gridHeight = 8;
+  let color = null;
+  let chunkLayout;
 
   for(; chunkIndex < chunkCount; chunkIndex++) {
     currentY = minY + (chunkIndex * this._chunkHeight);
     this.currentChunk = [];
-    // Pick a layout
-    let layout = this.rnd.between(0,5);
-    // layout is an 8x8 sprite
-    // if pixel is white/transp, no rock
-    // if pixel is black (non transparent), rock.
-    for(let i = 0; i < 8; i++) {
-      for(let j = 0; j < 8; j++) {
-        let color = this.scene.textures.getPixel(i, j, 'chunks', layout);
+    // Pick a chunkLayout from the chunk file
+    let chunkLayout = this.rnd.between(0, CHUNK_COUNT);
+    for(let i = 0; i < gridWidth; i++) {
+      for(let j = 0; j < gridHeight; j++) {
+        color = this.scene.textures.getPixel(i, j, 'chunks', chunkLayout);
         if(color.alpha == 255) {
-          let gridWidth = 8;
-          let gridHeight = 8;
-          let pX = i * gridWidth;
-          let pY = currentY + (j * gridHeight);
-          pX = Phaser.Math.Clamp(pX, minX, maxX);
+          pX = i * gridWidth;
+          pY = currentY + (j * gridHeight);
           this.placeObject(color, pX, pY);
         }
       }
@@ -132,3 +125,9 @@ placeWater(x,y) {
   this._water.push(water);
 }
 ```
+
+Pretty simple. You'll notice that `_buildChunks` is capable of building multiple chunks at once, if necessary. I will cover that later when I go over how I build a never-ending underground.
+
+
+## Endless Growth
+As the player's root moves down every frame, we need to make sure there is "dirt" and obstacles waiting for them.
