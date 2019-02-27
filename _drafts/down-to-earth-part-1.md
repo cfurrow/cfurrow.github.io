@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "\"Down to Earth\" - Part 1"
-description:
+description: Here I give an overview (with some code) on how I tinkered with my latest game, "Down to Earth".
 headline:
 modified: 2019-02-25 13:34:38 -0500
 category: game development
@@ -16,7 +16,11 @@ hero:
 
 In mid-2018 I set out to make a simple game in concept and simple technically. While it *was* simple, it still has taken me a long while to actually complete it, as I love to tinker. Below is an attempt to capture the timeline of what I've built so far, and what is to come.
 
-< show game here >
+<div styles="margin-left: auto; margin-right: auto; width: 70%">
+  <video controls width="500">
+    <source src="{% asset_path gameplay.mp4 %}" type="video/mp4">
+  </video>
+</div>
 
 ## Concept
 While sitting in my office, and staring out my window into the nature in my backyard, my mind wandered into game development, as it does from time to time. I wanted to make *something* and hopefully come up with an idea that was not only simple for me to build, but also enjoyable to build and play. As I watched the weeds in my yard sway with the wind, the idea, or, part of the idea, popped in my head, “What if I built a game based around a plant?”
